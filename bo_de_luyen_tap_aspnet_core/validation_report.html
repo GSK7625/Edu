@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Báo cáo kiểm tra bộ câu hỏi</title>
+  <style>
+    body{font-family:Segoe UI,Roboto,Arial,sans-serif;background:#f6f8fb;color:#1f2937;margin:0;padding:24px;line-height:1.55}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:20px;margin-bottom:16px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+    h1,h2{margin-top:0}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;border-bottom:1px solid #e5e7eb;text-align:left}
+    th{background:#f8fafc}
+    ul{padding-left:18px}
+    span{color:#6b7280}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#dbeafe;color:#1d4ed8;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Báo cáo kiểm tra bộ câu hỏi</h1>
+    <p><span class="badge">PASS</span> Bộ câu hỏi đã vượt qua các kiểm tra cấu trúc tự động.</p>
+    <p>Tổng số phần: <strong>11</strong> · Tổng số câu: <strong>1650</strong></p>
+    <p>Chuẩn mỗi phần: <strong>45 dễ · 75 trung bình · 30 khó</strong></p>
+  </div>
+
+  <div class="card">
+    <h2>Kết quả kiểm tra</h2>
+    <ul><li><strong>all_sections_have_150_questions</strong>: PASS</li><li><strong>all_sections_match_difficulty_distribution</strong>: PASS</li><li><strong>all_questions_have_4_options</strong>: PASS</li><li><strong>all_questions_have_exactly_one_correct_label</strong>: PASS</li><li><strong>no_duplicate_option_texts</strong>: PASS</li><li><strong>no_exact_duplicate_stems_globally</strong>: PASS</li><li><strong>no_high_similarity_pairs_over_0_97_within_same_section</strong>: PASS</li><li><strong>no_double_negative_detected_by_rule</strong>: PASS</li><li><strong>no_answer_leak_patterns_detected</strong>: PASS</li><li><strong>no_correct_option_length_imbalance_detected_by_rule</strong>: PASS</li></ul>
+  </div>
+
+  <div class="card">
+    <h2>Thống kê theo phần</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Mã phần</th>
+          <th>Tiêu đề</th>
+          <th>Tổng câu</th>
+          <th>Dễ</th>
+          <th>Trung bình</th>
+          <th>Khó</th>
+        </tr>
+      </thead>
+      <tbody><tr><td>P01</td><td>Tổng quan &amp; Cài đặt môi trường ASP.NET Core</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P02</td><td>C# Cơ bản: Nền tảng lập trình</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P03</td><td>Collections, LINQ và thao tác với Object</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P04</td><td>Cài đặt môi trường [Phải thực hành tại nhà]</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P05</td><td>Giới thiệu Web API, RESTful API và HTTP</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P06</td><td>Routing &amp; Controller trong ASP.NET Core</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P07</td><td>Model Binding &amp; Validation trong ASP.NET Core</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P08</td><td>Dependency Injection, Middleware &amp; Standardized API Response</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P09</td><td>Web API quản lý sinh viên với upload file</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P10</td><td>Entity Framework Core &amp; ASP.NET Core 8+</td><td>150</td><td>45</td><td>75</td><td>30</td></tr><tr><td>P11</td><td>Authentication &amp; Authorization trong ASP.NET Core</td><td>150</td><td>45</td><td>75</td><td>30</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Nguồn học liệu đã dùng</h2>
+    <ul><li><strong>P01</strong> - Tổng quan &amp; Cài đặt môi trường ASP.NET Core <span>(Văn bản đã dán (1).txt)</span></li><li><strong>P02</strong> - C# Cơ bản: Nền tảng lập trình <span>(Văn bản đã dán (2).txt)</span></li><li><strong>P03</strong> - Collections, LINQ và thao tác với Object <span>(Văn bản đã dán (3).txt)</span></li><li><strong>P04</strong> - Cài đặt môi trường [Phải thực hành tại nhà] <span>(Văn bản đã dán (4).txt)</span></li><li><strong>P05</strong> - Giới thiệu Web API, RESTful API và HTTP <span>(Văn bản đã dán (5).txt)</span></li><li><strong>P06</strong> - Routing &amp; Controller trong ASP.NET Core <span>(Văn bản đã dán (6).txt)</span></li><li><strong>P07</strong> - Model Binding &amp; Validation trong ASP.NET Core <span>(Văn bản đã dán (7).txt)</span></li><li><strong>P08</strong> - Dependency Injection, Middleware &amp; Standardized API Response <span>(Văn bản đã dán (8).txt)</span></li><li><strong>P09</strong> - Web API quản lý sinh viên với upload file <span>(Văn bản đã dán (9).txt)</span></li><li><strong>P10</strong> - Entity Framework Core &amp; ASP.NET Core 8+ <span>(Văn bản đã dán (10).txt)</span></li><li><strong>P11</strong> - Authentication &amp; Authorization trong ASP.NET Core <span>(Văn bản đã dán (11).txt)</span></li></ul>
+  </div>
+</body>
+</html>

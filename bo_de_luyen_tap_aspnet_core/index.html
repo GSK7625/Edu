@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bộ đề ôn thi C# & ASP.NET Core</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>Bộ đề ôn thi</h1>
+        <p>C# & ASP.NET Core</p>
+      </div>
+
+      <section class="panel">
+        <h2>Chọn phạm vi</h2>
+        <label class="field">
+          <span>Phần học</span>
+          <select id="sectionSelect"></select>
+        </label>
+
+        <label class="field">
+          <span>Độ khó</span>
+          <select id="difficultySelect">
+            <option value="all">Tất cả độ khó</option>
+            <option value="easy">Chỉ câu dễ</option>
+            <option value="medium">Chỉ câu trung bình</option>
+            <option value="hard">Chỉ câu khó</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Chế độ</span>
+          <select id="modeSelect">
+            <option value="practice">Luyện tập có phản hồi ngay</option>
+            <option value="exam">Thi thử chấm điểm cuối bài</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Số câu</span>
+          <input id="countInput" type="number" min="5" max="1650" step="1" value="20" />
+        </label>
+
+        <div class="quick-buttons" id="quickCountButtons">
+          <button type="button" data-count="10">10</button>
+          <button type="button" data-count="20">20</button>
+          <button type="button" data-count="50">50</button>
+          <button type="button" data-count="100">100</button>
+          <button type="button" data-count="150">150</button>
+        </div>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="shuffleQuestions" checked />
+          <span>Trộn câu hỏi</span>
+        </label>
+
+        <button id="startBtn" class="primary-button">Bắt đầu</button>
+      </section>
+
+      <section class="panel">
+        <h2>Thông tin bộ đề</h2>
+        <div id="bankInfo" class="meta-list"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Danh sách phần</h2>
+        <div id="sectionList" class="section-list"></div>
+      </section>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h2 id="viewTitle">Sẵn sàng luyện tập</h2>
+          <p id="viewSubtitle">Chọn phần học, số câu và chế độ rồi nhấn “Bắt đầu”.</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="restartBtn" class="ghost-button" hidden>Làm lại</button>
+        </div>
+      </header>
+
+      <section id="welcomeView" class="card welcome-card">
+        <h3>Bạn sẽ nhận được gì?</h3>
+        <ul>
+          <li>11 phần học, mỗi phần 150 câu hỏi trắc nghiệm.</li>
+          <li>Tỷ lệ độ khó chuẩn theo từng phần: 45 dễ, 75 trung bình, 30 khó.</li>
+          <li>Mỗi câu có 4 đáp án, 1 đáp án đúng và có giải thích ngắn.</li>
+          <li>Chạy offline: chỉ cần mở <code>index.html</code> sau khi giải nén.</li>
+        </ul>
+      </section>
+
+      <section id="quizView" class="quiz-layout" hidden>
+        <div class="card progress-card">
+          <div class="progress-row">
+            <div>
+              <strong id="progressText">Câu 1 / 20</strong>
+              <span id="progressMeta"></span>
+            </div>
+            <div id="answerState" class="answer-state"></div>
+          </div>
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="quiz-main-grid">
+          <div class="card question-card">
+            <div class="question-head">
+              <span id="questionBadge" class="badge">P01</span>
+              <span id="difficultyBadge" class="badge subtle">Dễ</span>
+            </div>
+            <h3 id="questionStem" class="question-stem"></h3>
+            <div id="optionsContainer" class="options"></div>
+
+            <div id="feedbackBox" class="feedback" hidden></div>
+
+            <div class="nav-row">
+              <button id="prevBtn" class="ghost-button">Câu trước</button>
+              <button id="nextBtn" class="primary-button">Câu tiếp</button>
+              <button id="submitBtn" class="danger-button" hidden>Nộp bài</button>
+            </div>
+          </div>
+
+          <aside class="card palette-card">
+            <h3>Điều hướng</h3>
+            <div id="paletteGrid" class="palette-grid"></div>
+            <div class="palette-legend">
+              <span><i class="dot dot-current"></i> Hiện tại</span>
+              <span><i class="dot dot-answered"></i> Đã chọn</span>
+              <span><i class="dot dot-correct"></i> Đúng</span>
+              <span><i class="dot dot-wrong"></i> Sai</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="resultView" hidden>
+        <div class="card result-summary">
+          <h3>Kết quả</h3>
+          <div id="scoreHero" class="score-hero"></div>
+          <div id="resultStats" class="stats-grid"></div>
+          <div class="nav-row">
+            <button id="retryBtn" class="primary-button">Làm lại cùng cấu hình</button>
+            <button id="reviewWrongBtn" class="ghost-button">Chỉ xem câu sai</button>
+            <button id="reviewAllBtn" class="ghost-button">Xem toàn bộ</button>
+          </div>
+        </div>
+
+        <div id="reviewList" class="review-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

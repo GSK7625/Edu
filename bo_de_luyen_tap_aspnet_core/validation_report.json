@@ -1,0 +1,201 @@
+{
+  "totalSections": 11,
+  "totalQuestions": 1650,
+  "difficultyTargetPerSection": {
+    "easy": 45,
+    "medium": 75,
+    "hard": 30
+  },
+  "perSection": [
+    {
+      "id": "P01",
+      "title": "Tổng quan & Cài đặt môi trường ASP.NET Core",
+      "questionCount": 150,
+      "difficultyCount": {
+        "medium": 75,
+        "hard": 30,
+        "easy": 45
+      }
+    },
+    {
+      "id": "P02",
+      "title": "C# Cơ bản: Nền tảng lập trình",
+      "questionCount": 150,
+      "difficultyCount": {
+        "easy": 45,
+        "medium": 75,
+        "hard": 30
+      }
+    },
+    {
+      "id": "P03",
+      "title": "Collections, LINQ và thao tác với Object",
+      "questionCount": 150,
+      "difficultyCount": {
+        "hard": 30,
+        "medium": 75,
+        "easy": 45
+      }
+    },
+    {
+      "id": "P04",
+      "title": "Cài đặt môi trường [Phải thực hành tại nhà]",
+      "questionCount": 150,
+      "difficultyCount": {
+        "hard": 30,
+        "easy": 45,
+        "medium": 75
+      }
+    },
+    {
+      "id": "P05",
+      "title": "Giới thiệu Web API, RESTful API và HTTP",
+      "questionCount": 150,
+      "difficultyCount": {
+        "hard": 30,
+        "medium": 75,
+        "easy": 45
+      }
+    },
+    {
+      "id": "P06",
+      "title": "Routing & Controller trong ASP.NET Core",
+      "questionCount": 150,
+      "difficultyCount": {
+        "medium": 75,
+        "hard": 30,
+        "easy": 45
+      }
+    },
+    {
+      "id": "P07",
+      "title": "Model Binding & Validation trong ASP.NET Core",
+      "questionCount": 150,
+      "difficultyCount": {
+        "easy": 45,
+        "hard": 30,
+        "medium": 75
+      }
+    },
+    {
+      "id": "P08",
+      "title": "Dependency Injection, Middleware & Standardized API Response",
+      "questionCount": 150,
+      "difficultyCount": {
+        "medium": 75,
+        "hard": 30,
+        "easy": 45
+      }
+    },
+    {
+      "id": "P09",
+      "title": "Web API quản lý sinh viên với upload file",
+      "questionCount": 150,
+      "difficultyCount": {
+        "hard": 30,
+        "easy": 45,
+        "medium": 75
+      }
+    },
+    {
+      "id": "P10",
+      "title": "Entity Framework Core & ASP.NET Core 8+",
+      "questionCount": 150,
+      "difficultyCount": {
+        "medium": 75,
+        "easy": 45,
+        "hard": 30
+      }
+    },
+    {
+      "id": "P11",
+      "title": "Authentication & Authorization trong ASP.NET Core",
+      "questionCount": 150,
+      "difficultyCount": {
+        "medium": 75,
+        "easy": 45,
+        "hard": 30
+      }
+    }
+  ],
+  "checks": {
+    "all_sections_have_150_questions": true,
+    "all_sections_match_difficulty_distribution": true,
+    "all_questions_have_4_options": true,
+    "all_questions_have_exactly_one_correct_label": true,
+    "no_duplicate_option_texts": true,
+    "no_exact_duplicate_stems_globally": true,
+    "no_high_similarity_pairs_over_0_97_within_same_section": true,
+    "no_double_negative_detected_by_rule": true,
+    "no_answer_leak_patterns_detected": true,
+    "no_correct_option_length_imbalance_detected_by_rule": true
+  },
+  "sources": [
+    {
+      "sectionId": "P01",
+      "title": "Tổng quan & Cài đặt môi trường ASP.NET Core",
+      "sourceFile": "Văn bản đã dán (1).txt",
+      "sourceTitle": "Tổng quan & Cài đặt môi trường ASP.NET Core"
+    },
+    {
+      "sectionId": "P02",
+      "title": "C# Cơ bản: Nền tảng lập trình",
+      "sourceFile": "Văn bản đã dán (2).txt",
+      "sourceTitle": "C# Cơ bản: Nền tảng lập trình"
+    },
+    {
+      "sectionId": "P03",
+      "title": "Collections, LINQ và thao tác với Object",
+      "sourceFile": "Văn bản đã dán (3).txt",
+      "sourceTitle": "Collections, LINQ và thao tác với Object"
+    },
+    {
+      "sectionId": "P04",
+      "title": "Cài đặt môi trường [Phải thực hành tại nhà]",
+      "sourceFile": "Văn bản đã dán (4).txt",
+      "sourceTitle": "Cài đặt môi trường [Phải thực hành tại nhà]"
+    },
+    {
+      "sectionId": "P05",
+      "title": "Giới thiệu Web API, RESTful API và HTTP",
+      "sourceFile": "Văn bản đã dán (5).txt",
+      "sourceTitle": "Giới thiệu Web API, RESTful API và HTTP"
+    },
+    {
+      "sectionId": "P06",
+      "title": "Routing & Controller trong ASP.NET Core",
+      "sourceFile": "Văn bản đã dán (6).txt",
+      "sourceTitle": "Buổi 2: Routing & Controller trong ASP.NET Core"
+    },
+    {
+      "sectionId": "P07",
+      "title": "Model Binding & Validation trong ASP.NET Core",
+      "sourceFile": "Văn bản đã dán (7).txt",
+      "sourceTitle": "Buổi 3: Model Binding & Validation trong ASP.NET Core"
+    },
+    {
+      "sectionId": "P08",
+      "title": "Dependency Injection, Middleware & Standardized API Response",
+      "sourceFile": "Văn bản đã dán (8).txt",
+      "sourceTitle": "Buổi 4: Dependency Injection, Middleware & Standardized API Response trong ASP.NET Core"
+    },
+    {
+      "sectionId": "P09",
+      "title": "Web API quản lý sinh viên với upload file",
+      "sourceFile": "Văn bản đã dán (9).txt",
+      "sourceTitle": "Hướng dẫn xây dựng Web API quản lý sinh viên với upload file trong ASP.NET Core"
+    },
+    {
+      "sectionId": "P10",
+      "title": "Entity Framework Core & ASP.NET Core 8+",
+      "sourceFile": "Văn bản đã dán (10).txt",
+      "sourceTitle": "Hướng dẫn đầy đủ về ENTITY FRAMEWORK CORE và ASP.NET CORE 8+"
+    },
+    {
+      "sectionId": "P11",
+      "title": "Authentication & Authorization trong ASP.NET Core",
+      "sourceFile": "Văn bản đã dán (11).txt",
+      "sourceTitle": "Hướng dẫn thực hành AUTHENTICATION & AUTHORIZATION trong ASP.NET CORE"
+    }
+  ]
+}

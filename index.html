@@ -1,160 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bộ đề ôn thi C# & ASP.NET Core</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#102b40"><meta name="description" content="Luyện thi Cơ sở dữ liệu nâng cao với 5 đề, 200 câu trắc nghiệm SQL Server. Thi thử 50 phút, chấm điểm và giải thích từng câu, dùng trên điện thoại.">
+<title>Luyện thi CSDL nâng cao · 200 câu</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="brand">
-        <h1>Bộ đề ôn thi</h1>
-        <p>C# & ASP.NET Core</p>
-      </div>
-
-      <section class="panel">
-        <h2>Chọn phạm vi</h2>
-        <label class="field">
-          <span>Phần học</span>
-          <select id="sectionSelect"></select>
-        </label>
-
-        <label class="field">
-          <span>Độ khó</span>
-          <select id="difficultySelect">
-            <option value="all">Tất cả độ khó</option>
-            <option value="easy">Chỉ câu dễ</option>
-            <option value="medium">Chỉ câu trung bình</option>
-            <option value="hard">Chỉ câu khó</option>
-          </select>
-        </label>
-
-        <label class="field">
-          <span>Chế độ</span>
-          <select id="modeSelect">
-            <option value="practice">Luyện tập có phản hồi ngay</option>
-            <option value="exam">Thi thử chấm điểm cuối bài</option>
-          </select>
-        </label>
-
-        <label class="field">
-          <span>Số câu</span>
-          <input id="countInput" type="number" min="5" max="1650" step="1" value="20" />
-        </label>
-
-        <div class="quick-buttons" id="quickCountButtons">
-          <button type="button" data-count="10">10</button>
-          <button type="button" data-count="20">20</button>
-          <button type="button" data-count="50">50</button>
-          <button type="button" data-count="100">100</button>
-          <button type="button" data-count="150">150</button>
-        </div>
-
-        <label class="checkbox-row">
-          <input type="checkbox" id="shuffleQuestions" checked />
-          <span>Trộn câu hỏi</span>
-        </label>
-
-        <button id="startBtn" class="primary-button">Bắt đầu</button>
-      </section>
-
-      <section class="panel">
-        <h2>Thông tin bộ đề</h2>
-        <div id="bankInfo" class="meta-list"></div>
-      </section>
-
-      <section class="panel">
-        <h2>Danh sách phần</h2>
-        <div id="sectionList" class="section-list"></div>
-      </section>
-    </aside>
-
-    <main class="main-content">
-      <header class="topbar">
-        <div>
-          <h2 id="viewTitle">Sẵn sàng luyện tập</h2>
-          <p id="viewSubtitle">Chọn phần học, số câu và chế độ rồi nhấn “Bắt đầu”.</p>
-        </div>
-        <div class="topbar-actions">
-          <button id="restartBtn" class="ghost-button" hidden>Làm lại</button>
-        </div>
-      </header>
-
-      <section id="welcomeView" class="card welcome-card">
-        <h3>Bạn sẽ nhận được gì?</h3>
-        <ul>
-          <li>11 phần học, mỗi phần 150 câu hỏi trắc nghiệm.</li>
-          <li>Tỷ lệ độ khó chuẩn theo từng phần: 45 dễ, 75 trung bình, 30 khó.</li>
-          <li>Mỗi câu có 4 đáp án, 1 đáp án đúng và có giải thích ngắn.</li>
-          <li>Chạy offline: chỉ cần mở <code>index.html</code> sau khi giải nén.</li>
-        </ul>
-      </section>
-
-      <section id="quizView" class="quiz-layout" hidden>
-        <div class="card progress-card">
-          <div class="progress-row">
-            <div>
-              <strong id="progressText">Câu 1 / 20</strong>
-              <span id="progressMeta"></span>
-            </div>
-            <div id="answerState" class="answer-state"></div>
-          </div>
-          <div class="progress-bar">
-            <div id="progressFill" class="progress-fill"></div>
-          </div>
-        </div>
-
-        <div class="quiz-main-grid">
-          <div class="card question-card">
-            <div class="question-head">
-              <span id="questionBadge" class="badge">P01</span>
-              <span id="difficultyBadge" class="badge subtle">Dễ</span>
-            </div>
-            <h3 id="questionStem" class="question-stem"></h3>
-            <div id="optionsContainer" class="options"></div>
-
-            <div id="feedbackBox" class="feedback" hidden></div>
-
-            <div class="nav-row">
-              <button id="prevBtn" class="ghost-button">Câu trước</button>
-              <button id="nextBtn" class="primary-button">Câu tiếp</button>
-              <button id="submitBtn" class="danger-button" hidden>Nộp bài</button>
-            </div>
-          </div>
-
-          <aside class="card palette-card">
-            <h3>Điều hướng</h3>
-            <div id="paletteGrid" class="palette-grid"></div>
-            <div class="palette-legend">
-              <span><i class="dot dot-current"></i> Hiện tại</span>
-              <span><i class="dot dot-answered"></i> Đã chọn</span>
-              <span><i class="dot dot-correct"></i> Đúng</span>
-              <span><i class="dot dot-wrong"></i> Sai</span>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section id="resultView" hidden>
-        <div class="card result-summary">
-          <h3>Kết quả</h3>
-          <div id="scoreHero" class="score-hero"></div>
-          <div id="resultStats" class="stats-grid"></div>
-          <div class="nav-row">
-            <button id="retryBtn" class="primary-button">Làm lại cùng cấu hình</button>
-            <button id="reviewWrongBtn" class="ghost-button">Chỉ xem câu sai</button>
-            <button id="reviewAllBtn" class="ghost-button">Xem toàn bộ</button>
-          </div>
-        </div>
-
-        <div id="reviewList" class="review-list"></div>
-      </section>
-    </main>
-  </div>
-
-  <script src="questions.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+<header class="top"><div class="top-inner"><a class="brand" href="#" id="brand"><span class="mark">SQL</span><span>CSDL nâng cao<small>Phòng luyện thi</small></span></a><button id="theme" class="icon-button" aria-label="Chuyển giao diện sáng tối" title="Giao diện sáng tối">◐</button></div></header>
+<main>
+<section id="setup" aria-labelledby="setup-title">
+<div class="intro"><div class="eyebrow">200 CÂU · 5 BỘ ĐỀ</div><h1 id="setup-title">Luyện chắc từng câu.<br>Vào thi tự tin hơn.</h1><p>Đọc mã T-SQL, nhận biết lỗi và suy luận kết quả.<br>Đáp án có giải thích, đối chiếu với 5 bài giảng.</p></div>
+<div class="setup-grid"><div class="panel settings"><h2>Chọn cách học</h2><div class="segmented" aria-label="Chế độ làm bài"><button id="practice-mode" class="active" aria-pressed="true">Luyện tập<small>Giải thích ngay</small></button><button id="exam-mode" aria-pressed="false">Thi thử<small>Chấm khi nộp bài</small></button></div>
+<div class="field"><label for="set">Bộ đề</label><select id="set"><option value="0">Đề 01 · 40 câu</option><option value="1">Đề 02 · 40 câu</option><option value="2">Đề 03 · 40 câu</option><option value="3">Đề 04 · 40 câu</option><option value="4">Đề 05 · 40 câu</option><option value="random">Ngẫu nhiên từ 200 câu</option></select></div>
+<div id="random-settings" hidden><div class="field"><label for="chapter">Phạm vi kiến thức</label><select id="chapter"><option value="all">Tất cả 5 bài</option><option value="1">Bài 1 · Nền tảng CSDL</option><option value="2">Bài 2 · Kiểu dữ liệu & T-SQL</option><option value="3">Bài 3 · Hàm thư viện & mã kịch bản</option><option value="4">Bài 4 · Thủ tục & giao dịch</option><option value="5">Bài 5 · Hàm, view & trigger</option></select></div><div class="field"><label for="count">Số câu</label><select id="count"><option value="40">40 câu</option><option value="20">20 câu</option><option value="10">10 câu</option><option value="all">Toàn bộ câu phù hợp</option></select></div></div>
+<div class="field" id="time-field" hidden><label for="duration">Thời gian thi thử</label><select id="duration"><option value="auto">Theo số câu · 75 giây/câu</option><option value="50">50 phút</option><option value="30">30 phút</option><option value="none">Không giới hạn</option></select></div>
+<p class="setting-hint" id="setting-hint">40 câu · Xem đáp án ngay sau khi chọn.</p><button class="button primary full" id="start">Bắt đầu luyện tập</button><button class="button full resume" id="resume" hidden>Tiếp tục bài đang làm</button><p class="local-note">Tiến độ lưu trên trình duyệt này, không đồng bộ giữa các thiết bị.</p></div>
+<aside class="study-side"><div class="panel"><div class="eyebrow">GÓC ÔN TẬP</div><h2>Những câu cần xem lại</h2><div class="study-numbers"><div><strong id="wrong-count">0</strong><span>Câu làm sai</span></div><div><strong id="flag-count">0</strong><span>Câu đánh dấu</span></div></div><button class="button full" id="study-wrong">Ôn câu sai</button><button class="button full" id="study-flagged">Ôn câu đánh dấu</button><p class="local-note">Ôn lại một câu đúng sẽ bỏ câu đó khỏi danh sách câu sai.</p></div><div class="quick-note"><h3>Giữ nhịp như đề mẫu</h3><p>Mỗi đề có 40 câu, 4 lựa chọn.<br>Thang điểm 10, mỗi câu 0,25 điểm.<br>Thời gian luyện thi đề xuất: 50 phút.</p><details><summary>Quy ước khi đọc mã</summary><p>Các câu độc lập, dùng SQL Server/T-SQL và GO trong SSMS. Không có giao dịch mở sẵn, trigger hay ràng buộc ngoài những gì câu hỏi nêu. Chuỗi ASCII dùng mã hóa không UTF-8. Không suy luận thứ tự hàng khi thiếu ORDER BY.</p></details></div></aside></div>
+</section>
+<section id="quiz" hidden aria-labelledby="quiz-title">
+<div class="quiz-heading"><div><button class="text-button" id="back-setup">Chọn bộ đề</button><h1 id="quiz-title">Đề 01</h1></div><div class="timer" id="timer" hidden role="timer" aria-label="Thời gian còn lại">50:00</div></div>
+<div id="results" class="results" hidden aria-live="polite"></div>
+<div class="quiz-layout"><div><article class="panel question-panel"><div class="question-meta"><span class="eyebrow" id="question-position">CÂU 01 / 40</span><button id="flag" class="flag" aria-pressed="false">☆ Đánh dấu</button></div><span class="topic" id="topic"></span><h2 id="question-stem"></h2><pre id="code" hidden><code id="question-code"></code></pre><div class="options" id="options" role="group" aria-label="Chọn một đáp án"></div><div class="feedback" id="feedback" hidden aria-live="polite"></div><div class="question-nav"><button class="button" id="prev">Câu trước</button><span id="answered-small"></span><button class="button primary" id="next">Câu tiếp</button></div></article><p class="small-note">Chọn số câu để chuyển nhanh. Với thi thử, đáp án chỉ hiện sau khi nộp bài.</p></div>
+<aside class="panel palette-panel"><div class="palette-heading"><h2>Danh sách câu</h2><strong id="answered">0/40</strong></div><div class="progress" aria-label="Tiến độ"><div id="progress-fill"></div></div><div class="legend"><span><i class="dot done"></i>Đã làm</span><span><i class="dot flagged"></i>Đánh dấu</span></div><div class="palette" id="palette"></div><button class="button primary full" id="submit">Nộp bài</button><button class="button full" id="restart" hidden>Làm lại bộ câu này</button></aside></div>
+</section>
+<footer><span>CSDL nâng cao · 5 đề luyện tập</span><span>200 câu • Đáp án có giải thích</span></footer>
+</main>
+<dialog id="confirm"><div class="dialog-inner"><h2 id="confirm-title">Nộp bài?</h2><p id="confirm-body"></p><div class="dialog-actions"><button class="button" id="cancel">Quay lại</button><button class="button primary" id="confirm-ok">Nộp bài</button></div></div></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>

@@ -1,48 +1,28 @@
-# Bộ đề ôn thi C# & ASP.NET Core
+# Luyện thi CSDL nâng cao
 
-Thư mục này chứa:
+Website luyện tập SQL Server/T-SQL trên điện thoại và máy tính.
 
-- `index.html`: trang web luyện tập chạy offline.
-- `styles.css`, `app.js`, `questions.js`: mã nguồn giao diện luyện tập.
-- `question_bank.json`: toàn bộ ngân hàng 1.650 câu hỏi.
-- `validation_report.json`, `validation_report.html`: báo cáo kiểm tra tự động.
+## Nội dung
+- 5 bộ đề, mỗi đề 40 câu: tổng cộng 200 câu.
+- Luyện tập: hiện đáp án và giải thích ngay sau khi chọn.
+- Thi thử: đếm thời gian, nộp bài rồi chấm điểm thang 10.
+- Đề ngẫu nhiên theo bài, ôn câu sai và câu đánh dấu.
+- Lưu tiến độ trên trình duyệt hiện tại; không đồng bộ giữa thiết bị.
 
-## Cách dùng
+## Chạy
+Mở `index.html` hoặc dùng GitHub Pages từ nhánh `main`, thư mục `/ (root)`.
 
-1. Giải nén thư mục này nếu bạn đang mở từ file `.zip`.
-2. Mở `index.html` bằng trình duyệt.
-3. Chọn phần học, số câu, độ khó và chế độ rồi bấm **Bắt đầu**.
+Website: https://gsk7625.github.io/Edu/
 
-## Quy mô bộ đề
+## Mã nguồn
+- `index.html`: giao diện.
+- `style.css`: bố cục co giãn cho điện thoại, giao diện sáng/tối.
+- `app.js`: làm bài, chấm điểm, đồng hồ và lưu tiến độ.
+- `data.js`: câu hỏi, lựa chọn, đáp án và giải thích.
+- `favicon.svg`: biểu tượng trang.
+- `.nojekyll`: phục vụ các file tĩnh trực tiếp.
 
-- 11 phần học
-- 150 câu / phần
-- 1.650 câu tổng cộng
-- Mỗi phần có đúng:
-  - 45 câu dễ
-  - 75 câu trung bình
-  - 30 câu khó
+## Kiểm tra
+Cú pháp JavaScript, 200 câu/5 đề, 4 phương án phân biệt và một đáp án đúng mỗi câu. Đã kiểm tra giao diện 390 x 844, lưu bài sau tải lại trang, luyện tập, thi thử, chấm điểm và lọc câu theo bài.
 
-## Những gì đã được kiểm tra tự động
-
-- Mỗi câu có đúng 4 phương án A, B, C, D.
-- Mỗi câu chỉ có 1 nhãn đáp án đúng.
-- Không có phương án trùng nhau trong cùng một câu.
-- Không có câu trùng nguyên văn giữa các phần.
-- Không có cặp câu quá giống nhau trong cùng một phần theo ngưỡng so khớp nội bộ đã đặt.
-- Không phát hiện mẫu phủ định kép theo rule kiểm tra.
-- Không phát hiện chênh lệch độ dài đáp án đúng vượt ngưỡng kiểm tra đã đặt.
-
-## Nguồn học liệu
-
-- P01: Tổng quan & Cài đặt môi trường ASP.NET Core (`Văn bản đã dán (1).txt`)
-- P02: C# Cơ bản: Nền tảng lập trình (`Văn bản đã dán (2).txt`)
-- P03: Collections, LINQ và thao tác với Object (`Văn bản đã dán (3).txt`)
-- P04: Cài đặt môi trường [Phải thực hành tại nhà] (`Văn bản đã dán (4).txt`)
-- P05: Giới thiệu Web API, RESTful API và HTTP (`Văn bản đã dán (5).txt`)
-- P06: Routing & Controller trong ASP.NET Core (`Văn bản đã dán (6).txt`)
-- P07: Model Binding & Validation trong ASP.NET Core (`Văn bản đã dán (7).txt`)
-- P08: Dependency Injection, Middleware & Standardized API Response (`Văn bản đã dán (8).txt`)
-- P09: Web API quản lý sinh viên với upload file (`Văn bản đã dán (9).txt`)
-- P10: Entity Framework Core & ASP.NET Core 8+ (`Văn bản đã dán (10).txt`)
-- P11: Authentication & Authorization trong ASP.NET Core (`Văn bản đã dán (11).txt`)
+Nội dung được biên soạn từ 5 bài giảng và đề mẫu trong cuộc trò chuyện. Các câu cùng kỹ năng có thể dùng tình huống và số liệu khác nhau. Độ khó chưa được hiệu chuẩn qua kết quả thi thực tế.

@@ -1,31 +1,36 @@
 <!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#102b40"><meta name="description" content="Luyện thi Cơ sở dữ liệu nâng cao với 5 đề, 200 câu trắc nghiệm SQL Server. Thi thử 50 phút, chấm điểm và giải thích từng câu, dùng trên điện thoại.">
-<title>Luyện thi CSDL nâng cao · 200 câu</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="description" content="Ôn tập Software Project Management theo 6 phần trong slide bài giảng, có giải thích và nguồn slide. Hoạt động offline.">
+ <title>SPM · Ôn tập Software Project Management</title>
+ <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+ <script defer src="data.js"></script><script defer src="core.js"></script><script defer src="app.js"></script>
 </head>
 <body>
-<header class="top"><div class="top-inner"><a class="brand" href="#" id="brand"><span class="mark">SQL</span><span>CSDL nâng cao<small>Phòng luyện thi</small></span></a><button id="theme" class="icon-button" aria-label="Chuyển giao diện sáng tối" title="Giao diện sáng tối">◐</button></div></header>
-<main>
-<section id="setup" aria-labelledby="setup-title">
-<div class="intro"><div class="eyebrow">200 CÂU · 5 BỘ ĐỀ</div><h1 id="setup-title">Luyện chắc từng câu.<br>Vào thi tự tin hơn.</h1><p>Đọc mã T-SQL, nhận biết lỗi và suy luận kết quả.<br>Đáp án có giải thích, đối chiếu với 5 bài giảng.</p></div>
-<div class="setup-grid"><div class="panel settings"><h2>Chọn cách học</h2><div class="segmented" aria-label="Chế độ làm bài"><button id="practice-mode" class="active" aria-pressed="true">Luyện tập<small>Giải thích ngay</small></button><button id="exam-mode" aria-pressed="false">Thi thử<small>Chấm khi nộp bài</small></button></div>
-<div class="field"><label for="set">Bộ đề</label><select id="set"><option value="0">Đề 01 · 40 câu</option><option value="1">Đề 02 · 40 câu</option><option value="2">Đề 03 · 40 câu</option><option value="3">Đề 04 · 40 câu</option><option value="4">Đề 05 · 40 câu</option><option value="random">Ngẫu nhiên từ 200 câu</option></select></div>
-<div id="random-settings" hidden><div class="field"><label for="chapter">Phạm vi kiến thức</label><select id="chapter"><option value="all">Tất cả 5 bài</option><option value="1">Bài 1 · Nền tảng CSDL</option><option value="2">Bài 2 · Kiểu dữ liệu & T-SQL</option><option value="3">Bài 3 · Hàm thư viện & mã kịch bản</option><option value="4">Bài 4 · Thủ tục & giao dịch</option><option value="5">Bài 5 · Hàm, view & trigger</option></select></div><div class="field"><label for="count">Số câu</label><select id="count"><option value="40">40 câu</option><option value="20">20 câu</option><option value="10">10 câu</option><option value="all">Toàn bộ câu phù hợp</option></select></div></div>
-<div class="field" id="time-field" hidden><label for="duration">Thời gian thi thử</label><select id="duration"><option value="auto">Theo số câu · 75 giây/câu</option><option value="50">50 phút</option><option value="30">30 phút</option><option value="none">Không giới hạn</option></select></div>
-<p class="setting-hint" id="setting-hint">40 câu · Xem đáp án ngay sau khi chọn.</p><button class="button primary full" id="start">Bắt đầu luyện tập</button><button class="button full resume" id="resume" hidden>Tiếp tục bài đang làm</button><p class="local-note">Tiến độ lưu trên trình duyệt này, không đồng bộ giữa các thiết bị.</p></div>
-<aside class="study-side"><div class="panel"><div class="eyebrow">GÓC ÔN TẬP</div><h2>Những câu cần xem lại</h2><div class="study-numbers"><div><strong id="wrong-count">0</strong><span>Câu làm sai</span></div><div><strong id="flag-count">0</strong><span>Câu đánh dấu</span></div></div><button class="button full" id="study-wrong">Ôn câu sai</button><button class="button full" id="study-flagged">Ôn câu đánh dấu</button><p class="local-note">Ôn lại một câu đúng sẽ bỏ câu đó khỏi danh sách câu sai.</p></div><div class="quick-note"><h3>Giữ nhịp như đề mẫu</h3><p>Mỗi đề có 40 câu, 4 lựa chọn.<br>Thang điểm 10, mỗi câu 0,25 điểm.<br>Thời gian luyện thi đề xuất: 50 phút.</p><details><summary>Quy ước khi đọc mã</summary><p>Các câu độc lập, dùng SQL Server/T-SQL và GO trong SSMS. Không có giao dịch mở sẵn, trigger hay ràng buộc ngoài những gì câu hỏi nêu. Chuỗi ASCII dùng mã hóa không UTF-8. Không suy luận thứ tự hàng khi thiếu ORDER BY.</p></details></div></aside></div>
-</section>
-<section id="quiz" hidden aria-labelledby="quiz-title">
-<div class="quiz-heading"><div><button class="text-button" id="back-setup">Chọn bộ đề</button><h1 id="quiz-title">Đề 01</h1></div><div class="timer" id="timer" hidden role="timer" aria-label="Thời gian còn lại">50:00</div></div>
-<div id="results" class="results" hidden aria-live="polite"></div>
-<div class="quiz-layout"><div><article class="panel question-panel"><div class="question-meta"><span class="eyebrow" id="question-position">CÂU 01 / 40</span><button id="flag" class="flag" aria-pressed="false">☆ Đánh dấu</button></div><span class="topic" id="topic"></span><h2 id="question-stem"></h2><pre id="code" hidden><code id="question-code"></code></pre><div class="options" id="options" role="group" aria-label="Chọn một đáp án"></div><div class="feedback" id="feedback" hidden aria-live="polite"></div><div class="question-nav"><button class="button" id="prev">Câu trước</button><span id="answered-small"></span><button class="button primary" id="next">Câu tiếp</button></div></article><p class="small-note">Chọn số câu để chuyển nhanh. Với thi thử, đáp án chỉ hiện sau khi nộp bài.</p></div>
-<aside class="panel palette-panel"><div class="palette-heading"><h2>Danh sách câu</h2><strong id="answered">0/40</strong></div><div class="progress" aria-label="Tiến độ"><div id="progress-fill"></div></div><div class="legend"><span><i class="dot done"></i>Đã làm</span><span><i class="dot flagged"></i>Đánh dấu</span></div><div class="palette" id="palette"></div><button class="button primary full" id="submit">Nộp bài</button><button class="button full" id="restart" hidden>Làm lại bộ câu này</button></aside></div>
-</section>
-<footer><span>CSDL nâng cao · 5 đề luyện tập</span><span>200 câu • Đáp án có giải thích</span></footer>
-</main>
-<dialog id="confirm"><div class="dialog-inner"><h2 id="confirm-title">Nộp bài?</h2><p id="confirm-body"></p><div class="dialog-actions"><button class="button" id="cancel">Quay lại</button><button class="button primary" id="confirm-ok">Nộp bài</button></div></div></dialog>
-<div class="toast" id="toast" role="status" hidden></div>
-<script src="data.js"></script><script src="app.js"></script>
-</body></html>
+ <a href="#main" class="skip">Đến nội dung chính</a>
+ <header class="topbar"><a class="brand" href="index.html" aria-label="Trang ôn tập SPM"><span class="brand-icon">S<span>PM</span></span><span>Software Project Management<small>Góc ôn tập</small></span></a><span class="offline"><span aria-hidden="true">◉</span> Sẵn sàng học offline</span></header>
+ <main id="main" tabindex="-1">
+  <section id="home" class="home">
+   <div class="intro"><div><p class="eyebrow">BÀI GIẢNG / 6 PHẦN</p><h1 id="home-title" tabindex="-1">Chọn nội dung.<br><span>Bắt đầu ôn tập.</span></h1><p class="lead">Câu hỏi bám sát slide, kèm lời giải để bạn hiểu lại từng ý.</p></div><div class="bank-stat"><strong id="bank-total">—</strong><span>câu hỏi trắc nghiệm</span><small>4 lựa chọn · 1 đáp án đúng</small></div></div>
+   <div id="resume-box" class="resume" hidden><span id="resume-text"></span><button id="resume" class="secondary">Tiếp tục bài đã lưu</button></div>
+   <div class="home-grid">
+    <section class="chapter-section" aria-labelledby="chapter-heading"><div class="section-title"><h2 id="chapter-heading">Bạn muốn ôn phần nào?</h2><button id="select-all" class="text-button">Chọn tất cả</button></div><div id="chapters" class="chapters"></div></section>
+    <aside class="setup"><p class="eyebrow">THIẾT LẬP BUỔI HỌC</p><fieldset class="modes"><legend>Cách làm bài</legend><label><input type="radio" name="mode" value="practice" checked><span><strong>Luyện tập</strong><small>Kiểm tra đáp án từng câu</small></span></label><label><input type="radio" name="mode" value="exam"><span><strong>Tự kiểm tra</strong><small>Xem lời giải sau khi nộp bài</small></span></label></fieldset><div class="settings"><label><input id="shuffle-questions" type="checkbox" checked> Xáo trộn câu hỏi</label><label><input id="shuffle-options" type="checkbox" checked> Xáo trộn đáp án</label></div><div class="selection-summary"><strong id="selected-count">—</strong><span>câu trong phần đã chọn</span></div><button id="start" class="primary full">Bắt đầu làm bài</button><button id="home-retry" class="secondary full" disabled>Làm lại câu sai</button><p class="note">Tiến độ được lưu trên trình duyệt này khi trình duyệt cho phép.</p></aside>
+   </div>
+   <p class="source-note">Nguồn: bài giảng Software Project Management · Trần Khánh Dung · 01/2017. Số slide được ghi trong mỗi lời giải.</p>
+  </section>
+  <section id="quiz" class="quiz" hidden>
+   <div class="quiz-top"><button id="back-home" class="text-button">Về chọn chương</button><span id="mode-label" class="pill"></span></div>
+   <div class="quiz-layout"><article class="question-panel"><div class="question-meta"><span id="question-part"></span><span id="question-number"></span></div><h1 id="question-title" tabindex="-1"></h1><fieldset id="answer-field"><legend class="sr-only">Chọn một đáp án</legend><div id="options" class="options"></div></fieldset><div id="explanation" class="explanation" hidden aria-live="polite"></div><div class="question-actions"><button id="check" class="primary">Kiểm tra đáp án</button><span id="question-status" class="note" role="status"></span></div><div class="navigation"><button id="prev" class="secondary">Câu trước</button><button id="next" class="secondary">Câu tiếp</button></div></article>
+    <aside class="question-sidebar"><div class="progress-head"><h2>Tiến độ</h2><strong id="progress-label"></strong></div><progress id="progress" max="100" value="0"></progress><p id="progress-detail" class="note"></p><button id="submit" class="primary full">Nộp bài & chấm điểm</button><details class="question-map" open><summary>Danh sách câu hỏi</summary><div class="legend"><span>○ Chưa làm</span><span>● Đã chọn</span></div><div id="question-grid" class="question-grid"></div></details></aside>
+   </div>
+  </section>
+  <section id="results" class="results" hidden aria-labelledby="results-title"><p class="eyebrow">KẾT QUẢ BUỔI HỌC</p><h1 id="results-title" tabindex="-1">Bạn đã hoàn thành bài.</h1><div class="result-score"><strong id="score-percent"></strong><span id="score-fraction"></span></div><div class="result-counts"><div><strong id="correct-count"></strong><span>Câu đúng</span></div><div><strong id="wrong-count"></strong><span>Câu sai</span></div><div><strong id="unanswered-count"></strong><span>Chưa trả lời</span></div></div><p class="note">Điểm tính trên toàn bộ câu trong bài, gồm cả câu chưa trả lời.</p><div id="part-results" class="part-results"></div><div class="result-actions"><button id="review" class="primary">Xem đáp án & lời giải</button><button id="retry" class="secondary">Làm lại câu sai</button><button id="new-session" class="text-button">Chọn bài mới</button></div></section>
+ </main>
+ <footer><span>SPM / Học từng ý, hiểu từng phần.</span><span>Không cần tài khoản · Không cần kết nối mạng</span></footer>
+ <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+ <dialog id="finish-dialog"><form method="dialog"><h2>Nộp bài và chấm điểm?</h2><p id="finish-message"></p><div class="dialog-actions"><button value="cancel" class="secondary">Tiếp tục làm</button><button value="submit" class="primary">Nộp bài</button></div></form></dialog>
+ <noscript><p class="fatal">Vui lòng bật JavaScript để làm bài ôn tập.</p></noscript>
+</body>
+</html>

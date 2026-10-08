@@ -1,6 +1,6 @@
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.SPMCore=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
  'use strict';
- const VERSION='spm-slides-83-v1';
+ const VERSION='spm-slides-83-300-v2';
  function shuffle(input){const a=input.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
  function makeSession(bank,config){
   let chosen=bank.filter(q=>config.parts.includes(q.part)&&(!config.ids||config.ids.includes(q.id)));

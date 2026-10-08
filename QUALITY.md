@@ -1,31 +1,15 @@
-# Kiểm tra bản bàn giao — 07/10/2026
+# Kiểm tra bản 300 câu — 08/10/2026
 
-## Ngân hàng câu hỏi
+- 300 câu; phân bố I/II/III/IV/V/VI: 70/70/45/40/40/35.
+- 300 câu dẫn và mã nguồn riêng biệt; mỗi câu có 4 lựa chọn khác nhau, 1 đáp án đúng, lời giải và số slide.
+- Chọn lọc từ bộ 500: loại 200 câu, chỉnh 288 câu dẫn và 53 bộ lựa chọn. Giữ nội dung trong 6 phần PowerPoint.
+- Vị trí đáp án đúng: A=75, B=75, C=75, D=75; từng chương lệch tối đa 1 giữa các vị trí.
+- Đáp án đúng dài nhất riêng biệt: 65/300 (21,7%). Thứ hạng độ dài có đồng hạng: hạng 1=150; hạng 2=36; hạng 3=49; hạng 4=65.
+- Loại câu về công thức integrity thiếu rõ ràng, DRE 0/0 và chi tiết nhớ máy móc trên hình/phiếu mẫu.
+- Báo cáo 65 câu tách riêng: 28 rõ ràng, 16 có điều kiện, 12 mơ hồ, 9 lỗi/thiếu dữ kiện. Không ép đáp án cho câu chưa đủ căn cứ.
 
-- 500 câu, phân bố I/II/III/IV/V/VI: 170/110/70/50/50/50.
-- 500 câu dẫn riêng biệt; mỗi câu có bốn phương án khác nhau, một đáp án đúng, lời giải và dẫn slide.
-- Rà soát chéo toàn bộ câu dẫn/phương án/lời giải; thay 74 câu để giảm diễn đạt lặp và sửa phương án thiếu điều kiện. Câu định nghĩa và câu áp dụng cùng khái niệm được giữ khi nhiệm vụ trả lời khác nhau.
-- Vị trí đáp án đúng trong dữ liệu: A=125, B=125, C=125, D=125; từng chương lệch tối đa một câu giữa các vị trí.
-- Đáp án đúng dài nhất riêng biệt: 137/500 (27,4%). Xếp hạng độ dài có gộp đồng hạng: ngắn nhất 198, hạng 2 là 70, hạng 3 là 95, hạng 4 là 137.
-- Văn bản và các bảng/hình được đối chiếu trực tiếp với slide; không tra cứu kiến thức môn học bên ngoài.
+12 kiểm thử dữ liệu và chấm điểm đạt: cấu trúc, nguồn, cân bằng đáp án, xáo trộn bảo toàn đáp án, chấm điểm, lọc câu sai, khôi phục bài và từ chối phiên bản 500 cũ.
 
-Kiểm tra cấu trúc tự động không thay thế việc đọc nội dung: không có công cụ nào tự chứng minh mọi phương án chỉ có một đáp án đúng. Rà soát nội dung được thực hiện riêng trước khi đóng gói.
+Kiểm tra Edge bằng file offline đạt: luyện tập và khóa đáp án; chọn bằng bàn phím; tự kiểm tra và nộp bài; xem lại lời giải; lưu/tiếp tục; chọn chương; bài 35 câu với 1 đúng, 1 sai, 33 chưa làm; làm lại câu sai; vẫn chạy khi lưu trữ bị chặn. Không yêu cầu mạng và không có lỗi JavaScript trong các luồng kiểm tra. Bố cục máy tính 1365×900 và điện thoại 390×844 không tràn ngang.
 
-## Chức năng
-
-11 kiểm thử tự động cho cấu trúc dữ liệu, nguồn, cân bằng đáp án, xáo trộn đúng đáp án, điểm, câu sai và khôi phục phiên đều đạt.
-
-Kiểm tra thực tế trên Edge qua file `file://`:
-
-- Luyện tập, kiểm tra từng câu, khóa lựa chọn sau khi xem lời giải.
-- Chọn đáp án bằng Space/phím mũi tên và giữ focus.
-- Tự kiểm tra, hộp thoại nộp bài, điểm đúng/sai/chưa trả lời.
-- Xem lời giải cả câu đã làm và câu chưa làm.
-- Lưu bài, tải lại trang và tiếp tục.
-- Chọn/bỏ chọn tất cả và chỉ một chương.
-- Bài 50 câu với một đúng, một sai, 48 chưa làm; làm lại đúng một câu sai, không mang theo đáp án cũ.
-- Hoạt động khi localStorage bị chặn.
-- Không có yêu cầu mạng từ trang và không có lỗi JavaScript trong các luồng kiểm tra.
-- Bố cục máy tính 1365×900 và điện thoại 390×844; không tràn ngang với danh sách đủ 500 câu.
-
-Bộ câu hỏi chưa được hiệu chuẩn độ khó bằng kết quả làm bài của người học.
+Kiểm tra cấu trúc không tự chứng minh mọi câu chỉ có một đáp án đúng; nội dung được đọc và rà soát riêng. Một khái niệm có thể được hỏi qua định nghĩa và tình huống. Bộ câu hỏi chưa được hiệu chuẩn độ khó bằng kết quả người học.

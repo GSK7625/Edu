@@ -2,7 +2,7 @@
  'use strict';
  const $=id=>document.getElementById(id),C=window.SPMCore,D=window.SPM_DATA;
  if(!C||!D||!Array.isArray(D.questions)||!D.questions.length){const p=document.createElement('p');p.className='fatal';p.textContent='Không tải được bộ câu hỏi. Hãy giải nén đầy đủ thư mục và mở lại index.html.';$('main').replaceChildren(p);return;}
- const bank=D.questions,parts=D.parts,KEY='spm-session-v1',WRONG='spm-wrong-v1';
+ const bank=D.questions,parts=D.parts,KEY='spm-session-v2',WRONG='spm-wrong-v2';
  const read=key=>{try{return localStorage.getItem(key)}catch{return null}};
  let storageAlerted=false;
  function write(key,value){try{localStorage.setItem(key,value)}catch{if(!storageAlerted){storageAlerted=true;toast('Trình duyệt không cho lưu tiến độ. Bạn vẫn có thể làm bài bình thường.');}}}

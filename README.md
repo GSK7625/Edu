@@ -14,13 +14,13 @@ Không cần cài đặt, máy chủ, tài khoản hay kết nối mạng. Giữ
 
 | Phần | Nội dung | Số câu | Slide |
 |---|---|---:|---|
-| I | Key concepts & principles | 170 | 4–22 |
-| II | Project Metrics and Software Measurement | 110 | 23–46 |
-| III | Software Project Planning | 70 | 47–57 |
-| IV | Risk Analysis & Management | 50 | 58–66 |
-| V | Project Scheduling and Tracking | 50 | 67–76 |
-| VI | Software Quality Assurance | 50 | 77–83 |
-| | **Tổng cộng** | **500** | |
+| I | Key concepts & principles | 70 | 4–22 |
+| II | Project Metrics and Software Measurement | 70 | 23–46 |
+| III | Software Project Planning | 45 | 47–57 |
+| IV | Risk Analysis & Management | 40 | 58–66 |
+| V | Project Scheduling and Tracking | 40 | 67–76 |
+| VI | Software Quality Assurance | 35 | 77–83 |
+| | **Tổng cộng** | **300** | |
 
 Mỗi câu có bốn lựa chọn, một đáp án đúng, giải thích ngắn và số slide nguồn. Có câu nhận biết, phân biệt, áp dụng tình huống và đọc bảng/công thức. Một khái niệm có thể được kiểm tra qua các nhiệm vụ khác nhau; các câu chỉ đổi cách diễn đạt hoặc chỉ đổi số đã được rà soát để giảm lặp. Tình huống được biên soạn nhằm áp dụng đúng nội dung slide, không bổ sung mô hình hay kiến thức môn học ngoài nguồn.
 
@@ -37,7 +37,7 @@ Mỗi câu có bốn lựa chọn, một đáp án đúng, giải thích ngắn 
 
 ## Đối chiếu nguồn
 
-Số slide là thứ tự trang trong PowerPoint, từ 1 đến 83. Các bảng FP (slide 32), bảng rủi ro (64), phiếu rủi ro (66) và mạng công việc (70) được đọc trực tiếp từ hình trong tài liệu. Công thức integrity được giữ theo cách in trong slide 43; phần 40–20–40 không tự bổ sung tên các giai đoạn vì slide 68 không nêu chúng.
+Số slide là thứ tự trang trong PowerPoint, từ 1 đến 83. Các bảng FP (slide 32), bảng rủi ro (64), phiếu rủi ro (66) và mạng công việc (70) được đọc trực tiếp từ hình trong tài liệu. Bản 300 câu bỏ công thức integrity in thiếu rõ ràng ở slide 43; phần 40–20–40 không tự bổ sung tên các giai đoạn vì slide 68 không nêu chúng.
 
 ## GitHub Pages
 
@@ -49,10 +49,16 @@ Các file tĩnh đặt ở gốc nhánh `main`, kèm `.nojekyll`, phù hợp v�
 
 - `index.html`: giao diện.
 - `style.css`: bố cục và responsive.
-- `data.js`: ngân hàng 500 câu và metadata 6 chương.
+- `data.js`: ngân hàng 300 câu và metadata 6 chương.
 - `core.js`: tạo bài, xáo trộn, chấm điểm, lọc câu sai và kiểm tra phiên đã lưu.
 - `app.js`: tương tác và lưu tiến độ trên thiết bị.
 - `favicon.svg`: biểu tượng trang.
 - `QUALITY.md`: kết quả kiểm tra bản bàn giao.
 
 Lịch sử website cũ được giữ trong các commit trước để có thể phục hồi bằng GitHub nếu cần.
+
+## Đối chiếu đề cương năm trước
+
+Mở [doi-chieu-65.html](doi-chieu-65.html) để xem kiểm chứng từng câu trong QLDA.pdf: 28 câu rõ ràng, 16 câu có điều kiện, 12 câu mơ hồ và 9 câu lỗi/thiếu dữ kiện. Đáp án khoanh tay được ghi riêng, không xem là đáp án chính thức. Nguồn Scrum/UML và giáo trình ngoài slide chỉ dùng cho báo cáo đối chiếu, không thêm vào bộ 300 câu.
+
+Bản mới đã loại 200 câu; rút gọn hoặc chỉnh 288 câu dẫn và 53 bộ lựa chọn. Tránh câu chỉ nhớ vị trí hình, tên/ngày/số tiền trên phiếu mẫu và các cách hỏi thiếu điều kiện. Vẫn giữ câu định nghĩa và áp dụng khi nhiệm vụ trả lời khác nhau. Tiến độ bản 500 câu được tách khỏi bản 300 câu để tránh chấm nhầm câu.

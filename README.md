@@ -14,12 +14,12 @@ Không cần cài đặt, tài khoản, máy chủ hay mạng để làm bài v�
 
 | Phần | Nội dung | Từ slide | Từ đề | Tổng |
 |---|---|---:|---:|---:|
-| 1 | Key concepts & principles | 50 | 37 | 87 |
-| 2 | Project Metrics and Software Measurement | 55 | 4 | 59 |
-| 3 | Software Project Planning | 35 | 9 | 44 |
-| 4 | Risk Analysis & Management | 30 | 6 | 36 |
-| 5 | Project Scheduling and Tracking | 35 | 7 | 42 |
-| 6 | Software Quality Assurance | 30 | 2 | 32 |
+| 1 | Key concepts & principles | 134 | 37 | 171 |
+| 2 | Project Metrics and Software Measurement | 14 | 4 | 18 |
+| 3 | Software Project Planning | 33 | 9 | 42 |
+| 4 | Risk Analysis & Management | 22 | 6 | 28 |
+| 5 | Project Scheduling and Tracking | 25 | 7 | 32 |
+| 6 | Software Quality Assurance | 7 | 2 | 9 |
 | | **Tổng** | **235** | **65** | **300** |
 
 Scrum/UML của đề được xếp trong Phần I và có nguồn riêng. Các số slide là thứ tự trang trong PowerPoint 83 slide của Trần Khánh Dung (01/2017).
@@ -29,6 +29,8 @@ Scrum/UML của đề được xếp trong Phần I và có nguồn riêng. Các
 Mỗi số câu gốc 1–65 xuất hiện đúng một lần và có nhãn “Đề năm ngoái · Câu …”. 23 câu giữ nội dung câu hỏi và các phương án; 42 câu được chỉnh điều kiện, cách hỏi hoặc phương án để tránh thiếu dữ kiện và nhiều đáp án hợp lý. Vị trí đáp án được xáo trộn. Bản luyện tập đã chỉnh không phải bản chép nguyên văn của đề.
 
 Mở [doi-chieu-65.html](doi-chieu-65.html) để đọc toàn bộ câu gốc, đáp án khoanh tay, kết luận kiểm chứng và bản chỉnh. Báo cáo câu gốc có 28 câu rõ ràng, 16 có điều kiện, 12 mơ hồ, 9 lỗi/thiếu dữ kiện. Không coi đáp án khoanh tay là đáp án chính thức.
+
+Số câu từng chương được phân bổ theo tỷ trọng trong đề: lấy 300 × số câu đề chương / 65 rồi làm tròn sao cho tổng bằng 300. Tỷ lệ câu đề trong mỗi chương gần 22%; chương VI có 2 câu đề + 7 câu slide = 9 câu. Cách phân bổ này ưu tiên ôn theo đề mẫu năm trước.
 
 235 câu còn lại chỉ dùng slide; các câu dễ trùng mục tiêu với đề đã được ưu tiên loại. 65 câu đề có thêm nội dung Scrum/UML, kiểm thử và vòng đời, kiểm chứng theo Scrum Guide, OMG UML và giáo trình tác giả được dẫn ở lời giải. Một khái niệm có thể được kiểm tra qua những nhiệm vụ khác nhau.
 

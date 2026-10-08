@@ -75,11 +75,11 @@ window.SPM_DATA = {
       "question": "[SCRUM] Kết quả mà Scrum Team có trách nhiệm tạo ra trong mỗi Sprint là gì?",
       "options": [
         "Tài liệu kịch bản kiểm thử của Sprint",
-        "Danh sách các Sprint Backlog items chưa hoàn thành",
         "Một Increment có giá trị, hữu ích và đạt Definition of Done",
+        "Danh sách các Sprint Backlog items chưa hoàn thành",
         "Các bản thiết kế giao diện người dùng User Interfaces"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Scrum Team chịu trách nhiệm tạo Increment có giá trị và hữu ích mỗi Sprint; công việc phải đạt Definition of Done mới thuộc Increment. Đã đổi bàn giao cuối Sprint thành kết quả mỗi Sprint vì có thể phát hành trước khi Sprint kết thúc.",
       "slides": [],
       "refs": [
@@ -99,11 +99,11 @@ window.SPM_DATA = {
       "question": "[UML] Quan hệ kết hợp (association) giữa các lớp định nghĩa mối liên quan nào giữa các lớp?",
       "options": [
         "Quan hệ phụ thuộc khi một lớp dùng định nghĩa của lớp khác",
-        "Quan hệ kế thừa giữa lớp chuyên biệt và lớp tổng quát",
         "Quan hệ ngữ nghĩa cho phép liên kết giữa các instance của các lớp",
+        "Quan hệ kế thừa giữa lớp chuyên biệt và lớp tổng quát",
         "Quan hệ bao gồm hành vi giữa hai use case"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Association xác định quan hệ ngữ nghĩa có thể tồn tại giữa các instance có kiểu, qua các links. Đã làm rõ lựa chọn Tương tác trong đề gốc để không đồng nhất Association với Interaction.",
       "slides": [],
       "refs": [
@@ -145,12 +145,12 @@ window.SPM_DATA = {
       "examNumber": 5,
       "question": "Trong các lựa chọn, phương pháp nào được slide 71 nêu để lập lịch dự án?",
       "options": [
-        "CPM (Critical Path Method)",
         "FP (Function Point based Estimation)",
         "COCOMO Model (Constructive Cost Model)",
+        "CPM (Critical Path Method)",
         "LOC (Line-Of-Code based Estimation)"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Slide 71 nêu PERT và CPM để lập lịch; COCOMO, FP và LOC được nêu ở phần ước lượng chi phí/nỗ lực. Đã giới hạn theo phương pháp lập lịch được slide 71 nêu, vì COCOMO cũng có thể ước lượng thời gian phát triển.",
       "slides": [
         57,
@@ -191,12 +191,12 @@ window.SPM_DATA = {
       "examNumber": 7,
       "question": "[SCRUM] Với User Story được viết theo mẫu “Là [vai trò], tôi muốn [chức năng] để [mục đích]”, câu chuyện cung cấp những thông tin nào?",
       "options": [
+        "Tất cả các đáp án",
         "Ai sẽ là người sử dụng chức năng",
         "Chức năng người dùng mong muốn là gì",
-        "Mục đích của người sử dụng là gì",
-        "Tất cả các đáp án"
+        "Mục đích của người sử dụng là gì"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Mẫu đã cho nêu người dùng, chức năng mong muốn và mục đích của họ, nên C bao quát A, B, D. Đã bổ sung mẫu vào câu hỏi; Scrum Guide không bắt buộc dùng User Story hay mẫu trình bày này.",
       "slides": [],
       "refs": [
@@ -215,12 +215,12 @@ window.SPM_DATA = {
       "examNumber": 8,
       "question": "[SCRUM] Theo Scrum Guide 2017, nhận định nào đúng về thành viên có kỹ năng kiểm thử trong Scrum?",
       "options": [
-        "Họ có thể thuộc Development Team, không có vai trò Tester riêng",
         "Họ có quyền chấp nhận sản phẩm thay cho Product Owner",
         "Họ chỉ tham gia sau khi Development Team kết thúc Sprint",
+        "Họ có thể thuộc Development Team, không có vai trò Tester riêng",
         "Họ phải thuộc một đội kiểm thử tách khỏi Development Team"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Development Team có kỹ năng liên chức năng, có thể có chuyên môn kiểm thử, nhưng Scrum không quy định chức danh hay tiểu đội riêng cho kiểm thử. Đã sửa câu hỏi về nhiệm vụ chính để tránh hiểu rằng Scrum không có công việc kiểm thử.",
       "slides": [],
       "refs": [
@@ -239,12 +239,12 @@ window.SPM_DATA = {
       "examNumber": 9,
       "question": "Phần mềm phải hoạt động ổn định để người dùng có thể tin tưởng khi sử dụng. Thuộc tính nào dưới đây trực tiếp phù hợp với yêu cầu này?",
       "options": [
+        "Tin cậy",
         "Dễ sử dụng",
         "Bảo trì được",
-        "Tin cậy",
         "Chiếm ít tài nguyên hệ thống"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Tin cậy thuộc nhóm dependability mà Sommerville xem là thuộc tính thiết yếu. Đã thay cách hỏi 'quan trọng nhất' bằng yêu cầu cụ thể; không có một thuộc tính đứng đầu cho mọi loại phần mềm.",
       "slides": [
         40,
@@ -297,11 +297,11 @@ window.SPM_DATA = {
       "question": "Trong kiểm thử đơn vị theo Sommerville, một thành phần được kiểm thử có thể thuộc dạng nào?",
       "options": [
         "Hàm hoặc phương thức riêng lẻ",
-        "Thành phần tổ hợp có giao diện xác định",
         "Tất cả các đáp án",
+        "Thành phần tổ hợp có giao diện xác định",
         "Lớp đối tượng có thuộc tính và phương thức"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Chapter 8 của Sommerville nêu các dạng đơn vị này. Đã giới hạn nghĩa component vào thành phần được kiểm thử đơn vị và thay các ví dụ cơ sở dữ liệu/middleware chưa rõ phạm vi trong đề gốc.",
       "slides": [],
       "refs": [
@@ -320,12 +320,12 @@ window.SPM_DATA = {
       "examNumber": 12,
       "question": "Trong mô hình thác nước được Sommerville trình bày, sau giai đoạn Implementation and unit testing, hệ thống chuyển sang giai đoạn nào?",
       "options": [
+        "Tích hợp và kiểm thử hệ thống",
         "Đặc tả yêu cầu phần mềm",
         "Vận hành và bảo trì",
-        "Tích hợp và kiểm thử hệ thống",
         "Thiết kế phần mềm"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Trình tự mô hình này đặt Integration and system testing sau Implementation and unit testing. Đã chỉ định mô hình và mức kiểm thử, thay vì giả định mọi kiểm thử chỉ xảy ra sau một bước chung.",
       "slides": [
         12
@@ -350,12 +350,12 @@ window.SPM_DATA = {
       "examNumber": 13,
       "question": "Theo hướng dẫn 40–20–40 của Pressman, cách phân phối nỗ lực nào phù hợp?",
       "options": [
-        "40% phân tích và thiết kế, 20% viết mã, 40% kiểm thử",
         "40% lập kế hoạch, 20% thiết kế, 40% viết mã và bảo trì",
         "40% phân tích nghiệp vụ, 20% thiết kế, 40% viết mã và kiểm thử",
+        "40% phân tích và thiết kế, 20% viết mã, 40% kiểm thử",
         "40% phân tích yêu cầu, 20% viết mã, 40% bảo trì"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Pressman mô tả hướng dẫn 40% analysis/design, 20% coding, 40% testing; slide 68 nhắc quy tắc này. Đã làm rõ 'cài đặt' là viết mã và ghi đây là hướng dẫn, không phải tỷ lệ bắt buộc cho mọi dự án.",
       "slides": [
         68
@@ -376,12 +376,12 @@ window.SPM_DATA = {
       "examNumber": 14,
       "question": "[SCRUM] Hoạt động Scrum Retrospective diễn ra vào thời điểm nào ?",
       "options": [
+        "Tại cuối mỗi Sprint",
         "Bất cứ khi nào Scrum Master đề nghị",
         "Bất cứ khi nào đội Scrum thấy cần",
-        "Tại cuối mỗi Sprint",
         "Bất cứ khi nào Product Owner yêu cầu"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Sprint Retrospective diễn ra sau Sprint Review và trước Sprint Planning tiếp theo; nó kết thúc Sprint. Vì vậy B là lựa chọn đúng.",
       "slides": [],
       "refs": [
@@ -401,11 +401,11 @@ window.SPM_DATA = {
       "question": "Các loại rủi ro dự án phát triển phần mềm có thể gặp ?",
       "options": [
         "Rủi ro quản lý",
-        "Cả rủi ro kỹ thuật, và rủi ro quản lý",
         "Rủi ro kỹ thuật",
-        "Không loại nào"
+        "Không loại nào",
+        "Cả rủi ro kỹ thuật, và rủi ro quản lý"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide 12 yêu cầu đánh giá cả rủi ro kỹ thuật và quản lý. Slide 60 còn phân loại rủi ro dự án, kỹ thuật, kinh doanh; D đúng nhưng không phải danh sách đầy đủ mọi nhóm.",
       "slides": [
         12,
@@ -422,12 +422,12 @@ window.SPM_DATA = {
       "examNumber": 16,
       "question": "Kỹ thuật đo trực tiếp phần mềm có thể dựa vào các yếu tố nào sau đây để đo ?",
       "options": [
+        "LOC (Line of Code), Tốc độ vận hành, Kích cỡ bộ nhớ, Số khiếm khuyết phát hiện trong một khoảng thời gian nhất định",
         "LOC (Line of Code) và FP (Function Point)",
         "Chỉ dựa trên KLOC (Kilo Line of Code)",
-        "LOC (Line of Code), Tốc độ vận hành, Kích cỡ bộ nhớ, Số khiếm khuyết phát hiện trong một khoảng thời gian nhất định",
         "Dựa trên FP (Function Point)"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Pressman §4.3 liệt kê LOC, tốc độ thực thi, bộ nhớ và defects theo thời gian là phép đo trực tiếp.",
       "slides": [
         29,
@@ -474,12 +474,12 @@ window.SPM_DATA = {
       "examNumber": 18,
       "question": "Kỹ thuật đo gián tiếp phần mềm có thể đưa ra chỉ số phản ánh khía cạnh nào về phần mềm ?",
       "options": [
-        "Về tính năng, độ phức tạp, chất lượng, tính hiệu quả, độ tin cậy, khả năng bảo trì được",
         "Kích cỡ phần mềm",
         "Phạm vi phần mềm",
-        "Quy mô phần mềm"
+        "Quy mô phần mềm",
+        "Về tính năng, độ phức tạp, chất lượng, tính hiệu quả, độ tin cậy, khả năng bảo trì được"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Pressman §4.3 nêu chức năng, chất lượng, phức tạp, hiệu quả, tin cậy và bảo trì thuộc phép đo gián tiếp.",
       "slides": [
         31,
@@ -503,11 +503,11 @@ window.SPM_DATA = {
       "question": "[SCRUM] Ai là người quyết định nội dung và thứ tự các danh mục trong Product Backlog?",
       "options": [
         "Development Team",
-        "Scrum Master",
         "Product Owner",
+        "Scrum Master",
         "Scrum Team"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Product Owner chịu trách nhiệm cuối cùng về nội dung và thứ tự Product Backlog. Họ có thể ủy quyền việc thực hiện, nhưng vẫn giữ accountability.",
       "slides": [],
       "refs": [
@@ -526,12 +526,12 @@ window.SPM_DATA = {
       "examNumber": 20,
       "question": "Một nhiệm vụ cần 20 giờ-người. Hai người có năng suất tương đương, chia đều công việc và làm song song hoàn toàn, không có phụ thuộc hay chi phí phối hợp. Đội mất bao nhiêu giờ?",
       "options": [
+        "10 giờ",
         "2 giờ",
         "4 giờ",
-        "10 giờ",
         "5 giờ"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Thời lượng theo các giả thiết đã nêu = 20/2 = 10 giờ. Đã bổ sung giả thiết chia đều và song song; trong dự án thực, tổng nỗ lực không tự xác định được thời lượng.",
       "slides": [
         52,
@@ -549,12 +549,12 @@ window.SPM_DATA = {
       "examNumber": 21,
       "question": "[SCRUM] Nhiệm vụ chính của Scrum Team là gì ?",
       "options": [
-        "Thực hiện các cuộc họp để cải tiến quy trình",
         "Tạo ra một Increment có giá trị và hữu ích mỗi Sprint",
+        "Thực hiện các cuộc họp để cải tiến quy trình",
         "Tạo ra các Product Backlog mới",
         "Giám sát và báo cáo các hoạt động của dự án"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Toàn bộ Scrum Team chịu trách nhiệm tạo Increment có giá trị, hữu ích mỗi Sprint. Đã sửa D: tinh chỉnh Product Backlog không phải lập trước Sprint Backlog cho Sprint tiếp theo; Sprint Backlog hình thành qua Sprint Planning.",
       "slides": [],
       "refs": [
@@ -574,11 +574,11 @@ window.SPM_DATA = {
       "question": "Biểu đồ Gantt hỗ trợ người Quản lý dự án việc gì?",
       "options": [
         "Không đáp án nào",
-        "Theo dõi tiến độ hoàn thành của dự án",
         "Đảm bảo chất lượng sản phẩm phần mềm",
+        "Theo dõi tiến độ hoàn thành của dự án",
         "Giám sát rủi ro dự án"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Biểu đồ thời gian/Gantt biểu diễn nhiệm vụ, nỗ lực, thời lượng và ngày bắt đầu, hỗ trợ theo dõi tiến độ; các hoạt động theo dõi được liệt kê ở slide 74.",
       "slides": [
         72,
@@ -620,12 +620,12 @@ window.SPM_DATA = {
       "examNumber": 24,
       "question": "[SCRUM] Theo Scrum Guide 2020, trách nhiệm chính của Scrum Master là gì?",
       "options": [
+        "Thiết lập Scrum và giúp Scrum Team cải thiện hiệu quả trong framework",
         "Trực tiếp phân công công việc mỗi ngày cho từng Developer",
         "Quyết định nội dung và thứ tự Product Backlog thay cho Product Owner",
-        "Thiết lập Scrum và giúp Scrum Team cải thiện hiệu quả trong framework",
         "Phê duyệt từng thay đổi kỹ thuật trong Sprint Backlog của Developers"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Scrum Master chịu trách nhiệm thiết lập Scrum và về hiệu quả Scrum Team, giúp mọi người hiểu và thực hành Scrum. Đã thay các lựa chọn hỗ trợ có thể cùng đúng bằng các trách nhiệm được phân biệt rõ, không coi Scrum Master là người chỉ huy công việc.",
       "slides": [],
       "refs": [
@@ -649,11 +649,11 @@ window.SPM_DATA = {
       "question": "Nếu không bị hủy, một Sprint kết thúc khi nào?",
       "options": [
         "Khi tất cả các Sprint Backlog items được hoàn thành",
-        "Khi quãng thời gian cho một Sprint kết thúc",
         "Khi việc kiểm thử kết thúc",
-        "Khi Product Owner đề nghị"
+        "Khi Product Owner đề nghị",
+        "Khi quãng thời gian cho một Sprint kết thúc"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Trong trường hợp Sprint không bị hủy, Sprint kết thúc khi hết timebox cố định, không phụ thuộc hoàn thành tất cả items hay kết thúc kiểm thử. Hủy Sprint sớm là trường hợp riêng khi Sprint Goal trở nên lỗi thời. Đã bổ sung điều kiện không bị hủy để tách ngoại lệ hủy Sprint trước thời hạn.",
       "slides": [],
       "refs": [
@@ -697,11 +697,11 @@ window.SPM_DATA = {
       "question": "Hoạt động nào dưới đây không có timebox chính thức do Scrum Guide quy định?",
       "options": [
         "Sprint Review",
+        "Sắp xếp và tinh chỉnh Product Backlog",
         "Sprint",
-        "Daily Scrum",
-        "Sắp xếp và tinh chỉnh Product Backlog"
+        "Daily Scrum"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Ở đây giới hạn thời gian được hiểu là timebox chính thức do Scrum Guide quy định. Refinement là hoạt động liên tục không có timebox đó; Sprint, Daily Scrum và Sprint Review đều có. Nhóm vẫn có thể tự giới hạn buổi refinement. Đã làm rõ đây là timebox chính thức, không phải hoạt động được phép kéo dài vô hạn.",
       "slides": [],
       "refs": [
@@ -720,12 +720,12 @@ window.SPM_DATA = {
       "examNumber": 28,
       "question": "[SCRUM] Theo Scrum Guide 2020, thời lượng tối đa của một Sprint là bao lâu?",
       "options": [
-        "Một tháng theo lịch",
         "Một tuần",
         "Sáu tuần",
-        "Hai tuần"
+        "Hai tuần",
+        "Một tháng theo lịch"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Sprint có thời lượng cố định một tháng hoặc ít hơn. Đã sửa đơn vị tuần thành tháng theo lịch: bốn tuần không đồng nhất chính xác với một tháng.",
       "slides": [],
       "refs": [
@@ -768,12 +768,12 @@ window.SPM_DATA = {
       "examNumber": 30,
       "question": "Phương án nào liệt kê đầy đủ cả hai kỹ thuật kiểm thử đơn vị và tích hợp mà Developer có thể thực hiện?",
       "options": [
-        "Kiểm thử tích hợp và kiểm thử đơn vị",
         "Không đáp án nào đúng",
         "Kiểm thử đơn vị",
-        "Kiểm thử tích hợp"
+        "Kiểm thử tích hợp",
+        "Kiểm thử tích hợp và kiểm thử đơn vị"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Development testing do nhóm phát triển thực hiện gồm kiểm thử đơn vị, thành phần và hệ thống tích hợp. Vì vậy cả unit và integration đều có thể do developer thực hiện; không phải chỉ unit. Đã hỏi phương án liệt kê đầy đủ cả hai kỹ thuật; từng kỹ thuật riêng lẻ cũng có thể do Developer thực hiện.",
       "slides": [],
       "refs": [
@@ -793,11 +793,11 @@ window.SPM_DATA = {
       "question": "Câu hỏi nào dưới đây không thuộc nguyên lý W5HH ở slide 19?",
       "options": [
         "Why is the system being developed?",
-        "What will be done, by When?",
         "Which programming language is most popular worldwide?",
+        "What will be done, by When?",
         "Who is responsible for a function?"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "W5HH hỏi Why, What/When, Who, Where, How và How much; không hỏi ngôn ngữ phổ biến nhất toàn cầu. Đã thay lựa chọn C: câu gốc về vị trí tổ chức của stakeholders vẫn thuộc ý nghĩa Where nên không thể dùng làm phương án ngoài nguyên lý.",
       "slides": [
         19
@@ -813,12 +813,12 @@ window.SPM_DATA = {
       "examNumber": 32,
       "question": "Quản lý dự án phần mềm hiệu quả tập trung vào bốn yếu tố (4P) bao gồm: People, Product, Project, và ...?",
       "options": [
-        "Process",
         "Participants",
         "Profit",
+        "Process",
         "Plan"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Bốn yếu tố trên slide 5 là People, Product, Process và Project.",
       "slides": [
         5
@@ -860,12 +860,12 @@ window.SPM_DATA = {
       "examNumber": 34,
       "question": "Các nguồn lực cần Người quản lý dự án phần mềm quan tâm bao gồm: Con người, Công cụ phần cứng-phần mềm, và ...?",
       "options": [
-        "Các thành phần phần mềm dùng lại",
         "Nguồn vốn",
         "Người dùng cuối",
+        "Các thành phần phần mềm dùng lại",
         "Kinh phí"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Kim tự tháp slide 50 gồm People, Reusable software components và Hardware/software tools.",
       "slides": [
         50
@@ -882,11 +882,11 @@ window.SPM_DATA = {
       "question": "[UML] Use case A có quan hệ «include» hướng từ A đến use case B. Quan hệ này có nghĩa là gì?",
       "options": [
         "A và B chỉ liên kết với cùng một actor",
-        "A bao gồm các hành vi của B",
         "A kế thừa đặc điểm của B qua quan hệ generalization",
-        "B mở rộng A tại extension point qua quan hệ extend"
+        "B mở rộng A tại extension point qua quan hệ extend",
+        "A bao gồm các hành vi của B"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Include chèn hành vi của use case được bao gồm B vào hành vi của use case bao gồm A. Đề gốc chỉ hiển thị <> nên thiếu dữ kiện; bản luyện tập chủ động chọn include với hướng A→B và thay các lựa chọn chồng nghĩa. Đây không phải khôi phục chắc chắn nội dung bị thiếu.",
       "slides": [],
       "refs": [
@@ -905,12 +905,12 @@ window.SPM_DATA = {
       "examNumber": 36,
       "question": "Số lượng người cần có đối với một dự án phần mềm chỉ xác định được sau khi ?",
       "options": [
-        "Có ước lượng về công sức phát triển",
         "Có ước lượng về rủi ro dự án",
+        "Có ước lượng về công sức phát triển",
         "Có ước lượng về chi phí dự án",
         "Có ước lượng về thời gian của dự án"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Slide 52: số người chỉ xác định sau khi ước lượng nỗ lực phát triển theo tháng-người.",
       "slides": [
         52
@@ -927,11 +927,11 @@ window.SPM_DATA = {
       "question": "[UML] Biểu đồ trường hợp sử dụng (Use case diagram) biểu diễn khía cạnh nào của hệ thống ?",
       "options": [
         "Trình tự thông điệp chi tiết giữa các lifeline",
-        "Cấu trúc tĩnh của hệ thống",
         "Các chức năng và hành vi hệ thống cung cấp cho actor",
+        "Cấu trúc tĩnh của hệ thống",
         "Kiến trúc triển khai của hệ thống"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Use case dùng để nắm bắt yêu cầu về những gì hệ thống phải làm và đặc tả hành vi được cung cấp cho actor, không mô tả cấu trúc nội bộ. Đã gộp hành vi và yêu cầu chức năng vào D để loại sự chồng nghĩa giữa A và D của đề gốc.",
       "slides": [],
       "refs": [
@@ -950,12 +950,12 @@ window.SPM_DATA = {
       "examNumber": 38,
       "question": "DRE (Defect Removal Efficiency) được xác định bằng công thức: DRE = E / (E + D) trong đó, E: số lỗi được phát hiện trước khi bàn giao cho người dùng cuối, D: số lỗi số khiếm khuyết được phát hiện sau khi bàn giao. Giá trị lý tưởng của DRE là bao nhiêu ?",
       "options": [
+        "1",
         "0,5",
         "0",
-        "1",
         "0,1"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Slide 46 xác định giá trị lý tưởng của DRE là 1.",
       "slides": [
         46
@@ -971,12 +971,12 @@ window.SPM_DATA = {
       "examNumber": 39,
       "question": "Việc đo lường sản phẩm công việc phần mềm nên được tiến hành như thế nào theo các mục tiêu đo lường trong bài giảng?",
       "options": [
-        "Chỉ sau khi cài đặt phần mềm cho người dùng",
         "Xuyên suốt quá trình khi có sản phẩm và thuộc tính phù hợp để đo",
+        "Chỉ sau khi cài đặt phần mềm cho người dùng",
         "Chỉ trước khi phân tích yêu cầu",
         "Chỉ trước khi lập kế hoạch dự án"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Slides 25 và 40 nêu đo lường để hỗ trợ quyết định khi dự án tiến triển và đánh giá yêu cầu, thiết kế, mã, kiểm thử. Đã thay đáp án chỉ đo sau khi hoàn tất bằng việc đo trên các sản phẩm phù hợp trong quá trình phát triển.",
       "slides": [
         25,
@@ -994,12 +994,12 @@ window.SPM_DATA = {
       "examNumber": 40,
       "question": "Thứ tự các giai đoạn trong mô hình thác nước mà Sommerville trình bày là gì?",
       "options": [
-        "Yêu cầu; thiết kế; hiện thực và kiểm thử đơn vị; tích hợp và kiểm thử hệ thống; vận hành và bảo trì",
         "Yêu cầu; tích hợp và kiểm thử hệ thống; thiết kế; hiện thực và kiểm thử đơn vị; vận hành và bảo trì",
+        "Yêu cầu; thiết kế; hiện thực và kiểm thử đơn vị; tích hợp và kiểm thử hệ thống; vận hành và bảo trì",
         "Thiết kế; yêu cầu; tích hợp và kiểm thử hệ thống; hiện thực và kiểm thử đơn vị; vận hành và bảo trì",
         "Yêu cầu; thiết kế; vận hành và bảo trì; hiện thực và kiểm thử đơn vị; tích hợp và kiểm thử hệ thống"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Đây là trình tự năm giai đoạn của mô hình thác nước trong Chapter 2 của Sommerville. Đã chỉ định mô hình và bỏ vị trí planning tách riêng vốn khiến A/B của đề gốc có thể được hiểu khác nhau.",
       "slides": [
         48,
@@ -1044,10 +1044,10 @@ window.SPM_DATA = {
       "options": [
         "Không đáp án nào đúng",
         "Tác nhân và nguồn gốc",
-        "Khả năng xảy ra và mức độ gây thiệt hại",
-        "Thời điểm và thời lượng xảy ra"
+        "Thời điểm và thời lượng xảy ra",
+        "Khả năng xảy ra và mức độ gây thiệt hại"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Slides 21 và 63 yêu cầu xét khả năng xảy ra và tác động/hậu quả nếu rủi ro xảy ra.",
       "slides": [
         21,
@@ -1064,12 +1064,12 @@ window.SPM_DATA = {
       "examNumber": 43,
       "question": "Khái niệm “constraints” trong đặc tả yêu cầu phần mềm có nghĩa gì ?",
       "options": [
-        "Các ràng buộc mà hệ thống phải tuân theo",
         "Không đáp án nào đúng",
         "Các dịch vụ mà hệ thống phải cung cấp",
-        "Các dịch vụ mà hệ thống phải cung cấp và các ràng buộc mà hệ thống phải tuân theo"
+        "Các dịch vụ mà hệ thống phải cung cấp và các ràng buộc mà hệ thống phải tuân theo",
+        "Các ràng buộc mà hệ thống phải tuân theo"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Constraints là các ràng buộc phải tuân theo, khác với các dịch vụ chức năng mà hệ thống cung cấp.",
       "slides": [
         10,
@@ -1091,12 +1091,12 @@ window.SPM_DATA = {
       "examNumber": 44,
       "question": "Tài liệu nào đặc tả các dịch vụ, chức năng và ràng buộc của phần mềm cần xây dựng, làm cơ sở đánh giá phần mềm có đáp ứng yêu cầu hay không?",
       "options": [
+        "Bản đặc tả yêu cầu phần mềm",
         "Bản ước lượng kế hoạch dự án",
         "Bản mô tả bối cảnh hệ thống tổng thể",
-        "Bản thiết kế chi tiết",
-        "Bản đặc tả yêu cầu phần mềm"
+        "Bản thiết kế chi tiết"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Bản đặc tả yêu cầu phần mềm mô tả điều phần mềm phải đáp ứng; slides 40 và 82 đặt yêu cầu làm nền tảng chất lượng. Đã ghi rõ đối tượng là phần mềm và làm rõ A là bối cảnh tổng thể để tách khỏi đặc tả yêu cầu hệ thống.",
       "slides": [
         40,
@@ -1118,12 +1118,12 @@ window.SPM_DATA = {
       "examNumber": 45,
       "question": "Các loại hoạt động trong giai đoạn bảo trì phần mềm ?",
       "options": [
-        "Mã hóa; Kiểm thử; Bảo trì",
         "Sửa đổi; Thích nghi hóa; Nâng cấp",
+        "Mã hóa; Kiểm thử; Bảo trì",
         "Phân tích hệ thống; Lập kế hoạch phần mềm; Phân tích yêu cầu phần mềm",
         "Thiết kế phần mềm; Mã hóa; Kiểm thử phần mềm"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Slide 41 mô tả sửa lỗi, thích nghi môi trường và nâng cấp theo yêu cầu. C khớp ba nhóm này; không nên hiểu đây là danh sách đầy đủ mọi phân loại bảo trì khác.",
       "slides": [
         41
@@ -1140,11 +1140,11 @@ window.SPM_DATA = {
       "question": "Theo cách phân chia của Pressman, các hoạt động chính trong pha định nghĩa ở giai đoạn đầu gồm những gì?",
       "options": [
         "Thiết kế phần mềm; mã hóa; kiểm thử phần mềm",
+        "Kỹ nghệ hệ thống/thông tin; lập kế hoạch phần mềm; phân tích yêu cầu phần mềm",
         "Mã hóa; kiểm thử; bảo trì",
-        "Sửa lỗi; thích nghi; nâng cấp",
-        "Kỹ nghệ hệ thống/thông tin; lập kế hoạch phần mềm; phân tích yêu cầu phần mềm"
+        "Sửa lỗi; thích nghi; nâng cấp"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Pressman §2.1.2 nêu ba hoạt động của definition phase. Đã đổi 'các hoạt động kỹ thuật' thành 'các hoạt động chính trong pha định nghĩa' vì lập kế hoạch còn có nội dung quản lý.",
       "slides": [],
       "refs": [
@@ -1164,11 +1164,11 @@ window.SPM_DATA = {
       "question": "Trong câu hỏi này, phân tích nghiệp vụ được giới hạn ở việc làm rõ các dịch vụ và ràng buộc của phần mềm để bàn giao yêu cầu cho nhóm phát triển. Work product nào phù hợp nhất?",
       "options": [
         "Bản ước lượng kế hoạch phần mềm",
-        "Bản đặc tả yêu cầu phần mềm",
         "Bản mô tả hệ thống tổng thể",
-        "Bản thiết kế chi tiết"
+        "Bản thiết kế chi tiết",
+        "Bản đặc tả yêu cầu phần mềm"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Với phạm vi đã nêu, đầu ra cần bàn giao là yêu cầu phần mềm, không phải giải pháp thiết kế hay ước lượng. Đã xác định rõ phạm vi phân tích nghiệp vụ; đề gốc không quy định phạm vi nên chưa thể chọn duy nhất A hay D.",
       "slides": [
         10,
@@ -1237,12 +1237,12 @@ window.SPM_DATA = {
       "examNumber": 50,
       "question": "Các thuộc tính nào của rủi ro dự án phần mềm ?",
       "options": [
+        "Tính không chắc chắn và gây thiệt hại khi xảy ra",
         "Tính linh hoạt và không kiểm soát được",
         "Không đáp án nào đúng",
-        "Tính chắc chắn và không gây thiệt hại khi xảy ra",
-        "Tính không chắc chắn và gây thiệt hại khi xảy ra"
+        "Tính chắc chắn và không gây thiệt hại khi xảy ra"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Slide 59: rủi ro luôn có uncertainty và loss nếu trở thành hiện thực.",
       "slides": [
         59
@@ -1259,11 +1259,11 @@ window.SPM_DATA = {
       "question": "[UML] Biểu đồ tuần tự (Sequence diagram) biểu diễn khía cạnh nào của hệ thống ?",
       "options": [
         "Trạng thái của hệ thống",
-        "Hành vi của hệ thống",
         "Cấu trúc tĩnh của hệ thống",
-        "Thành phần kiến trúc của hệ thống"
+        "Thành phần kiến trúc của hệ thống",
+        "Hành vi của hệ thống"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Sequence diagram mô tả Interaction bằng trình tự Messages trao đổi giữa Lifelines, nên biểu diễn khía cạnh hành vi của hệ thống.",
       "slides": [],
       "refs": [
@@ -1283,11 +1283,11 @@ window.SPM_DATA = {
       "question": "[UML] Phát biểu nào sai trong số các phát biểu về tác nhân (actor) của hệ thống ?",
       "options": [
         "Một thiết bị phần cứng có thể là tác nhân của hệ thống",
+        "Tác nhân của một hệ thống luôn là con người",
         "Một phần mềm khác có thể là một tác nhân của hệ thống",
-        "Các tác nhân được phân biệt theo vai trò khi tham gia hệ thống",
-        "Tác nhân của một hệ thống luôn là con người"
+        "Các tác nhân được phân biệt theo vai trò khi tham gia hệ thống"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Actor biểu diễn vai trò tương tác với subject, không bị giới hạn ở con người. Phần mềm hoặc thiết bị bên ngoài có thể đóng vai trò actor nếu tương tác với hệ thống đang xét; do đó A sai.",
       "slides": [],
       "refs": [
@@ -1307,11 +1307,11 @@ window.SPM_DATA = {
       "question": "[UML] Biểu đồ lớp (Class diagram) biểu diễn khía cạnh nào của hệ thống ?",
       "options": [
         "Các ràng buộc phi chức năng đối với hệ thống",
-        "Cấu trúc tĩnh của hệ thống",
         "Sự tương tác của các phần tử hệ thống theo trình tự thời gian",
-        "Sự cộng tác giữa các phần tử trong hệ thống"
+        "Sự cộng tác giữa các phần tử trong hệ thống",
+        "Cấu trúc tĩnh của hệ thống"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Class diagram là biểu đồ cấu trúc, mô tả các lớp cùng các quan hệ cấu trúc tĩnh; nó không thể hiện trình tự thông điệp như sequence diagram.",
       "slides": [],
       "refs": [
@@ -1356,12 +1356,12 @@ window.SPM_DATA = {
       "examNumber": 55,
       "question": "Cách phát triển nào tổ chức công việc thành các lần lặp và cung cấp các phần chức năng tăng trưởng, phù hợp với hướng phát triển Agile?",
       "options": [
-        "Phát triển lặp và tăng trưởng",
         "Chỉ áp dụng công cụ sinh mã thế hệ thứ tư",
         "Chỉ tạo bản mẫu để trình diễn rồi ngừng phát triển",
-        "Thác nước với các pha cố định thực hiện một lượt"
+        "Thác nước với các pha cố định thực hiện một lượt",
+        "Phát triển lặp và tăng trưởng"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Phát triển lặp/tăng trưởng cho phép phát triển và cung cấp chức năng qua các increment. Đã thêm lựa chọn này để thay câu gốc thiếu mô hình phù hợp; không đồng nhất bản mẫu hoặc RAD với Scrum.",
       "slides": [
         11
@@ -1383,11 +1383,11 @@ window.SPM_DATA = {
       "question": "Loại tài nguyên nào cần ước lượng cho dự án phần mềm ?",
       "options": [
         "Công cụ phần cứng và phần mềm",
-        "Tất cả các đáp án đều đúng",
         "Con người",
+        "Tất cả các đáp án đều đúng",
         "Thành phần phần mềm dùng lại"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Ba loại ở A, B, C là đúng các tầng của kim tự tháp nguồn lực slide 50.",
       "slides": [
         50,
@@ -1404,12 +1404,12 @@ window.SPM_DATA = {
       "examNumber": 57,
       "question": "Thông tin nào không được thể hiện thành cột riêng trong bảng rủi ro minh họa ở slide 64?",
       "options": [
-        "Chi phí khắc phục thiệt hại khi rủi ro xảy ra",
         "Khả năng xảy ra",
+        "Chi phí khắc phục thiệt hại khi rủi ro xảy ra",
         "Tên rủi ro",
         "Loại rủi ro"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Bảng mẫu có Risks, Category, Probability, Impact và RMMM, không có cột chi phí khắc phục. Đã giới hạn câu hỏi vào bảng mẫu; điều này không cấm một bảng rủi ro khác thêm thông tin chi phí.",
       "slides": [
         64
@@ -1425,12 +1425,12 @@ window.SPM_DATA = {
       "examNumber": 58,
       "question": "Mục nào dưới đây không phải nhiệm vụ, mốc hoặc sản phẩm bàn giao trong định nghĩa task set của slide 69?",
       "options": [
+        "Xác suất một rủi ro xảy ra",
         "Phiên bản phần mềm cần bàn giao",
         "Mốc dự án cần đạt",
-        "Xác suất một rủi ro xảy ra",
         "Nhiệm vụ kỹ nghệ phần mềm cần thực hiện"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Task set gồm work tasks, milestones và deliverables; xác suất là thuộc tính rủi ro. Đã thay phương án loại hoạt động kỹ thuật giảm thiểu rủi ro, vì hoạt động đó vẫn có thể là một nhiệm vụ của dự án.",
       "slides": [
         12,
@@ -1492,10 +1492,10 @@ window.SPM_DATA = {
       "options": [
         "Xác định chi phí và lịch biểu dự án",
         "Xác định rủi ro và kỹ thuật tránh hoặc giảm thiểu rủi ro",
-        "Lập trình hiện thực các chức năng phần mềm",
-        "Xác định phạm vi và nguồn lực dự án"
+        "Xác định phạm vi và nguồn lực dự án",
+        "Lập trình hiện thực các chức năng phần mềm"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Slides 48 và 76 xác định phạm vi, nguồn lực, rủi ro, chi phí và lịch trong planning; lập trình là thực hiện xây dựng. Đã thay 'phân tích nghiệp vụ' vì hiểu nghiệp vụ và phạm vi cũng có thể hỗ trợ lập kế hoạch.",
       "slides": [
         48,
@@ -1513,12 +1513,12 @@ window.SPM_DATA = {
       "examNumber": 62,
       "question": "Theo phân nhóm nguồn lực ở slides 53–55, mục nào thuộc nguồn lực môi trường thay vì bốn nhóm nguồn lực phần mềm?",
       "options": [
-        "Công cụ phần mềm trong môi trường phát triển",
         "Thành phần mới cần xây dựng cho dự án hiện tại",
+        "Công cụ phần mềm trong môi trường phát triển",
         "Thành phần phần mềm từ dự án quá khứ",
         "Phần mềm sẵn có từ bên thứ ba"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Slide 54 vẫn liệt kê New components trong bốn software-resource categories, còn slide 55 xếp phần cứng/phần mềm môi trường vào environmental resources. Đã hỏi đúng phân nhóm của bài, thay vì coi thành phần mới đã là tài sản được tái sử dụng.",
       "slides": [
         50,
@@ -1539,10 +1539,10 @@ window.SPM_DATA = {
       "options": [
         "Tiến hành các cuộc họp định kỳ để thành viên đội dự án có thể báo tiến độ và các vấn đề gặp phải",
         "So sánh ngày bắt đầu dự kiến và ngày bắt đầu thực tế đối với từng nhiệm vụ trong bảng dự án",
-        "Xác định xem các cột mốc dự án có đạt được theo đúng lịch biểu hay không",
-        "Phân rã các nhiệm vụ và lập lịch dự án"
+        "Phân rã các nhiệm vụ và lập lịch dự án",
+        "Xác định xem các cột mốc dự án có đạt được theo đúng lịch biểu hay không"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "C là hoạt động phân rã/lập lịch. A/B/D là các cách theo dõi lịch được liệt kê ở slide 74.",
       "slides": [
         71,
@@ -1585,10 +1585,10 @@ window.SPM_DATA = {
       "options": [
         "Người được phân công thực hiện",
         "Các nhiệm vụ và nhiệm vụ cấp dưới",
-        "Chi phí cho từng nhiệm vụ",
-        "Nỗ lực phân bổ theo person-day"
+        "Nỗ lực phân bổ theo person-day",
+        "Chi phí cho từng nhiệm vụ"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Ảnh bảng mẫu có Work tasks, Assigned person và Effort allocated, không có cột chi phí. Đã giới hạn câu hỏi vào mẫu slide 73; bảng dự án nói chung vẫn có thể bổ sung chi phí.",
       "slides": [
         73
@@ -1600,6 +1600,8 @@ window.SPM_DATA = {
     },
     {
       "part": 1,
+      "sourceId": "SPM-003",
+      "sourceType": "slides",
       "question": "Vai trò nào xác định các vấn đề kinh doanh?",
       "options": [
         "End-users",
@@ -1612,12 +1614,12 @@ window.SPM_DATA = {
       "slides": [
         6
       ],
-      "sourceId": "SPM-003",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-003"
     },
     {
       "part": 1,
+      "sourceId": "SPM-004",
+      "sourceType": "slides",
       "question": "Vai trò nào lập kế hoạch, động viên, tổ chức và kiểm soát người thực hiện?",
       "options": [
         "Senior managers",
@@ -1630,12 +1632,12 @@ window.SPM_DATA = {
       "slides": [
         6
       ],
-      "sourceId": "SPM-004",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-004"
     },
     {
       "part": 1,
+      "sourceId": "SPM-005",
+      "sourceType": "slides",
       "question": "Ai cung cấp kỹ năng kỹ thuật để xây dựng phần mềm?",
       "options": [
         "End-users",
@@ -1648,498 +1650,1262 @@ window.SPM_DATA = {
       "slides": [
         6
       ],
-      "sourceId": "SPM-005",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-005"
     },
     {
       "part": 1,
+      "sourceId": "SPM-006",
+      "sourceType": "slides",
       "question": "Ai xác định yêu cầu đối với phần mềm?",
       "options": [
         "Practitioners",
         "Technical managers",
-        "End-users",
-        "Customers"
+        "Customers",
+        "End-users"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Customers chỉ định các yêu cầu của phần mềm.",
       "slides": [
         6
       ],
-      "sourceId": "SPM-006",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-006"
     },
     {
       "part": 1,
+      "sourceId": "SPM-007",
+      "sourceType": "slides",
       "question": "Ai tương tác với phần mềm sau khi phát hành?",
       "options": [
-        "End-users",
         "Practitioners",
         "Project managers",
+        "End-users",
         "Senior managers"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "End-users sử dụng và tương tác với phần mềm sau khi phát hành.",
       "slides": [
         6
       ],
-      "sourceId": "SPM-007",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-007"
     },
     {
       "part": 1,
+      "sourceId": "SPM-008",
+      "sourceType": "slides",
+      "question": "Một dự án cần phân biệt vấn đề kinh doanh, yêu cầu phần mềm và kỹ năng xây dựng. Bộ phân công nào đúng theo ba vai trò tương ứng?",
+      "options": [
+        "Practitioners: kinh doanh; senior managers: yêu cầu; customers: kỹ thuật",
+        "Senior managers: kinh doanh; customers: yêu cầu; practitioners: kỹ thuật",
+        "Customers: kinh doanh; practitioners: yêu cầu; senior managers: kỹ thuật",
+        "End-users: kinh doanh; managers: yêu cầu; customers: kỹ thuật"
+      ],
+      "correct": 1,
+      "explanation": "Slide 6 phân biệt ba trách nhiệm: business issues, requirements và technical skills.",
+      "slides": [
+        6
+      ],
+      "id": "SLIDE-SPM-008"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-009",
+      "sourceType": "slides",
+      "question": "Technical manager muốn vừa tổ chức người thực hiện vừa giúp họ chuyển ý tưởng thành sản phẩm. Ghép vai trò và năng lực nào thích hợp?",
+      "options": [
+        "Senior manager với năng lực Information objectives",
+        "Customer với năng lực Context",
+        "Project manager với năng lực Organization",
+        "End-user với năng lực Customer evaluation"
+      ],
+      "correct": 2,
+      "explanation": "Slide 6 giao quản lý practitioners cho project manager; slide 7 gọi việc tổ chức quy trình chuyển ý tưởng thành sản phẩm là Organization.",
+      "slides": [
+        6,
+        7
+      ],
+      "id": "SLIDE-SPM-009"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-011",
+      "sourceType": "slides",
+      "question": "Phân biệt nào đúng giữa customers và end-users theo bài?",
+      "options": [
+        "Customers tổ chức nhóm; end-users cung cấp kỹ năng kỹ thuật",
+        "Customers đánh giá nhân sự; end-users lập kế hoạch dự án",
+        "Customers viết mã; end-users xác định vấn đề kinh doanh",
+        "Customers nêu yêu cầu; end-users tương tác khi phần mềm được phát hành"
+      ],
+      "correct": 3,
+      "explanation": "Hai nhóm được mô tả theo việc chỉ định yêu cầu và việc tương tác với phần mềm trong sử dụng thực tế.",
+      "slides": [
+        6
+      ],
+      "id": "SLIDE-SPM-011"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-012",
+      "sourceType": "slides",
+      "question": "Practitioners đã được xác định nhưng trách nhiệm từng chức năng vẫn chưa rõ. Khi áp dụng W5HH, điều nào cần bổ sung trước khi coi phân công đã đầy đủ?",
+      "options": [
+        "Chỉ ghi users tương tác sau khi phát hành",
+        "Chỉ ghi senior managers xác định business issues",
+        "Nêu ai chịu trách nhiệm từng chức năng",
+        "Chỉ ghi practitioners cung cấp kỹ năng kỹ thuật"
+      ],
+      "correct": 2,
+      "explanation": "Biết nhóm vai trò không thay thế câu hỏi Who chịu trách nhiệm một chức năng trên slide 19.",
+      "slides": [
+        6,
+        19
+      ],
+      "id": "SLIDE-SPM-012"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-013",
+      "sourceType": "slides",
       "question": "Năng lực Motivation của trưởng nhóm là gì?",
       "options": [
-        "Khuyến khích người kỹ thuật làm việc hết khả năng",
-        "Tự thực hiện toàn bộ công việc kỹ thuật của nhóm",
         "Xác định mọi vấn đề kinh doanh của tổ chức",
-        "Chỉ chấp nhận những ý tưởng vượt mọi ràng buộc"
+        "Khuyến khích người kỹ thuật làm việc hết khả năng",
+        "Chỉ chấp nhận những ý tưởng vượt mọi ràng buộc",
+        "Tự thực hiện toàn bộ công việc kỹ thuật của nhóm"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Motivation là khả năng thúc đẩy người kỹ thuật phát huy tốt nhất năng lực của mình.",
       "slides": [
         7
       ],
-      "sourceId": "SPM-013",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-013"
     },
     {
       "part": 1,
+      "sourceId": "SPM-014",
+      "sourceType": "slides",
       "question": "Năng lực Organization của trưởng nhóm là gì?",
       "options": [
+        "Loại bỏ quy trình để mỗi người làm theo ý mình",
         "Đánh giá phản hồi của người dùng sau mỗi lần cài đặt",
         "Điều chỉnh hoặc tạo quy trình để biến ý tưởng thành sản phẩm",
-        "Loại bỏ quy trình để mỗi người làm theo ý mình",
         "Chỉ giao nhiệm vụ dựa trên chức danh của từng người"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Organization hướng đến định hình quy trình hiện có hoặc tạo quy trình mới để chuyển ý tưởng ban đầu thành sản phẩm cuối.",
       "slides": [
         7
       ],
-      "sourceId": "SPM-014",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-014"
     },
     {
       "part": 1,
+      "sourceId": "SPM-015",
+      "sourceType": "slides",
       "question": "Năng lực Innovation của trưởng nhóm khuyến khích điều gì?",
       "options": [
         "Chỉ làm theo ý tưởng của người lãnh đạo",
         "Tránh mọi ý tưởng chưa có ở dự án trước",
-        "Sáng tạo trong các giới hạn của sản phẩm",
-        "Thay đổi yêu cầu mà không cần xét giới hạn"
+        "Thay đổi yêu cầu mà không cần xét giới hạn",
+        "Sáng tạo trong các giới hạn của sản phẩm"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Bài nhấn mạnh tạo điều kiện sáng tạo ngay cả khi phải làm việc trong các giới hạn đã thiết lập.",
       "slides": [
         7
       ],
-      "sourceId": "SPM-015",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-015"
     },
     {
       "part": 1,
-      "question": "Đặc điểm nào thuộc cách tổ chức nhóm không chính thức?",
+      "sourceId": "SPM-016",
+      "sourceType": "slides",
+      "question": "Trưởng nhóm chọn dùng quy trình hiện có sau khi điều chỉnh nó, thay vì tạo quy trình mới. Nhận định nào đúng theo năng lực Organization?",
       "options": [
-        "Không có software manager điều phối",
-        "Có thể chỉ định trưởng nhóm ad hoc",
-        "Mỗi người chỉ làm việc hoàn toàn độc lập",
-        "Mọi nhóm bắt buộc có cấu trúc chung"
+        "Dùng quy trình hiện có khiến Motivation không cần thiết",
+        "Chỉ tạo quy trình mới mới được xem là Organization",
+        "Điều chỉnh quy trình chỉ là vai trò của end-users",
+        "Cả điều chỉnh và tạo mới quy trình đều thuộc năng lực này"
+      ],
+      "correct": 3,
+      "explanation": "Slide 7 nêu mold existing processes hoặc invent new ones.",
+      "slides": [
+        7
+      ],
+      "id": "SLIDE-SPM-016"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-017",
+      "sourceType": "slides",
+      "question": "Trưởng nhóm dùng cả sự thúc đẩy và sự khích lệ để thành viên phát huy năng lực. Đây là minh họa cho năng lực nào?",
+      "options": [
+        "Risk analysis",
+        "Motivation",
+        "Scope definition",
+        "Organization"
       ],
       "correct": 1,
+      "explanation": "Bài mô tả Motivation có thể khuyến khích người kỹ thuật bằng cách push hoặc pull.",
+      "slides": [
+        7
+      ],
+      "id": "SLIDE-SPM-017"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-018",
+      "sourceType": "slides",
+      "question": "Nhóm đã xác định các giới hạn do bối cảnh hệ thống lớn hơn. Trưởng nhóm nên xử lý các ý tưởng mới thế nào để đồng thời phù hợp Context và Innovation?",
+      "options": [
+        "Khuyến khích sáng tạo trong các giới hạn đã xác định",
+        "Giữ sáng tạo bằng cách tự bỏ mọi giới hạn của context",
+        "Giữ context bằng cách chấm dứt việc đề xuất ý tưởng",
+        "Đổi mọi ý tưởng thành dữ liệu đầu ra rồi không xét giới hạn"
+      ],
+      "correct": 0,
+      "explanation": "Slide 10 xác định ràng buộc context; slide 7 khuyến khích sáng tạo trong bounds của sản phẩm.",
+      "slides": [
+        7,
+        10
+      ],
+      "id": "SLIDE-SPM-018"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-019",
+      "sourceType": "slides",
+      "question": "Nhóm đã được khuyến khích để giữ nhân sự ổn định nhưng không có quy trình chuyển ý tưởng thành sản phẩm. Kết hợp nào mô tả đúng tình trạng?",
+      "options": [
+        "Đã có Organization nên không cần kiểm soát turnover",
+        "Đã hỗ trợ momentum nhưng còn thiếu Organization",
+        "Đã có Motivation nên mọi ý tưởng tự thành sản phẩm",
+        "Đã có Innovation nên không cần quy trình triển khai"
+      ],
+      "correct": 1,
+      "explanation": "Slide 17 hỗ trợ giảm turnover để giữ momentum; slide 7 cần Organization để chuyển ý tưởng thành sản phẩm.",
+      "slides": [
+        7,
+        17
+      ],
+      "id": "SLIDE-SPM-019"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-020",
+      "sourceType": "slides",
+      "question": "Trong phương án tổ chức thứ nhất, ai chịu trách nhiệm phối hợp khi các cá nhân làm các nhiệm vụ chức năng và ít làm việc chung?",
+      "options": [
+        "Software manager",
+        "Các end-users sau phát hành",
+        "Một leader chính thức của từng team",
+        "Khách hàng của từng chức năng"
+      ],
+      "correct": 0,
+      "explanation": "Phương án thứ nhất giao việc phối hợp cho software manager, người có thể còn quản lý dự án khác.",
+      "slides": [
+        8
+      ],
+      "id": "SLIDE-SPM-020"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-021",
+      "sourceType": "slides",
+      "question": "Điều kiện m < n xuất hiện trong phương án tổ chức nào?",
+      "options": [
+        "Tất cả nhóm có cấu trúc chính thức giống nhau",
+        "Các cá nhân tạo thành những nhóm không chính thức",
+        "Mỗi cá nhân làm một dự án độc lập",
+        "Mỗi nhóm chỉ có một trưởng nhóm cấp cao"
+      ],
+      "correct": 1,
+      "explanation": "Phương án thứ hai phân n người vào m nhiệm vụ với m < n để hình thành informal teams.",
+      "slides": [
+        8
+      ],
+      "id": "SLIDE-SPM-021"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-022",
+      "sourceType": "slides",
+      "question": "Đặc điểm nào thuộc cách tổ chức nhóm không chính thức?",
+      "options": [
+        "Mọi nhóm bắt buộc có cấu trúc chung",
+        "Không có software manager điều phối",
+        "Mỗi người chỉ làm việc hoàn toàn độc lập",
+        "Có thể chỉ định trưởng nhóm ad hoc"
+      ],
+      "correct": 3,
       "explanation": "Phương án informal teams có thể bổ nhiệm team leader ad hoc, còn phối hợp giữa nhóm thuộc software manager.",
       "slides": [
         8
       ],
-      "sourceId": "SPM-022",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-022"
     },
     {
       "part": 1,
+      "sourceId": "SPM-023",
+      "sourceType": "slides",
       "question": "Trong cách tổ chức thành các nhóm có cấu trúc chung, ai kiểm soát phối hợp?",
       "options": [
-        "Chỉ customers của dự án",
+        "Cả team và software project manager",
         "Chỉ senior managers của tổ chức",
-        "Chỉ một team leader ad hoc",
-        "Cả team và software project manager"
+        "Chỉ customers của dự án",
+        "Chỉ một team leader ad hoc"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Phương án thứ ba chia trách nhiệm phối hợp cho cả nhóm và người quản lý dự án phần mềm.",
       "slides": [
         8
       ],
-      "sourceId": "SPM-023",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-023"
     },
     {
       "part": 1,
+      "sourceId": "SPM-024",
+      "sourceType": "slides",
       "question": "Điểm nào phân biệt nhóm có cấu trúc chung với nhóm không chính thức?",
       "options": [
+        "Mỗi team chỉ được giao một chức năng cố định",
         "Cấu trúc team được xác định cho mọi nhóm trong dự án",
         "Số người luôn nhỏ hơn số nhiệm vụ chức năng",
-        "Software manager không còn tham gia phối hợp",
-        "Mỗi team chỉ được giao một chức năng cố định"
+        "Software manager không còn tham gia phối hợp"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Phương án thứ ba quy định cấu trúc cụ thể áp dụng cho tất cả các nhóm làm trong dự án.",
       "slides": [
         8
       ],
-      "sourceId": "SPM-024",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-024"
     },
     {
       "part": 1,
+      "sourceId": "SPM-025",
+      "sourceType": "slides",
+      "question": "Có 12 người được tổ chức thành 3 nhóm; mỗi nhóm nhận một hoặc nhiều nhiệm vụ và có cấu trúc xác định chung. Dữ kiện nào quyết định đây là phương án t teams thay vì chỉ informal teams?",
+      "options": [
+        "Mỗi nhóm có cấu trúc được xác định chung cho dự án",
+        "Chỉ việc manager cũng có thể quan tâm dự án khác",
+        "Chỉ việc mỗi người đã có một nhiệm vụ chức năng",
+        "Chỉ việc số nhóm nhỏ hơn số người trong dự án"
+      ],
+      "correct": 0,
+      "explanation": "Slide 8 đặc trưng phương án thứ ba bằng cấu trúc nhóm chung và cơ chế phối hợp team cùng project manager.",
+      "slides": [
+        8
+      ],
+      "id": "SLIDE-SPM-025"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-027",
+      "sourceType": "slides",
+      "question": "Trong phương án informal teams, leader ad hoc đã được chỉ định. Ai vẫn chịu trách nhiệm phối hợp giữa các team?",
+      "options": [
+        "Software manager",
+        "Chỉ leader của team lớn nhất",
+        "Chỉ practitioners mới tham gia",
+        "Mỗi customer tự phối hợp"
+      ],
+      "correct": 0,
+      "explanation": "Bổ nhiệm leader ad hoc không thay đổi trách nhiệm phối hợp giữa các team của software manager.",
+      "slides": [
+        8
+      ],
+      "id": "SLIDE-SPM-027"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-029",
+      "sourceType": "slides",
       "question": "Điều kiện nào cần có ở một nhóm hiệu suất cao?",
       "options": [
-        "Các thành viên tránh trao đổi công việc",
-        "Các thành viên đều có chức danh quản lý",
         "Các thành viên có kỹ năng giống hệt nhau",
-        "Các thành viên tin tưởng lẫn nhau"
+        "Các thành viên tránh trao đổi công việc",
+        "Các thành viên tin tưởng lẫn nhau",
+        "Các thành viên đều có chức danh quản lý"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Sự tin tưởng giữa các thành viên là một yêu cầu của high-performance team.",
       "slides": [
         9
       ],
-      "sourceId": "SPM-029",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-029"
     },
     {
       "part": 1,
+      "sourceId": "SPM-030",
+      "sourceType": "slides",
       "question": "Phân bố kỹ năng của nhóm cần phù hợp với điều gì?",
       "options": [
         "Vị trí tổ chức của người quản lý",
-        "Bài toán cần giải quyết",
+        "Cơ chế phối hợp giữa các nhóm",
         "Cấu trúc các nhóm không chính thức",
-        "Cơ chế phối hợp giữa các nhóm"
+        "Bài toán cần giải quyết"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Bài yêu cầu distribution of skills phải phù hợp với problem.",
       "slides": [
         9
       ],
-      "sourceId": "SPM-030",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-030"
     },
     {
       "part": 1,
+      "sourceId": "SPM-031",
+      "sourceType": "slides",
       "question": "Để giữ sự gắn kết, nhóm có thể xử lý người làm giảm sự gắn kết thế nào?",
       "options": [
-        "Bỏ yêu cầu tin tưởng giữa thành viên",
         "Loại họ khỏi team nếu cần",
+        "Bỏ yêu cầu tin tưởng giữa thành viên",
         "Tăng số nhiệm vụ độc lập cho mọi người",
         "Giao họ toàn quyền điều phối"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Slide nêu mavericks có thể cần bị loại nếu muốn duy trì team cohesiveness.",
       "slides": [
         9
       ],
-      "sourceId": "SPM-031",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-031"
     },
     {
       "part": 1,
+      "sourceId": "SPM-033",
+      "sourceType": "slides",
+      "question": "Nhóm tin tưởng nhau nhưng thiếu kỹ năng cho bài toán; một thành viên khác lại làm giảm sự gắn kết. Hướng xem xét nào bao quát hai vấn đề theo bài?",
+      "options": [
+        "Chỉ tăng trust vì trust thay thế được mọi kỹ năng",
+        "Chỉ tăng chức danh quản lý vì số cấp quyết định hiệu suất",
+        "Cải thiện phân bố kỹ năng và cân nhắc cohesiveness",
+        "Chỉ giữ mọi thành viên vì gắn kết không phải điều kiện"
+      ],
+      "correct": 2,
+      "explanation": "Slide 9 yêu cầu kỹ năng phù hợp và có thể loại mavericks để duy trì cohesiveness.",
+      "slides": [
+        9
+      ],
+      "id": "SLIDE-SPM-033"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-035",
+      "sourceType": "slides",
       "question": "Mục nào xem xét phần mềm trong hệ thống hoặc bối cảnh kinh doanh lớn hơn?",
       "options": [
-        "Information objectives",
+        "Context",
         "Function and performance",
         "Problem decomposition",
-        "Context"
+        "Information objectives"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Context xét vị trí phần mềm trong hệ thống, sản phẩm hoặc bối cảnh kinh doanh lớn hơn.",
       "slides": [
         10
       ],
-      "sourceId": "SPM-035",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-035"
     },
     {
       "part": 1,
+      "sourceId": "SPM-036",
+      "sourceType": "slides",
       "question": "Câu hỏi nào thuộc Information objectives?",
       "options": [
-        "Ai chịu trách nhiệm tổ chức nhóm lập trình?",
-        "Dự án cần bao nhiêu người quản lý cấp cao?",
+        "Nhóm nên chọn mô hình quy trình nào?",
         "Dữ liệu nào cần làm đầu vào và tạo ra ở đầu ra?",
-        "Nhóm nên chọn mô hình quy trình nào?"
+        "Dự án cần bao nhiêu người quản lý cấp cao?",
+        "Ai chịu trách nhiệm tổ chức nhóm lập trình?"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Information objectives xác định các đối tượng dữ liệu đầu vào và đầu ra mà khách hàng nhìn thấy.",
       "slides": [
         10
       ],
-      "sourceId": "SPM-036",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-036"
     },
     {
       "part": 1,
+      "sourceId": "SPM-037",
+      "sourceType": "slides",
       "question": "Function and performance xem xét nội dung nào?",
       "options": [
-        "Phân rã bài toán trong phân tích yêu cầu",
         "Dữ liệu người dùng thấy ở đầu vào, đầu ra",
         "Biến đổi dữ liệu và đặc tính hiệu năng",
-        "Bối cảnh hệ thống lớn hơn và ràng buộc"
+        "Bối cảnh hệ thống lớn hơn và ràng buộc",
+        "Phân rã bài toán trong phân tích yêu cầu"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Phần này hỏi phần mềm thực hiện chức năng biến đổi dữ liệu thế nào và có đặc tính hiệu năng đặc biệt không.",
       "slides": [
         10
       ],
-      "sourceId": "SPM-037",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-037"
     },
     {
       "part": 1,
+      "sourceId": "SPM-038",
+      "sourceType": "slides",
       "question": "Phân rã bài toán là trọng tâm của hoạt động nào?",
       "options": [
         "Đánh giá doanh thu tổ chức",
+        "Phân tích yêu cầu phần mềm",
         "Quản lý biến động nhân sự",
-        "Theo dõi earned value hằng tháng",
-        "Phân tích yêu cầu phần mềm"
+        "Theo dõi earned value hằng tháng"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Bài xác định phân rã bài toán là hoạt động cốt lõi của software requirements analysis.",
       "slides": [
         10
       ],
-      "sourceId": "SPM-038",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-038"
     },
     {
       "part": 1,
-      "question": "Hoạt động nào thiết lập việc thu thập yêu cầu giữa nhóm phát triển và khách hàng?",
+      "sourceId": "SPM-039",
+      "sourceType": "slides",
+      "question": "Phân tích đã mô tả vị trí phần mềm trong hệ thống lớn và cách biến đổi dữ liệu, nhưng chưa nêu dữ liệu người dùng nhìn thấy. Bộ đánh giá nào đúng?",
       "options": [
-        "Customer evaluation",
-        "Construction and release",
-        "Customer communication",
-        "Engineering"
+        "Đã có Information objectives; còn thiếu Context và Function",
+        "Đã có Context và Information objectives; chỉ thiếu Function",
+        "Chỉ có Function; Context không xét hệ thống lớn hơn",
+        "Đã có Context và Function; còn thiếu Information objectives"
+      ],
+      "correct": 3,
+      "explanation": "Slide 10 phân biệt context, chức năng biến đổi dữ liệu và dữ liệu đầu vào/đầu ra customer-visible.",
+      "slides": [
+        10
+      ],
+      "id": "SLIDE-SPM-039"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-040",
+      "sourceType": "slides",
+      "question": "Đội phân tích đã liệt kê dữ liệu vào và báo cáo ra nhưng chưa mô tả cách chuyển đổi. Nội dung scope nào còn thiếu?",
+      "options": [
+        "Information objectives",
+        "Function and performance",
+        "Team cohesiveness",
+        "Organizational location"
+      ],
+      "correct": 1,
+      "explanation": "Biến đổi input thành output được hỏi trong Function and performance.",
+      "slides": [
+        10
+      ],
+      "id": "SLIDE-SPM-040"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-042",
+      "sourceType": "slides",
+      "question": "Một đặc tính tốc độ xử lý đặc biệt cần được xét trong scope. Mục nào phù hợp nhất?",
+      "options": [
+        "Postmortem analysis",
+        "Information objectives",
+        "Function and performance",
+        "Team structure"
       ],
       "correct": 2,
+      "explanation": "Các special performance characteristics thuộc nội dung Function and performance.",
+      "slides": [
+        10
+      ],
+      "id": "SLIDE-SPM-042"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-043",
+      "sourceType": "slides",
+      "question": "Tài liệu chỉ ghi dữ liệu vào/ra và mục tiêu tốc độ, rồi tuyên bố scope đầy đủ. Câu hỏi nào làm lộ một phần phạm vi còn bỏ ngỏ?",
+      "options": [
+        "Có thêm bao nhiêu đối tượng dữ liệu đầu ra của người dùng?",
+        "Có thêm đặc tính hiệu năng đặc biệt nào cần xử lý?",
+        "Phần mềm nằm trong bối cảnh lớn hơn nào và chịu ràng buộc gì?",
+        "Có thêm dữ liệu đầu vào nào mà khách hàng cung cấp?"
+      ],
+      "correct": 2,
+      "explanation": "Tài liệu có information objectives và performance nhưng chưa có context và constraints phát sinh.",
+      "slides": [
+        10
+      ],
+      "id": "SLIDE-SPM-043"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-044",
+      "sourceType": "slides",
+      "question": "Tập nào chỉ gồm các mô hình process được liệt kê trong bài?",
+      "options": [
+        "People, Product, Project",
+        "Linear sequential, prototyping, incremental",
+        "Customer communication, planning, engineering",
+        "Trust, motivation, organization"
+      ],
+      "correct": 1,
+      "explanation": "Slide 11 liệt kê ba mô hình này cùng Spiral, component-based development và fourth generation techniques.",
+      "slides": [
+        11
+      ],
+      "id": "SLIDE-SPM-044"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-045",
+      "sourceType": "slides",
+      "question": "Mục nào là mô hình process trong danh sách, thay vì hoạt động framework?",
+      "options": [
+        "Risk analysis",
+        "Customer evaluation",
+        "Spiral model",
+        "Construction and release"
+      ],
+      "correct": 2,
+      "explanation": "Spiral được liệt kê là mô hình process; ba mục kia là framework activities.",
+      "slides": [
+        11
+      ],
+      "id": "SLIDE-SPM-045"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-046",
+      "sourceType": "slides",
+      "question": "Cặp nào đều thuộc danh sách mô hình process?",
+      "options": [
+        "Postmortem analysis và earned value tracking",
+        "Formal risk management và defect tracking",
+        "Component-based development và fourth generation techniques",
+        "Information objectives và customer communication"
+      ],
+      "correct": 2,
+      "explanation": "Hai mô hình này có mặt trong danh sách của slide 11.",
+      "slides": [
+        11
+      ],
+      "id": "SLIDE-SPM-046"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-047",
+      "sourceType": "slides",
+      "question": "Một bảng đặt Planning ngang hàng với Prototyping như hai mô hình process. Lỗi phân loại nào cần sửa?",
+      "options": [
+        "Planning là đối tượng dữ liệu",
+        "Planning là framework activity",
+        "Prototyping là vai trò nhân sự",
+        "Prototyping là chỉ tiêu nhân sự"
+      ],
+      "correct": 1,
+      "explanation": "Planning nằm trong framework activities, còn prototyping nằm trong danh sách mô hình process.",
+      "slides": [
+        11,
+        12
+      ],
+      "id": "SLIDE-SPM-047"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-048",
+      "sourceType": "slides",
+      "question": "Hoạt động nào thiết lập việc thu thập yêu cầu giữa nhóm phát triển và khách hàng?",
+      "options": [
+        "Construction and release",
+        "Customer communication",
+        "Customer evaluation",
+        "Engineering"
+      ],
+      "correct": 1,
       "explanation": "Customer communication bao gồm các nhiệm vụ tạo requirements elicitation hiệu quả.",
       "slides": [
         12
       ],
-      "sourceId": "SPM-048",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-048"
     },
     {
       "part": 1,
+      "sourceId": "SPM-049",
+      "sourceType": "slides",
       "question": "Xác định nguồn lực và mốc thời gian thuộc hoạt động nào?",
       "options": [
-        "Planning",
-        "Construction and release",
         "Engineering",
-        "Customer evaluation"
+        "Construction and release",
+        "Customer evaluation",
+        "Planning"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Planning định nghĩa resources, timelines và thông tin dự án khác.",
       "slides": [
         12
       ],
-      "sourceId": "SPM-049",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-049"
     },
     {
       "part": 1,
+      "sourceId": "SPM-051",
+      "sourceType": "slides",
       "question": "Tạo các biểu diễn của ứng dụng thuộc hoạt động nào?",
       "options": [
-        "Engineering",
         "Customer evaluation",
-        "Risk analysis",
-        "Planning"
+        "Planning",
+        "Engineering",
+        "Risk analysis"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Engineering thực hiện các nhiệm vụ xây dựng representations của ứng dụng.",
       "slides": [
         12
       ],
-      "sourceId": "SPM-051",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-051"
     },
     {
       "part": 1,
-      "question": "Mục đích của Customer evaluation là gì?",
+      "sourceId": "SPM-052",
+      "sourceType": "slides",
+      "question": "Bộ công việc nào thuộc Construction and release?",
       "options": [
-        "Xây dựng một bộ quy trình mới cho tổ chức",
-        "Xác định mọi ràng buộc của bối cảnh kinh doanh",
-        "Thiết lập toàn bộ kỹ năng của các practitioners",
-        "Thu nhận phản hồi khách hàng qua đánh giá phần mềm"
+        "Đánh giá rủi ro, chọn nhân sự và điều chỉnh ngân sách",
+        "Lấy phản hồi, xác định context và phân tích dữ liệu",
+        "Thu thập yêu cầu, lập scope và phân công vai trò",
+        "Xây dựng, kiểm thử, cài đặt và hỗ trợ người dùng"
       ],
       "correct": 3,
+      "explanation": "Construction and release gồm construct, test, install và user support.",
+      "slides": [
+        12
+      ],
+      "id": "SLIDE-SPM-052"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-053",
+      "sourceType": "slides",
+      "question": "Mục đích của Customer evaluation là gì?",
+      "options": [
+        "Thu nhận phản hồi khách hàng qua đánh giá phần mềm",
+        "Xác định mọi ràng buộc của bối cảnh kinh doanh",
+        "Xây dựng một bộ quy trình mới cho tổ chức",
+        "Thiết lập toàn bộ kỹ năng của các practitioners"
+      ],
+      "correct": 0,
       "explanation": "Customer evaluation lấy customer feedback từ việc đánh giá các biểu diễn phần mềm.",
       "slides": [
         12
       ],
-      "sourceId": "SPM-053",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-053"
     },
     {
       "part": 1,
+      "sourceId": "SPM-054",
+      "sourceType": "slides",
+      "question": "Biểu diễn ứng dụng đã được xây dựng, nhưng sản phẩm chưa được kiểm thử hay cài đặt. Phân biệt nào đúng?",
+      "options": [
+        "Có kết quả Engineering, chưa đủ Construction and release",
+        "Có kết quả Customer evaluation, không còn cần kiểm thử",
+        "Có kết quả Planning, đã đủ Construction and release",
+        "Có kết quả Risk analysis, đã hoàn tất hỗ trợ người dùng"
+      ],
+      "correct": 0,
+      "explanation": "Engineering tạo representations; Construction and release gồm xây dựng, kiểm thử, cài đặt và hỗ trợ.",
+      "slides": [
+        12
+      ],
+      "id": "SLIDE-SPM-054"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-055",
+      "sourceType": "slides",
+      "question": "Customer evaluation được bài giảng mô tả là lấy phản hồi dựa trên những gì?",
+      "options": [
+        "Chỉ phân công nhân sự chưa có phần mềm để đánh giá",
+        "Chỉ danh sách nguồn lực trước khi có biểu diễn ứng dụng",
+        "Chỉ rủi ro quản lý, không xét biểu diễn hay triển khai",
+        "Biểu diễn tạo khi engineering và được triển khai khi construction"
+      ],
+      "correct": 3,
+      "explanation": "Slide 12 đề cập representations created during engineering và implemented during construction.",
+      "slides": [
+        12
+      ],
+      "id": "SLIDE-SPM-055"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-057",
+      "sourceType": "slides",
       "question": "Customer communication và Customer evaluation khác nhau thế nào?",
       "options": [
-        "Một bên tạo biểu diễn; bên kia hỗ trợ người dùng",
         "Một bên thu thập yêu cầu; bên kia thu phản hồi qua đánh giá",
         "Một bên quản lý nhân sự; bên kia xác định business issues",
-        "Một bên kiểm thử mã; bên kia định nghĩa nguồn lực"
+        "Một bên kiểm thử mã; bên kia định nghĩa nguồn lực",
+        "Một bên tạo biểu diễn; bên kia hỗ trợ người dùng"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Communication nhằm requirements elicitation, evaluation nhằm customer feedback dựa trên representations.",
       "slides": [
         12
       ],
-      "sourceId": "SPM-057",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-057"
     },
     {
       "part": 1,
-      "question": "Mini-specs cần phản ánh các khía cạnh nào?",
+      "sourceId": "SPM-058",
+      "sourceType": "slides",
+      "question": "Nhóm đã review mini-specs đúng đắn và nhất quán rồi cho rằng không cần kiểm thử khi xây dựng. Kết luận nào phù hợp?",
       "options": [
-        "Cost, turnover và sponsorship",
-        "Data, function và behavior",
-        "People, technology và finance",
-        "Schedule, staff và earned value"
+        "Kiểm thử chỉ thuộc Customer communication nên có thể bỏ khi xây dựng",
+        "Review yêu cầu không thay thế kiểm thử trong Construction and release",
+        "Kiểm thử chỉ cần nếu không có mini-specs trong scoping document",
+        "Review mini-specs tự động hoàn thành mọi nhiệm vụ Construction"
       ],
       "correct": 1,
+      "explanation": "Slide 15 review mini-specs; slide 12 vẫn yêu cầu test trong Construction and release.",
+      "slides": [
+        12,
+        15
+      ],
+      "id": "SLIDE-SPM-058"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-061",
+      "sourceType": "slides",
+      "question": "CPF được viết đầy đủ là gì?",
+      "options": [
+        "Critical Project Feedback",
+        "Construction Planning Flow",
+        "Customer Product Function",
+        "Common Process Framework"
+      ],
+      "correct": 3,
+      "explanation": "Slide 14 dùng CPF cho Common Process Framework.",
+      "slides": [
+        14
+      ],
+      "id": "SLIDE-SPM-061"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-063",
+      "sourceType": "slides",
+      "question": "Bước đầu tiên trong ví dụ Customer communication cho dự án nhỏ là gì?",
+      "options": [
+        "Họp để cài đặt phần mềm",
+        "Lập danh sách vấn đề cần làm rõ",
+        "Sửa ngay statement of scope",
+        "Review scope với các bên"
+      ],
+      "correct": 1,
+      "explanation": "Chuỗi nhiệm vụ bắt đầu bằng Develop list of clarification issues.",
+      "slides": [
+        14
+      ],
+      "id": "SLIDE-SPM-063"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-064",
+      "sourceType": "slides",
+      "question": "Sau khi lập danh sách clarification issues, bước kế tiếp là gì?",
+      "options": [
+        "Cài đặt bản phát hành đầu tiên",
+        "Tự chốt scope mà không thảo luận",
+        "Đánh giá nhân sự của các nhà cung cấp",
+        "Gặp khách hàng để giải quyết các vấn đề"
+      ],
+      "correct": 3,
+      "explanation": "Bước tiếp theo là Meet with customer to address clarification issues.",
+      "slides": [
+        14
+      ],
+      "id": "SLIDE-SPM-064"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-065",
+      "sourceType": "slides",
+      "question": "Statement of scope trong ví dụ dự án nhỏ được xây dựng bằng cách nào?",
+      "options": [
+        "Cùng khách hàng xây dựng",
+        "Chỉ end-users tự lập sau phát hành",
+        "Chỉ practitioners lập trước khi hỏi",
+        "Senior managers lập thay mọi bên"
+      ],
+      "correct": 0,
+      "explanation": "Slide yêu cầu Jointly develop a statement of scope sau cuộc gặp làm rõ.",
+      "slides": [
+        14
+      ],
+      "id": "SLIDE-SPM-065"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-066",
+      "sourceType": "slides",
+      "question": "Ví dụ nhỏ review statement of scope; ví dụ chi tiết review mini-specs rồi review scoping document. Khác biệt nào đúng?",
+      "options": [
+        "Cả hai chỉ review sau khi phần mềm được cài đặt",
+        "Ví dụ nhỏ bắt buộc review từng mini-spec trước scope",
+        "Ví dụ chi tiết không cần review tài liệu phạm vi",
+        "Ví dụ chi tiết có review ở cả mức mini-spec và tài liệu phạm vi"
+      ],
+      "correct": 3,
+      "explanation": "Slide 15 có hai mức review; slide 14 chỉ nêu review statement of scope.",
+      "slides": [
+        14,
+        15
+      ],
+      "id": "SLIDE-SPM-066"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-067",
+      "sourceType": "slides",
+      "question": "Thứ tự nào đúng trong ba bước cuối của ví dụ dự án nhỏ?",
+      "options": [
+        "Cùng lập scope → review → sửa khi cần",
+        "Sửa → cùng lập scope → review",
+        "Review → sửa → cùng lập scope",
+        "Cùng lập scope → sửa → bỏ review"
+      ],
+      "correct": 0,
+      "explanation": "Slide đặt review sau xây dựng và sửa sau review.",
+      "slides": [
+        14
+      ],
+      "id": "SLIDE-SPM-067"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-068",
+      "sourceType": "slides",
+      "question": "Sau khi review phạm vi, các bên yêu cầu điều chỉnh. Hai ví dụ phân rã Customer communication dẫn đến lựa chọn nào?",
+      "options": [
+        "Chỉ sửa ở ví dụ nhỏ vì ví dụ chi tiết là bất biến",
+        "Giữ nguyên ở cả hai vì review đồng nghĩa đóng mọi thay đổi",
+        "Sửa tài liệu phạm vi khi cần trong cả hai ví dụ",
+        "Chỉ sửa ở ví dụ chi tiết vì ví dụ nhỏ không review"
+      ],
+      "correct": 2,
+      "explanation": "Cả slides 14 và 15 kết thúc bằng modify scope/scoping document as required.",
+      "slides": [
+        14,
+        15
+      ],
+      "id": "SLIDE-SPM-068"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-069",
+      "sourceType": "slides",
+      "question": "Chuỗi Customer communication chi tiết bắt đầu bằng nhiệm vụ nào?",
+      "options": [
+        "Conduct cuộc họp chính thức",
+        "Review yêu cầu của khách hàng",
+        "Sửa scoping document",
+        "Assemble các mini-specs"
+      ],
+      "correct": 1,
+      "explanation": "Bước đầu của slide 15 là Review the customer request.",
+      "slides": [
+        15
+      ],
+      "id": "SLIDE-SPM-069"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-070",
+      "sourceType": "slides",
+      "question": "Sau khi review customer request, cần làm gì theo chuỗi nhiệm vụ được nêu?",
+      "options": [
+        "Lập kế hoạch và lịch họp chính thức có điều phối",
+        "Assemble scope trước khi nghiên cứu giải pháp",
+        "Cài đặt hệ thống tại nơi sử dụng",
+        "Review ngay từng mini-spec đã hoàn thành"
+      ],
+      "correct": 0,
+      "explanation": "Bước kế tiếp là Plan and schedule a formal, facilitated meeting with the customer.",
+      "slides": [
+        15
+      ],
+      "id": "SLIDE-SPM-070"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-071",
+      "sourceType": "slides",
+      "question": "Nghiên cứu trước cuộc họp chính thức nhằm làm rõ điều gì?",
+      "options": [
+        "Earned value của các tháng đã qua",
+        "Mức turnover trong ba tháng gần nhất",
+        "Số defects đã đóng sau khi cài đặt",
+        "Giải pháp đề xuất và các cách tiếp cận hiện có"
+      ],
+      "correct": 3,
+      "explanation": "Research được thực hiện để specify the proposed solution and existing approaches.",
+      "slides": [
+        15
+      ],
+      "id": "SLIDE-SPM-071"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-072",
+      "sourceType": "slides",
+      "question": "Những gì được chuẩn bị trước khi conduct cuộc họp chính thức?",
+      "options": [
+        "Báo cáo postmortem và bản cài đặt",
+        "Working document và agenda",
+        "Danh sách defects đóng và mở",
+        "Cấu trúc team và bảng earned value"
+      ],
+      "correct": 1,
+      "explanation": "Slide yêu cầu chuẩn bị working document và agenda trước cuộc họp.",
+      "slides": [
+        15
+      ],
+      "id": "SLIDE-SPM-072"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-073",
+      "sourceType": "slides",
+      "question": "Mini-specs cần phản ánh các khía cạnh nào?",
+      "options": [
+        "Data, function và behavior",
+        "People, technology và finance",
+        "Schedule, staff và earned value",
+        "Cost, turnover và sponsorship"
+      ],
+      "correct": 0,
       "explanation": "Mini-specs phản ánh data, function và behavioral features của phần mềm.",
       "slides": [
         15
       ],
-      "sourceId": "SPM-073",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-073"
     },
     {
       "part": 1,
+      "sourceId": "SPM-074",
+      "sourceType": "slides",
       "question": "Review mini-specs kiểm tra các tiêu chí nào?",
       "options": [
-        "Có ngân sách, có leader, có nhà tài trợ",
-        "Ít chữ, nhiều hình, không dữ liệu",
         "Đúng đắn, nhất quán, không mơ hồ",
-        "Nhanh, ít người, nhiều chức năng"
+        "Nhanh, ít người, nhiều chức năng",
+        "Có ngân sách, có leader, có nhà tài trợ",
+        "Ít chữ, nhiều hình, không dữ liệu"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Slide yêu cầu correctness, consistency và lack of ambiguity.",
       "slides": [
         15
       ],
-      "sourceId": "SPM-074",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-074"
     },
     {
       "part": 1,
+      "sourceId": "SPM-075",
+      "sourceType": "slides",
       "question": "Các mini-specs được tập hợp thành tài liệu gì?",
       "options": [
-        "Personnel turnover register",
         "Monthly earned value report",
-        "Scoping document",
-        "User training manual"
+        "Personnel turnover register",
+        "User training manual",
+        "Scoping document"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Chuỗi nhiệm vụ nêu Assemble the mini-specs into a scoping document.",
       "slides": [
         15
       ],
-      "sourceId": "SPM-075",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-075"
     },
     {
       "part": 1,
+      "sourceId": "SPM-076",
+      "sourceType": "slides",
+      "question": "Nhóm chuẩn bị working document và agenda rồi coi chúng là scoping document cuối cùng. Bước nào chưa diễn ra theo chuỗi slide 15?",
+      "options": [
+        "Chỉ đổi tên working document là đã đủ toàn bộ scope",
+        "Chỉ tính turnover trước khi chấp nhận scoping document",
+        "Chỉ bỏ agenda để tài liệu được xem là scope cuối cùng",
+        "Họp, cùng tạo/review mini-specs rồi tập hợp thành scope"
+      ],
+      "correct": 3,
+      "explanation": "Working document và agenda có trước meeting; scoping document được assemble từ mini-specs sau meeting.",
+      "slides": [
+        15
+      ],
+      "id": "SLIDE-SPM-076"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-077",
+      "sourceType": "slides",
+      "question": "Một mini-spec mô tả chức năng rõ ràng nhưng mâu thuẫn với mini-spec khác. Tiêu chí review nào bị vi phạm?",
+      "options": [
+        "Sponsorship",
+        "Consistency",
+        "Availability",
+        "Turnover"
+      ],
+      "correct": 1,
+      "explanation": "Consistency là tiêu chí kiểm tra sự nhất quán của mini-specs.",
+      "slides": [
+        15
+      ],
+      "id": "SLIDE-SPM-077"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-078",
+      "sourceType": "slides",
+      "question": "Một mini-spec dùng mô tả có thể hiểu theo nhiều cách. Tiêu chí nào cần cải thiện?",
+      "options": [
+        "Empirical estimation",
+        "Staff stability",
+        "Earned value",
+        "Lack of ambiguity"
+      ],
+      "correct": 3,
+      "explanation": "Review mini-specs phải bảo đảm không mơ hồ.",
+      "slides": [
+        15
+      ],
+      "id": "SLIDE-SPM-078"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-079",
+      "sourceType": "slides",
+      "question": "Nhóm tiến hành họp chính thức trước rồi mới soạn agenda cho cuộc họp đó. Lỗi trình tự là gì?",
+      "options": [
+        "Mini-specs phải được lập sau cài đặt",
+        "Scoping document phải thay thế working document",
+        "Customer request chỉ được review cuối cùng",
+        "Agenda phải được chuẩn bị trước cuộc họp"
+      ],
+      "correct": 3,
+      "explanation": "Slide đặt việc chuẩn bị working document và agenda trước Conduct the meeting.",
+      "slides": [
+        15
+      ],
+      "id": "SLIDE-SPM-079"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-083",
+      "sourceType": "slides",
+      "question": "Một dự án không biết rõ ranh giới sản phẩm cần xây dựng. Vấn đề nào trong danh sách của John Reel phù hợp nhất?",
+      "options": [
+        "Chosen technology thay đổi",
+        "Users kháng cự sử dụng sản phẩm",
+        "Product scope được định nghĩa kém",
+        "Sponsorship đã bị mất"
+      ],
+      "correct": 2,
+      "explanation": "Ranh giới sản phẩm không rõ phản ánh poorly defined product scope.",
+      "slides": [
+        16
+      ],
+      "id": "SLIDE-SPM-083"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-084",
+      "sourceType": "slides",
       "question": "Các thay đổi được xử lý thiếu kiểm soát là vấn đề nào?",
       "options": [
         "Business needs đã được xác định rõ",
         "Managers áp dụng lessons learned",
-        "Changes are managed poorly",
-        "Team có đủ kỹ năng thích hợp"
+        "Team có đủ kỹ năng thích hợp",
+        "Changes are managed poorly"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Quản lý thay đổi kém là một trong mười vấn đề được liệt kê.",
       "slides": [
         16
       ],
-      "sourceId": "SPM-084",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-084"
     },
     {
       "part": 1,
+      "sourceId": "SPM-085",
+      "sourceType": "slides",
       "question": "Nền tảng đã chọn thay đổi giữa dự án là vấn đề nào?",
       "options": [
-        "Sponsorship is lost",
-        "The chosen technology changes",
         "Product scope is poorly defined",
-        "Users are resistant"
+        "Users are resistant",
+        "Sponsorship is lost",
+        "The chosen technology changes"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide 16 nêu sự thay đổi của công nghệ được chọn là vấn đề có thể xảy ra.",
       "slides": [
         16
       ],
-      "sourceId": "SPM-085",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-085"
     },
     {
       "part": 1,
+      "sourceId": "SPM-086",
+      "sourceType": "slides",
+      "question": "Nhu cầu kinh doanh ban đầu không rõ, rồi tiếp tục thay đổi. Nguy cơ nào được phản ánh?",
+      "options": [
+        "End-users đã tương tác sau phát hành",
+        "Business needs change hoặc ill-defined",
+        "Engineering tạo nhiều representations",
+        "Team áp dụng distribution of skills"
+      ],
+      "correct": 1,
+      "explanation": "Bài liệt kê business needs thay đổi hoặc không được định nghĩa rõ.",
+      "slides": [
+        16
+      ],
+      "id": "SLIDE-SPM-086"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-087",
+      "sourceType": "slides",
       "question": "Yêu cầu hoàn thành vào ngày không khả thi là vấn đề nào?",
       "options": [
-        "Deadlines are unrealistic",
         "Sponsorship is lost",
-        "Technology changes",
-        "Users are resistant"
+        "Deadlines are unrealistic",
+        "Users are resistant",
+        "Technology changes"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Thời hạn không thực tế thuộc danh sách What can go wrong in a project.",
       "slides": [
         16
       ],
-      "sourceId": "SPM-087",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-087"
     },
     {
       "part": 1,
+      "sourceId": "SPM-088",
+      "sourceType": "slides",
       "question": "Người dùng phản đối sử dụng phần mềm là vấn đề nào?",
       "options": [
         "Resources đã được xác định",
-        "Scope đã được review",
         "Users are resistant",
+        "Scope đã được review",
         "Practitioners có kỹ năng"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Sự kháng cự của users là vấn đề được nêu ở slide 16.",
       "slides": [
         16
       ],
-      "sourceId": "SPM-088",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-088"
     },
     {
       "part": 1,
+      "sourceId": "SPM-089",
+      "sourceType": "slides",
       "question": "Mất sự hỗ trợ của nhà tài trợ là vấn đề nào?",
       "options": [
         "Customer evaluation tạo nhiều phản hồi",
@@ -2152,362 +2918,1134 @@ window.SPM_DATA = {
       "slides": [
         16
       ],
-      "sourceId": "SPM-089",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-089"
     },
     {
       "part": 1,
+      "sourceId": "SPM-090",
+      "sourceType": "slides",
       "question": "Có đủ người nhưng thiếu kỹ năng cần thiết là vấn đề nào?",
       "options": [
-        "Deadlines đã được xác định thực tế",
         "Team thiếu người có kỹ năng phù hợp",
-        "Users đã tham gia đánh giá",
-        "Scope đã được phân rã rõ"
+        "Scope đã được phân rã rõ",
+        "Deadlines đã được xác định thực tế",
+        "Users đã tham gia đánh giá"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Danh sách nhấn mạnh appropriate skills, không chỉ số lượng người.",
       "slides": [
         16
       ],
-      "sourceId": "SPM-090",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-090"
     },
     {
       "part": 1,
+      "sourceId": "SPM-091",
+      "sourceType": "slides",
       "question": "Bỏ qua kinh nghiệm đã rút ra là vấn đề nào?",
       "options": [
-        "Đổi technology đã chọn",
-        "Mất sponsorship đã có",
         "Business needs không rõ",
-        "Tránh best practices và lessons learned"
+        "Tránh best practices và lessons learned",
+        "Đổi technology đã chọn",
+        "Mất sponsorship đã có"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Bài nêu việc tránh best practices và lessons learned có thể khiến dự án thất bại.",
       "slides": [
         16
       ],
-      "sourceId": "SPM-091",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-091"
     },
     {
       "part": 1,
+      "sourceId": "SPM-092",
+      "sourceType": "slides",
+      "question": "Để xử lý tình trạng hiểu sai nhu cầu ngay từ đầu, nguyên tắc nào phù hợp trực tiếp?",
+      "options": [
+        "Start on the right foot",
+        "People-aware program management",
+        "Conduct a postmortem analysis",
+        "Track monthly earned value"
+      ],
+      "correct": 0,
+      "explanation": "Start on the right foot yêu cầu nỗ lực hiểu bài toán trước khi đặt mục tiêu và kỳ vọng.",
+      "slides": [
+        16,
+        17
+      ],
+      "id": "SLIDE-SPM-092"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-093",
+      "sourceType": "slides",
+      "question": "Vấn đề deadline không thực tế đối lập trực tiếp với yêu cầu nào khi bắt đầu dự án?",
+      "options": [
+        "Tạo representations của ứng dụng",
+        "Thu feedback khi postmortem",
+        "Theo dõi defects đóng và mở",
+        "Đặt mục tiêu và kỳ vọng thực tế"
+      ],
+      "correct": 3,
+      "explanation": "Slide 17 nhấn mạnh realistic objectives and expectations khi khởi đầu đúng.",
+      "slides": [
+        16,
+        17
+      ],
+      "id": "SLIDE-SPM-093"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-094",
+      "sourceType": "slides",
       "question": "Start on the right foot yêu cầu làm gì trước khi đặt mục tiêu?",
       "options": [
-        "Nỗ lực hiểu bài toán cần giải quyết",
         "Thu earned value của tháng đầu",
+        "Nỗ lực hiểu bài toán cần giải quyết",
         "Chốt lịch dù chưa hiểu vấn đề",
         "Chỉ định mọi người cùng một kỹ năng"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Hiểu problem là nền tảng để đặt mục tiêu và kỳ vọng thực tế.",
       "slides": [
         17
       ],
-      "sourceId": "SPM-094",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-094"
     },
     {
       "part": 1,
+      "sourceId": "SPM-095",
+      "sourceType": "slides",
+      "question": "Mục tiêu và kỳ vọng khi khởi đầu đúng cần được đặt cho ai?",
+      "options": [
+        "Chỉ senior managers",
+        "Mọi người sẽ tham gia dự án",
+        "Chỉ project manager",
+        "Chỉ practitioners mới tuyển"
+      ],
+      "correct": 1,
+      "explanation": "Slide 17 yêu cầu kỳ vọng thực tế cho everyone who will be involved in the project.",
+      "slides": [
+        17
+      ],
+      "id": "SLIDE-SPM-095"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-096",
+      "sourceType": "slides",
       "question": "Duy trì động lực cần dùng khuyến khích để đạt mục tiêu nhân sự nào?",
       "options": [
-        "Giảm turnover nhân sự xuống mức tối thiểu",
-        "Thay thành viên liên tục để tăng ý tưởng",
         "Dời toàn bộ hoạt động review đến cuối",
-        "Tăng số cấp phê duyệt cho từng tác vụ"
+        "Tăng số cấp phê duyệt cho từng tác vụ",
+        "Giảm turnover nhân sự xuống mức tối thiểu",
+        "Thay thành viên liên tục để tăng ý tưởng"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Bài yêu cầu incentives để giữ turnover of personnel ở mức thấp nhất.",
       "slides": [
         17
       ],
-      "sourceId": "SPM-096",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-096"
     },
     {
       "part": 1,
+      "sourceId": "SPM-097",
+      "sourceType": "slides",
       "question": "Vai trò của nhóm khi duy trì động lực dự án là gì?",
       "options": [
         "Nhấn mạnh chất lượng ở mọi nhiệm vụ",
-        "Chuyển mọi quyết định kỹ thuật cho khách hàng",
         "Chỉ xét chất lượng khi phần mềm đã phát hành",
-        "Trì hoãn các nhiệm vụ có thể đo lường"
+        "Trì hoãn các nhiệm vụ có thể đo lường",
+        "Chuyển mọi quyết định kỹ thuật cho khách hàng"
       ],
       "correct": 0,
       "explanation": "Team nên emphasize quality in every task it performs.",
       "slides": [
         17
       ],
-      "sourceId": "SPM-097",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-097"
     },
     {
       "part": 1,
+      "sourceId": "SPM-098",
+      "sourceType": "slides",
       "question": "Quản lý cấp cao cần làm gì để duy trì động lực dự án?",
       "options": [
-        "Kiểm soát chi tiết từng thao tác kỹ thuật",
-        "Thay đổi toàn bộ thành viên mỗi tháng",
         "Tạo điều kiện để team làm việc ít bị cản trở",
-        "Buộc team bỏ chất lượng để giữ nhịp độ"
+        "Thay đổi toàn bộ thành viên mỗi tháng",
+        "Buộc team bỏ chất lượng để giữ nhịp độ",
+        "Kiểm soát chi tiết từng thao tác kỹ thuật"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Slide diễn đạt senior management should stay out of the team’s way.",
       "slides": [
         17
       ],
-      "sourceId": "SPM-098",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-098"
     },
     {
       "part": 1,
+      "sourceId": "SPM-100",
+      "sourceType": "slides",
+      "question": "Manager muốn duy trì momentum nhưng chỉ xem turnover toàn tổ chức, không xem từng supplier/developer. Điều chỉnh nào kết hợp đúng hai nội dung của bài?",
+      "options": [
+        "Chỉ tăng số nhiệm vụ mà không xét turnover của đơn vị",
+        "Bỏ incentives vì turnover đã có một số chung toàn tổ chức",
+        "Giữ incentives và theo dõi turnover ba tháng của từng đơn vị",
+        "Chỉ đổi cấu trúc nhóm và bỏ metrics về nhân sự"
+      ],
+      "correct": 2,
+      "explanation": "Slide 17 dùng incentives giảm turnover; slide 21 theo dõi average turnover ba tháng cho từng supplier/developer.",
+      "slides": [
+        17,
+        21
+      ],
+      "id": "SLIDE-SPM-100"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-101",
+      "sourceType": "slides",
       "question": "Tiến độ dự án phần mềm được theo dõi thông qua gì?",
       "options": [
         "Chỉ số nhân viên đã được giao công việc",
+        "Chỉ các ngày hoàn thành dự kiến của dự án",
         "Sản phẩm công việc và phép đo quy trình, dự án",
-        "Chỉ danh sách chức năng trong tài liệu phạm vi",
-        "Chỉ các ngày hoàn thành dự kiến của dự án"
+        "Chỉ danh sách chức năng trong tài liệu phạm vi"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Progress được theo dõi qua work products, với process và project measures hỗ trợ đánh giá.",
       "slides": [
         18
       ],
-      "sourceId": "SPM-101",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-101"
     },
     {
       "part": 1,
+      "sourceId": "SPM-102",
+      "sourceType": "slides",
       "question": "Thông điệp của Make smart decisions là gì?",
       "options": [
-        "Luôn chọn cách phức tạp hơn",
         "Tăng mọi cấp phê duyệt",
         "Chỉ quyết định sau phát hành",
-        "Keep it simple"
+        "Keep it simple",
+        "Luôn chọn cách phức tạp hơn"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Slide 18 tóm tắt việc ra quyết định thông minh bằng keep it simple.",
       "slides": [
         18
       ],
-      "sourceId": "SPM-102",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-102"
     },
     {
       "part": 1,
+      "sourceId": "SPM-103",
+      "sourceType": "slides",
+      "question": "Postmortem analysis cần có cơ chế như thế nào để rút lessons learned?",
+      "options": [
+        "Ngẫu nhiên khi manager còn thời gian",
+        "Chỉ dùng khi khách hàng khiếu nại",
+        "Nhất quán cho từng dự án",
+        "Chỉ áp dụng cho dự án đầu tiên"
+      ],
+      "correct": 2,
+      "explanation": "Bài yêu cầu consistent mechanism for extracting lessons learned for each project.",
+      "slides": [
+        18
+      ],
+      "id": "SLIDE-SPM-103"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-104",
+      "sourceType": "slides",
       "question": "Trong tổng kết dự án, cần so sánh những lịch nào?",
       "options": [
         "Lịch kế hoạch và lịch thực tế",
-        "Số team và số máy tính",
         "Chức danh manager và chức danh customer",
-        "Tên công nghệ và tên sản phẩm"
+        "Tên công nghệ và tên sản phẩm",
+        "Số team và số máy tính"
       ],
       "correct": 0,
       "explanation": "Postmortem đánh giá planned and actual schedules.",
       "slides": [
         18
       ],
-      "sourceId": "SPM-104",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-104"
     },
     {
       "part": 1,
+      "sourceId": "SPM-105",
+      "sourceType": "slides",
       "question": "Tổng kết dự án cần lấy phản hồi từ ai?",
       "options": [
+        "Chỉ các end-users chưa dùng phần mềm",
         "Thành viên team và customers",
-        "Chỉ những senior managers",
         "Chỉ người cung cấp công cụ",
-        "Chỉ các end-users chưa dùng phần mềm"
+        "Chỉ những senior managers"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Slide yêu cầu feedback from team members and customers.",
       "slides": [
         18
       ],
-      "sourceId": "SPM-105",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-105"
     },
     {
       "part": 1,
-      "question": "How trong W5HH tìm hiểu những khía cạnh nào?",
+      "sourceId": "SPM-106",
+      "sourceType": "slides",
+      "question": "Kết quả postmortem cần được lưu như thế nào?",
       "options": [
-        "Chỉ số giờ một thành viên có mặt",
-        "Chỉ cách viết giao diện người dùng",
-        "Chỉ lý do hệ thống được đề xuất",
-        "Cách làm về kỹ thuật và quản lý"
+        "Chỉ trao đổi miệng một lần",
+        "Chỉ giữ trong trí nhớ manager",
+        "Ghi nhận bằng văn bản",
+        "Chỉ gửi bản cài đặt cho khách hàng"
+      ],
+      "correct": 2,
+      "explanation": "Bài nêu record findings in written form.",
+      "slides": [
+        18
+      ],
+      "id": "SLIDE-SPM-106"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-107",
+      "sourceType": "slides",
+      "question": "Nhóm kết thúc dự án bằng cách thu metrics nhưng không phân tích. Bước nào trong postmortem còn thiếu?",
+      "options": [
+        "Chốt scope trước khi review",
+        "Xóa lịch thực tế của dự án",
+        "Đổi toàn bộ process models",
+        "Phân tích software project metrics"
       ],
       "correct": 3,
+      "explanation": "Postmortem yêu cầu collect and analyze software project metrics.",
+      "slides": [
+        18
+      ],
+      "id": "SLIDE-SPM-107"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-108",
+      "sourceType": "slides",
+      "question": "Một nhóm dùng work products để xem tiến độ khi dự án đang chạy và so sánh lịch kế hoạch/thực tế khi tổng kết. Hai mục đích khác nhau nào đúng?",
+      "options": [
+        "Cả hai chỉ là xác định context trước khi có yêu cầu",
+        "Theo dõi tiến độ hiện tại và rút bài học sau dự án",
+        "Theo dõi chỉ dành sau dự án, tổng kết chỉ dành trước dự án",
+        "Cả hai chỉ là động viên để giảm turnover nhân sự"
+      ],
+      "correct": 1,
+      "explanation": "Slide 18 phân biệt Track progress và Postmortem analysis.",
+      "slides": [
+        18
+      ],
+      "id": "SLIDE-SPM-108"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-110",
+      "sourceType": "slides",
+      "question": "Nguyên tắc nào phù hợp khi công việc đã hoàn tất và cần học cho các dự án sau?",
+      "options": [
+        "Start on the right foot",
+        "Conduct a postmortem analysis",
+        "Define information objectives",
+        "Maintain momentum"
+      ],
+      "correct": 1,
+      "explanation": "Postmortem thiết lập cơ chế rút lessons learned cho từng dự án.",
+      "slides": [
+        17,
+        18
+      ],
+      "id": "SLIDE-SPM-110"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-111",
+      "sourceType": "slides",
+      "question": "Câu hỏi Why trong W5HH tìm hiểu điều gì?",
+      "options": [
+        "Lý do hệ thống được phát triển",
+        "Kỹ thuật triển khai từng công việc",
+        "Vị trí tổ chức của người thực hiện",
+        "Lượng mỗi nguồn lực cần dùng"
+      ],
+      "correct": 0,
+      "explanation": "Why is the system being developed hỏi lý do phát triển hệ thống.",
+      "slides": [
+        19
+      ],
+      "id": "SLIDE-SPM-111"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-112",
+      "sourceType": "slides",
+      "question": "Cặp What và When trong W5HH giúp xác định nội dung nào?",
+      "options": [
+        "Lý do kinh doanh và số defects",
+        "Người phụ trách và vị trí tổ chức",
+        "Việc sẽ làm và thời điểm thực hiện",
+        "Phương pháp kỹ thuật và nguồn lực"
+      ],
+      "correct": 2,
+      "explanation": "Slide hỏi What will be done, by When.",
+      "slides": [
+        19
+      ],
+      "id": "SLIDE-SPM-112"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-113",
+      "sourceType": "slides",
+      "question": "Câu hỏi Who trong W5HH tập trung vào điều gì?",
+      "options": [
+        "Ai đã từng tham gia dự án cũ",
+        "Ai đề xuất công nghệ của thị trường",
+        "Ai chịu trách nhiệm một chức năng",
+        "Ai sẽ sử dụng phần mềm sau release"
+      ],
+      "correct": 2,
+      "explanation": "Who is responsible for a function hỏi trách nhiệm đối với chức năng.",
+      "slides": [
+        19
+      ],
+      "id": "SLIDE-SPM-113"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-114",
+      "sourceType": "slides",
+      "question": "Where trong W5HH được hiểu theo nghĩa nào?",
+      "options": [
+        "Máy chủ được cài ở quốc gia nào",
+        "Người phụ trách ở vị trí nào trong tổ chức",
+        "Phần mềm được lưu ở thư mục nào",
+        "Người dùng ngồi tại phòng nào"
+      ],
+      "correct": 1,
+      "explanation": "Bài nêu Where are they organizationally located, tức vị trí trong tổ chức.",
+      "slides": [
+        19
+      ],
+      "id": "SLIDE-SPM-114"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-115",
+      "sourceType": "slides",
+      "question": "How trong W5HH tìm hiểu những khía cạnh nào?",
+      "options": [
+        "Cách làm về kỹ thuật và quản lý",
+        "Chỉ số giờ một thành viên có mặt",
+        "Chỉ cách viết giao diện người dùng",
+        "Chỉ lý do hệ thống được đề xuất"
+      ],
+      "correct": 0,
       "explanation": "How hỏi job được thực hiện technically and managerially thế nào.",
       "slides": [
         19
       ],
-      "sourceId": "SPM-115",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-115"
     },
     {
       "part": 1,
+      "sourceId": "SPM-116",
+      "sourceType": "slides",
       "question": "How much trong W5HH xác định điều gì?",
       "options": [
-        "Lượng cần thiết của từng nguồn lực",
-        "Số chức năng đã được nhận xét",
+        "Mức thích thú của người dùng",
         "Vị trí của manager trong tổ chức",
-        "Mức thích thú của người dùng"
+        "Lượng cần thiết của từng nguồn lực",
+        "Số chức năng đã được nhận xét"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "How much of each resource is needed hỏi nhu cầu lượng của mỗi resource.",
       "slides": [
         19
       ],
-      "sourceId": "SPM-116",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-116"
     },
     {
       "part": 1,
-      "question": "Khái niệm dự án nhấn mạnh điều gì?",
+      "sourceId": "SPM-118",
+      "sourceType": "slides",
+      "question": "Nhóm chỉ ghi người chịu trách nhiệm mà chưa ghi vị trí của họ trong tổ chức. Câu hỏi W5HH nào còn thiếu?",
       "options": [
-        "Tập hợp thao tác của một nhiệm vụ rõ để đạt mục tiêu",
-        "Chỉ một sản phẩm đã phát hành thành công",
-        "Một phòng ban tồn tại lâu dài trong tổ chức",
-        "Mọi hoạt động hằng ngày không có điểm kết thúc"
+        "How much",
+        "When",
+        "Where",
+        "Why"
+      ],
+      "correct": 2,
+      "explanation": "Who xử lý người chịu trách nhiệm; Where làm rõ organizational location.",
+      "slides": [
+        19
+      ],
+      "id": "SLIDE-SPM-118"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-120",
+      "sourceType": "slides",
+      "question": "Bản ghi đã có “ai phụ trách”, “thuộc bộ phận nào” và “cần bao nhiêu nguồn lực” nhưng chưa nêu cách làm kỹ thuật/quản lý. Đánh giá W5HH nào đúng?",
+      "options": [
+        "Có Who, Where, How much; thiếu How",
+        "Có How, When, Why; thiếu Who",
+        "Có Who, What, How; thiếu Where",
+        "Có Where, When, How much; thiếu Why"
       ],
       "correct": 0,
+      "explanation": "Các câu trả lời tương ứng Who, Where và How much; cách làm kỹ thuật/quản lý thuộc How.",
+      "slides": [
+        19
+      ],
+      "id": "SLIDE-SPM-120"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-121",
+      "sourceType": "slides",
+      "question": "Nhóm biết mục tiêu và người chịu trách nhiệm nhưng chưa xác định công việc cùng hạn hoàn thành. Cặp câu hỏi nào cần bổ sung?",
+      "options": [
+        "Who và How much",
+        "Where và How",
+        "What và When",
+        "Why và Where"
+      ],
+      "correct": 2,
+      "explanation": "What xác định việc làm, When xác định thời điểm của công việc đó.",
+      "slides": [
+        19
+      ],
+      "id": "SLIDE-SPM-121"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-122",
+      "sourceType": "slides",
+      "question": "Khái niệm dự án nhấn mạnh điều gì?",
+      "options": [
+        "Mọi hoạt động hằng ngày không có điểm kết thúc",
+        "Chỉ một sản phẩm đã phát hành thành công",
+        "Tập hợp thao tác của một nhiệm vụ rõ để đạt mục tiêu",
+        "Một phòng ban tồn tại lâu dài trong tổ chức"
+      ],
+      "correct": 2,
       "explanation": "Project là well-defined task gồm collection of operations nhằm đạt goal.",
       "slides": [
         20
       ],
-      "sourceId": "SPM-122",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-122"
     },
     {
       "part": 1,
+      "sourceId": "SPM-123",
+      "sourceType": "slides",
       "question": "Đặc trưng nào phù hợp với một dự án?",
       "options": [
+        "Có thời điểm bắt đầu và kết thúc",
         "Không cần mục tiêu riêng",
         "Là hoạt động thường nhật không giới hạn",
-        "Chỉ cần nguồn lực tài chính",
-        "Có thời điểm bắt đầu và kết thúc"
+        "Chỉ cần nguồn lực tài chính"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Bài nêu project có start time và end time.",
       "slides": [
         20
       ],
-      "sourceId": "SPM-123",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-123"
     },
     {
       "part": 1,
+      "sourceId": "SPM-124",
+      "sourceType": "slides",
+      "question": "Khi nào project kết thúc theo định nghĩa được trình bày?",
+      "options": [
+        "Khi tổ chức đổi tên",
+        "Khi số người tham gia tăng",
+        "Khi có một cuộc họp review",
+        "Khi mục tiêu đạt được"
+      ],
+      "correct": 3,
+      "explanation": "Project ends when its goal is achieved.",
+      "slides": [
+        20
+      ],
+      "id": "SLIDE-SPM-124"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-125",
+      "sourceType": "slides",
+      "question": "Một nhiệm vụ có đủ người và kinh phí nhưng không có mục tiêu riêng hay thời điểm kết thúc. Tại sao chưa thể dựa vào nguồn lực để kết luận đó là project?",
+      "options": [
+        "Có nhân lực đồng nghĩa mục tiêu đã được xác định",
+        "Đủ nguồn lực luôn đủ chứng minh đó là project",
+        "Có kinh phí đồng nghĩa thời điểm kết thúc đã rõ",
+        "Nguồn lực không thay thế đặc trưng mục tiêu và thời gian"
+      ],
+      "correct": 3,
+      "explanation": "Slide 20 nêu nhiều đặc trưng đồng thời, gồm mục tiêu riêng, start/end time và adequate resources.",
+      "slides": [
+        20
+      ],
+      "id": "SLIDE-SPM-125"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-126",
+      "sourceType": "slides",
+      "question": "Tập nguồn lực nào phù hợp với danh sách trong bài?",
+      "options": [
+        "Chỉ mã nguồn, giao diện, lịch họp và hợp đồng",
+        "Chỉ nhân lực, văn phòng, thương hiệu và doanh thu",
+        "Thời gian, nhân lực, tài chính, vật liệu, kho tri thức",
+        "Chỉ khách hàng, người dùng, test và feedback"
+      ],
+      "correct": 2,
+      "explanation": "Project cần adequate resources về time, manpower, finance, material và knowledge-bank.",
+      "slides": [
+        20
+      ],
+      "id": "SLIDE-SPM-126"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-127",
+      "sourceType": "slides",
+      "question": "Hoạt động nào phù hợp hơn với khái niệm project được mô tả?",
+      "options": [
+        "Công việc có mục tiêu riêng và thời gian xác định",
+        "Vận hành mỗi ngày không có mục tiêu kết thúc",
+        "Tác vụ thường nhật lặp lại vô thời hạn",
+        "Một bộ phận lâu dài không có thời điểm đóng"
+      ],
+      "correct": 0,
+      "explanation": "Project khác routine activity hoặc day-to-day operations và có start, end.",
+      "slides": [
+        20
+      ],
+      "id": "SLIDE-SPM-127"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-128",
+      "sourceType": "slides",
+      "question": "Phạm vi Software Project trong định nghĩa của bài kéo dài từ đâu đến đâu?",
+      "options": [
+        "Thu thập yêu cầu đến kiểm thử và bảo trì",
+        "Chỉ gồm họp scope và phân công nhóm",
+        "Chỉ gồm cài đặt và đào tạo người dùng",
+        "Chỉ bắt đầu từ viết mã đến biên dịch"
+      ],
+      "correct": 0,
+      "explanation": "Định nghĩa bao quát complete procedure từ requirement gathering đến testing and maintenance.",
+      "slides": [
+        20
+      ],
+      "id": "SLIDE-SPM-128"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-131",
+      "sourceType": "slides",
+      "question": "Định nghĩa Software Project có nhắc execution methodologies. Điều kiện nào phản ánh đầy đủ việc phát triển thay vì chỉ liệt kê các công đoạn?",
+      "options": [
+        "Chỉ có phương pháp, không cần sản phẩm dự kiến hay giới hạn thời gian",
+        "Chỉ liệt kê yêu cầu và kiểm thử, không cần phương pháp hay thời gian",
+        "Chỉ có thời gian, không cần phương pháp hay mục tiêu sản phẩm",
+        "Thực hiện theo phương pháp trong thời gian xác định để đạt sản phẩm dự kiến"
+      ],
+      "correct": 3,
+      "explanation": "Slide 20 liên kết procedure, methodologies, specified period và intended software product.",
+      "slides": [
+        20
+      ],
+      "id": "SLIDE-SPM-131"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-132",
+      "sourceType": "slides",
+      "question": "Formal risk management đề cập tập rủi ro nào của dự án?",
+      "options": [
+        "Mười rủi ro hàng đầu",
+        "Mười tài liệu về đào tạo",
+        "Mười chức năng đã cài đặt",
+        "Mười thành viên đông kinh nghiệm"
+      ],
+      "correct": 0,
+      "explanation": "Slide 21 yêu cầu nhận diện top ten risks for this project.",
+      "slides": [
+        21
+      ],
+      "id": "SLIDE-SPM-132"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-133",
+      "sourceType": "slides",
+      "question": "Với mỗi rủi ro trong Formal risk management, cần xem xét hai yếu tố nào?",
+      "options": [
+        "Thời gian họp và độ dài tài liệu",
+        "Số người dùng và tên biểu mẫu",
+        "Khả năng xảy ra và tác động nếu xảy ra",
+        "Tên customer và vị trí tổ chức"
+      ],
+      "correct": 2,
+      "explanation": "Bài nêu chance that the risk will become và impact if it does.",
+      "slides": [
+        21
+      ],
+      "id": "SLIDE-SPM-133"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-134",
+      "sourceType": "slides",
       "question": "Ước lượng thực nghiệm chi phí và lịch cần thông tin nào về ứng dụng?",
       "options": [
-        "Vị trí tổ chức của người phụ trách",
         "Kích thước ước tính hiện tại của ứng dụng",
+        "Số team có cấu trúc chung trong dự án",
         "Số defects hiện đang đóng của ứng dụng",
-        "Số team có cấu trúc chung trong dự án"
+        "Vị trí tổ chức của người phụ trách"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Slide liên hệ empirical estimation với current estimated size of the application software.",
       "slides": [
         21
       ],
-      "sourceId": "SPM-134",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-134"
     },
     {
       "part": 1,
+      "sourceId": "SPM-135",
+      "sourceType": "slides",
       "question": "Quản lý dự án dựa trên metric nhằm mục đích gì?",
       "options": [
-        "Chỉ xác định cấu trúc của software team",
         "Cảnh báo sớm các vấn đề đang phát triển",
-        "Chỉ ghi lại các vấn đề sau phát hành",
-        "Thay thế mọi yêu cầu của khách hàng"
+        "Thay thế mọi yêu cầu của khách hàng",
+        "Chỉ xác định cấu trúc của software team",
+        "Chỉ ghi lại các vấn đề sau phát hành"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Metrics program cung cấp early indication of evolving problems.",
       "slides": [
         21
       ],
-      "sourceId": "SPM-135",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-135"
     },
     {
       "part": 1,
+      "sourceId": "SPM-136",
+      "sourceType": "slides",
       "question": "Earned value được theo dõi theo chu kỳ nào?",
       "options": [
-        "Hằng năm",
-        "Hằng tháng",
         "Sau mỗi lần nhập liệu",
-        "Hằng giờ"
+        "Hằng tháng",
+        "Hằng giờ",
+        "Hằng năm"
       ],
       "correct": 1,
       "explanation": "Slide 21 đề cập monthly earned value metrics.",
       "slides": [
         21
       ],
-      "sourceId": "SPM-136",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-136"
     },
     {
       "part": 1,
+      "sourceId": "SPM-137",
+      "sourceType": "slides",
       "question": "Theo dõi khuyết tật cần ghi các trạng thái nào?",
       "options": [
+        "Chỉ defects chưa từng được báo cáo",
         "Chỉ tên người dùng đã phát hiện",
         "Đang mở và đã đóng",
-        "Chỉ defects của dự án trước",
-        "Chỉ defects chưa từng được báo cáo"
+        "Chỉ defects của dự án trước"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Bài yêu cầu track and report defects found và số defects currently closed/open.",
       "slides": [
         21
       ],
-      "sourceId": "SPM-137",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-137"
     },
     {
       "part": 1,
+      "sourceId": "SPM-138",
+      "sourceType": "slides",
       "question": "Quản lý chú trọng con người theo dõi chỉ số nhân sự nào?",
       "options": [
         "Nỗ lực phát triển ước lượng cho tháng tới",
+        "Số nhiệm vụ hoàn thành ba tháng gần nhất",
         "Turnover trung bình ba tháng gần nhất",
-        "Số người được phân công trong tháng gần nhất",
-        "Số nhiệm vụ hoàn thành ba tháng gần nhất"
+        "Số người được phân công trong tháng gần nhất"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Slide nêu average staff turnover for the past three months.",
       "slides": [
         21
       ],
-      "sourceId": "SPM-138",
-      "sourceType": "slides",
       "id": "SLIDE-SPM-138"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-140",
+      "sourceType": "slides",
+      "question": "Báo cáo có earned value hằng tháng và turnover ba tháng nhưng không có kích thước ước tính hiện tại. Critical practice nào thiếu dữ liệu trực tiếp được nêu?",
+      "options": [
+        "Defect tracking against quality targets",
+        "Earned value tracking",
+        "Empirical cost and schedule estimation",
+        "People-aware program management"
+      ],
+      "correct": 2,
+      "explanation": "Slide 21 gắn current estimated size với empirical cost and schedule estimation; hai practice kia đã có dữ liệu.",
+      "slides": [
+        21
+      ],
+      "id": "SLIDE-SPM-140"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-141",
+      "sourceType": "slides",
+      "question": "Báo cáo defects đã có số tìm thấy, số mở và số đóng nhưng không có dữ liệu thực thi kiểm thử từ lúc khởi đầu. Theo slide 21, còn thiếu gì?",
+      "options": [
+        "Theo dõi thực thi kiểm thử từ khi chương trình bắt đầu",
+        "Chỉ số lượt turnover của từng supplier/developer",
+        "Chỉ kích thước ước tính hiện tại của ứng dụng",
+        "Chỉ số lượng biểu diễn ứng dụng do Engineering tạo"
+      ],
+      "correct": 0,
+      "explanation": "Slide 21 liệt kê execution test from program inception cùng defect counts và open/closed status.",
+      "slides": [
+        21
+      ],
+      "id": "SLIDE-SPM-141"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-142",
+      "sourceType": "slides",
+      "question": "Một nhóm ghi tên mười rủi ro hàng đầu nhưng không xem khả năng và tác động. Practice nào chưa được thực hiện đầy đủ?",
+      "options": [
+        "Earned value tracking",
+        "Formal risk management",
+        "People-aware program management",
+        "Customer communication"
+      ],
+      "correct": 1,
+      "explanation": "Formal risk management không chỉ liệt kê top ten risks mà còn xem chance và impact.",
+      "slides": [
+        21
+      ],
+      "id": "SLIDE-SPM-142"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-143",
+      "sourceType": "slides",
+      "question": "Hai suppliers có tỷ lệ turnover ba tháng khác nhau nhưng báo cáo chỉ giữ một mức chung. Thông tin nào không còn được phản ánh đúng theo People-aware management?",
+      "options": [
+        "Danh sách vai trò của người dùng sau bàn giao",
+        "Turnover riêng của từng đơn vị tham gia",
+        "Các đối tượng dữ liệu vào/ra của ứng dụng",
+        "Những biểu diễn ứng dụng khách hàng đánh giá"
+      ],
+      "correct": 1,
+      "explanation": "Slide 21 yêu cầu average staff turnover for each supplier/developer, không chỉ một mức gộp.",
+      "slides": [
+        21
+      ],
+      "id": "SLIDE-SPM-143"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-156",
+      "sourceType": "slides",
+      "question": "Khách hàng đã xác định yêu cầu, nhưng technical manager còn cần thúc đẩy nhóm phát huy năng lực. Ghép nào đúng với việc thứ hai?",
+      "options": [
+        "End-user sử dụng Context",
+        "Senior manager sử dụng Information objectives",
+        "Project manager sử dụng Motivation",
+        "Customer sử dụng Engineering"
+      ],
+      "correct": 2,
+      "explanation": "Project manager phải motivate practitioners; Motivation là năng lực thúc đẩy họ làm việc tốt nhất.",
+      "slides": [
+        6,
+        7
+      ],
+      "id": "SLIDE-SPM-156"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-157",
+      "sourceType": "slides",
+      "question": "Trưởng nhóm khuyến khích sáng tạo, nhưng nhóm thiếu tin tưởng nhau. Kết luận nào phù hợp với bài?",
+      "options": [
+        "Trust chỉ là nhiệm vụ của customers",
+        "Trust chỉ cần khi không có giới hạn sản phẩm",
+        "Innovation chưa thay thế điều kiện trust của team hiệu suất cao",
+        "Innovation làm cho trust không còn cần thiết"
+      ],
+      "correct": 2,
+      "explanation": "Slide 7 nêu innovation là năng lực leader; slide 9 vẫn yêu cầu thành viên trust nhau để có high-performance team.",
+      "slides": [
+        7,
+        9
+      ],
+      "id": "SLIDE-SPM-157"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-158",
+      "sourceType": "slides",
+      "question": "Một dự án đã có t teams với cấu trúc chung. Dữ kiện này tự nó chưa bảo đảm điều kiện nào của high-performance team?",
+      "options": [
+        "Mỗi team được giao nhiệm vụ chức năng",
+        "Team và manager cùng phối hợp",
+        "Kỹ năng phù hợp với bài toán",
+        "Mọi team có cấu trúc được xác định"
+      ],
+      "correct": 2,
+      "explanation": "Cấu trúc ở slide 8 không khẳng định distribution of skills phù hợp với problem như slide 9 yêu cầu.",
+      "slides": [
+        8,
+        9
+      ],
+      "id": "SLIDE-SPM-158"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-159",
+      "sourceType": "slides",
+      "question": "Trao đổi về đầu vào, đầu ra và ràng buộc hệ thống lớn phục vụ hoạt động và mục đích nào?",
+      "options": [
+        "Customer communication để làm rõ scope",
+        "Risk analysis để tạo monthly earned value",
+        "Construction and release để tính turnover",
+        "Customer evaluation để tổ chức t teams"
+      ],
+      "correct": 0,
+      "explanation": "Customer communication thu thập yêu cầu; input, output và context là các câu hỏi xác định scope.",
+      "slides": [
+        10,
+        12
+      ],
+      "id": "SLIDE-SPM-159"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-160",
+      "sourceType": "slides",
+      "question": "Khi lập statement of scope, bước nào bảo đảm các bên cùng xem xét?",
+      "options": [
+        "Review statement of scope với all concerned",
+        "Chỉ kiểm thử các chức năng đã lập trình",
+        "Bỏ phần context để giảm độ dài tài liệu",
+        "Thay scope bằng danh sách leader ad hoc"
+      ],
+      "correct": 0,
+      "explanation": "Slide 14 yêu cầu review scope với tất cả bên liên quan, sau khi cùng xây dựng statement.",
+      "slides": [
+        10,
+        14
+      ],
+      "id": "SLIDE-SPM-160"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-161",
+      "sourceType": "slides",
+      "question": "Dự án chọn Incremental model và cần lập nguồn lực, timelines. Phân biệt nào đúng?",
+      "options": [
+        "Incremental là activity; Planning là model",
+        "Cả hai là vai trò của project players",
+        "Cả hai là information objectives",
+        "Incremental là model; Planning là activity"
+      ],
+      "correct": 3,
+      "explanation": "Slide 11 liệt kê Incremental model; slide 12 xác định Planning là hoạt động framework về nguồn lực và timelines.",
+      "slides": [
+        11,
+        12
+      ],
+      "id": "SLIDE-SPM-161"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-162",
+      "sourceType": "slides",
+      "question": "Formal meeting tạo mini-specs về data, function, behavior thuộc phân rã hoạt động nào?",
+      "options": [
+        "Construction and release",
+        "Customer communication",
+        "Risk analysis",
+        "Customer evaluation"
+      ],
+      "correct": 1,
+      "explanation": "Slide 15 mang tiêu đề phân rã customer communication; mini-specs phục vụ làm rõ yêu cầu và scope.",
+      "slides": [
+        12,
+        15
+      ],
+      "id": "SLIDE-SPM-162"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-163",
+      "sourceType": "slides",
+      "question": "Lập mini-specs và so sánh lịch kế hoạch/thực tế sau dự án thuộc hai nội dung nào?",
+      "options": [
+        "Customer communication và Postmortem analysis",
+        "Engineering và Maintain momentum",
+        "Customer evaluation và Start on the right foot",
+        "Risk analysis và Make smart decisions"
+      ],
+      "correct": 0,
+      "explanation": "Mini-specs thuộc chuỗi customer communication; so sánh schedules nằm trong postmortem.",
+      "slides": [
+        15,
+        18
+      ],
+      "id": "SLIDE-SPM-163"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-164",
+      "sourceType": "slides",
+      "question": "Hoạt động nào giúp rút và ghi lại lessons learned cho dự án sau?",
+      "options": [
+        "Information objectives",
+        "Informal team assignment",
+        "Construction and release",
+        "Postmortem analysis"
+      ],
+      "correct": 3,
+      "explanation": "Postmortem thiết lập cơ chế rút lessons learned, đánh giá dữ liệu và ghi findings bằng văn bản.",
+      "slides": [
+        16,
+        18
+      ],
+      "id": "SLIDE-SPM-164"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-165",
+      "sourceType": "slides",
+      "question": "Để vừa giữ momentum vừa theo dõi biến động nhân sự, cặp hành động nào phù hợp?",
+      "options": [
+        "Bỏ chất lượng từng task và xem số mini-specs đã lập",
+        "Chỉ tăng số tasks và xem số customer-visible outputs",
+        "Thay nhân sự hằng tháng và xem lịch họp formal meeting",
+        "Dùng incentives giảm turnover và xem turnover trung bình ba tháng"
+      ],
+      "correct": 3,
+      "explanation": "Slide 17 yêu cầu giảm personnel turnover; slide 21 theo dõi average staff turnover trong ba tháng.",
+      "slides": [
+        17,
+        21
+      ],
+      "id": "SLIDE-SPM-165"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-166",
+      "sourceType": "slides",
+      "question": "Đã có số liệu sản phẩm và quy trình để đo tiến độ. Practice nào dùng số liệu để cảnh báo sớm vấn đề?",
+      "options": [
+        "People-aware program management",
+        "Formal meeting preparation",
+        "Metric-based project management",
+        "Customer communication"
+      ],
+      "correct": 2,
+      "explanation": "Slide 18 cho phép measures để assess progress; slide 21 dùng metrics program để early indication of evolving problems.",
+      "slides": [
+        18,
+        21
+      ],
+      "id": "SLIDE-SPM-166"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-167",
+      "sourceType": "slides",
+      "question": "Dự án đã xác định thời gian, nhân lực và tài chính. Theo W5HH, cần hỏi gì để lượng hóa nhu cầu?",
+      "options": [
+        "Where",
+        "Who",
+        "Why",
+        "How much"
+      ],
+      "correct": 3,
+      "explanation": "Slide 20 liệt kê resources cần thiết; How much hỏi lượng mỗi resource cần dùng.",
+      "slides": [
+        19,
+        20
+      ],
+      "id": "SLIDE-SPM-167"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-168",
+      "sourceType": "slides",
+      "question": "Dự án chưa rõ thời điểm bắt đầu và kết thúc. Câu hỏi W5HH nào làm rõ thời gian?",
+      "options": [
+        "Who",
+        "How much",
+        "When",
+        "Where"
+      ],
+      "correct": 2,
+      "explanation": "Project có start và end time; When trong W5HH hỏi thời điểm công việc sẽ hoàn thành.",
+      "slides": [
+        19,
+        20
+      ],
+      "id": "SLIDE-SPM-168"
+    },
+    {
+      "part": 1,
+      "sourceId": "SPM-170",
+      "sourceType": "slides",
+      "question": "Ngoài phân tích rủi ro kỹ thuật/quản lý, Formal risk management cần những thông tin nào?",
+      "options": [
+        "Số người cùng làm việc trong các informal teams",
+        "Chỉ đầu vào và đầu ra của từng chức năng phần mềm",
+        "Top ten risks cùng khả năng và tác động của chúng",
+        "Chỉ vị trí của các project managers trong tổ chức"
+      ],
+      "correct": 2,
+      "explanation": "Risk analysis xét technical và management risks; Formal risk management nêu top ten risks, chance và impact.",
+      "slides": [
+        12,
+        21
+      ],
+      "id": "SLIDE-SPM-170"
     },
     {
       "part": 2,
       "question": "Đo lường phần mềm hỗ trợ các mục tiêu nào?",
       "options": [
-        "Ước lượng, chất lượng, năng suất và loại bỏ mọi rủi ro",
-        "Ước lượng, chất lượng, năng suất và thay thế phân tích yêu cầu",
         "Ước lượng, chất lượng, năng suất và bảo đảm không có thay đổi",
-        "Ước lượng, chất lượng, năng suất và kiểm soát dự án"
+        "Ước lượng, chất lượng, năng suất và kiểm soát dự án",
+        "Ước lượng, chất lượng, năng suất và loại bỏ mọi rủi ro",
+        "Ước lượng, chất lượng, năng suất và thay thế phân tích yêu cầu"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Slide 25 nêu bốn mục tiêu hỗ trợ của đo lường phần mềm.",
       "slides": [
         25
@@ -2518,102 +4056,12 @@ window.SPM_DATA = {
     },
     {
       "part": 2,
-      "question": "Đo lường hỗ trợ loại quyết định nào khi dự án đang tiến hành?",
-      "options": [
-        "Chỉ quyết định sau khi dự án kết thúc",
-        "Quyết định tác nghiệp",
-        "Chỉ quyết định trước khi xác định phạm vi",
-        "Quyết định không xét sản phẩm công việc"
-      ],
-      "correct": 1,
-      "explanation": "Slide 25 nêu đo lường hỗ trợ quyết định tác nghiệp khi dự án đang tiến hành.",
-      "slides": [
-        25
-      ],
-      "sourceId": "SPM-173",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-173"
-    },
-    {
-      "part": 2,
-      "question": "Quy trình đo lường bắt đầu bằng việc gì?",
-      "options": [
-        "Chọn tập hạn chế các phép đo dễ thu thập",
-        "Điều chỉnh nhiệm vụ từ các chỉ báo đã có",
-        "Phân tích xu hướng và hình thành kết luận",
-        "So sánh kết quả với dự án tương tự đã làm"
-      ],
-      "correct": 0,
-      "explanation": "Slide 26 bắt đầu bằng tập hạn chế các phép đo quá trình, dự án và sản phẩm dễ thu thập.",
-      "slides": [
-        26
-      ],
-      "sourceId": "SPM-175",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-175"
-    },
-    {
-      "part": 2,
-      "question": "Kết quả đo nên được so sánh với cơ sở nào?",
-      "options": [
-        "Ước muốn của quản lý mà không xét dữ liệu quá khứ",
-        "Trung bình quá khứ của các dự án tương tự",
-        "Giá trị cao nhất của các dự án bất kỳ, dù khác loại",
-        "Trung bình của mọi dự án, không cần xét tương đồng"
-      ],
-      "correct": 1,
-      "explanation": "Slide 26 yêu cầu phân tích và so sánh với trung bình quá khứ của các dự án tương tự.",
-      "slides": [
-        26
-      ],
-      "sourceId": "SPM-176",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-176"
-    },
-    {
-      "part": 2,
-      "question": "Sau khi thu thập và so sánh số liệu, cần làm gì?",
-      "options": [
-        "Hủy dữ liệu để tránh ảnh hưởng quyết định",
-        "Ngừng theo dõi vì đã có một lần so sánh",
-        "Đánh giá xu hướng và hình thành kết luận",
-        "Đổi mọi chỉ số thành số lượng nhân sự"
-      ],
-      "correct": 2,
-      "explanation": "Đánh giá xu hướng và đưa ra kết luận là bước tiếp theo trong slide 26.",
-      "slides": [
-        26
-      ],
-      "sourceId": "SPM-177",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-177"
-    },
-    {
-      "part": 2,
-      "question": "Hai hướng chuẩn hóa phép đo thường dùng là gì?",
-      "options": [
-        "Theo quy trình và quy mô nhóm",
-        "Theo kích thước và chức năng",
-        "Theo tiến độ và chi phí dự án",
-        "Theo nỗ lực và nguồn lực"
-      ],
-      "correct": 1,
-      "explanation": "Slide 26 nêu size-oriented và function-oriented metrics để chuẩn hóa.",
-      "slides": [
-        26
-      ],
-      "sourceId": "SPM-178",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-178"
-    },
-    {
-      "part": 2,
       "question": "Measure là gì?",
       "options": [
         "Quy trình phân tích xu hướng và rút ra kết luận",
-        "Tổ hợp các metric tạo hiểu biết về tình trạng dự án",
+        "Hành động xác định một đại lượng định lượng",
         "Chỉ báo định lượng về một thuộc tính",
-        "Hành động xác định một đại lượng định lượng"
+        "Tổ hợp các metric tạo hiểu biết về tình trạng dự án"
       ],
       "correct": 2,
       "explanation": "Measure cung cấp chỉ báo định lượng về mức độ, lượng, kích thước hoặc thuộc tính tương tự.",
@@ -2646,9 +4094,9 @@ window.SPM_DATA = {
       "part": 2,
       "question": "Metric định lượng điều gì?",
       "options": [
-        "Trình tự thực hiện các hoạt động xác định phép đo",
-        "Quy trình xác định nguồn lực trước khi lập kế hoạch",
         "Cách tổ chức công việc giữa các thành viên dự án",
+        "Quy trình xác định nguồn lực trước khi lập kế hoạch",
+        "Trình tự thực hiện các hoạt động xác định phép đo",
         "Mức độ sở hữu một thuộc tính"
       ],
       "correct": 3,
@@ -2662,32 +4110,14 @@ window.SPM_DATA = {
     },
     {
       "part": 2,
-      "question": "Đặc trưng của software metric là gì?",
-      "options": [
-        "Chỉ thể hiện cảm nhận của trưởng nhóm",
-        "Liên hệ các phép đo riêng lẻ theo một cách nào đó",
-        "Luôn chỉ là tổng số người làm dự án",
-        "Bắt buộc không sử dụng bất kỳ phép đo trực tiếp nào"
-      ],
-      "correct": 1,
-      "explanation": "Software metric liên hệ các measure riêng lẻ và có thể thuộc quá trình, dự án hoặc sản phẩm.",
-      "slides": [
-        27
-      ],
-      "sourceId": "SPM-182",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-182"
-    },
-    {
-      "part": 2,
       "question": "Indicator là gì?",
       "options": [
         "Mọi số đếm riêng lẻ, dù không cho hiểu biết về đối tượng",
-        "Chỉ nhận xét chủ quan, không thể dùng metric định lượng",
         "Metric hoặc tổ hợp metric cung cấp hiểu biết",
+        "Chỉ nhận xét chủ quan, không thể dùng metric định lượng",
         "Chỉ phép đo kích thước và không được phối hợp metric"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Indicator cung cấp insight và có thể là một metric hoặc kết hợp nhiều metric.",
       "slides": [
         27
@@ -2698,212 +4128,14 @@ window.SPM_DATA = {
     },
     {
       "part": 2,
-      "question": "Chỉ báo giúp đánh giá điều gì về dự án đang diễn ra?",
-      "options": [
-        "Chỉ số năm hoạt động của công ty",
-        "Tất cả quyết định cá nhân của khách hàng",
-        "Chỉ giá bán tương lai của sản phẩm",
-        "Trạng thái hiện tại của dự án"
-      ],
-      "correct": 3,
-      "explanation": "Slide 28 nêu việc đánh giá trạng thái dự án đang tiến hành.",
-      "slides": [
-        28
-      ],
-      "sourceId": "SPM-186",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-186"
-    },
-    {
-      "part": 2,
-      "question": "Phát hiện vấn đề trước khi nghiêm trọng là công dụng nào của chỉ báo?",
-      "options": [
-        "Xóa bỏ mọi rủi ro trước khi lập kế hoạch",
-        "Phát hiện sớm khu vực có vấn đề",
-        "Thay thế toàn bộ việc kiểm soát chất lượng",
-        "Bảo đảm mọi nhiệm vụ hoàn thành tức thì"
-      ],
-      "correct": 1,
-      "explanation": "Project indicators giúp uncover problem areas trước khi chúng trở nên critical.",
-      "slides": [
-        28
-      ],
-      "sourceId": "SPM-187",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-187"
-    },
-    {
-      "part": 2,
-      "question": "Chỉ báo dự án có thể hỗ trợ điều chỉnh những gì?",
-      "options": [
-        "Định nghĩa thuộc tính kỹ thuật cần đo",
-        "Dữ liệu lịch sử của dự án đã kết thúc",
-        "Luồng công việc hoặc nhiệm vụ",
-        "Các giá trị thực tế đã thu thập trước đó"
-      ],
-      "correct": 2,
-      "explanation": "Điều chỉnh work flow hoặc tasks là một công dụng của project indicators.",
-      "slides": [
-        28
-      ],
-      "sourceId": "SPM-188",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-188"
-    },
-    {
-      "part": 2,
-      "question": "Chỉ theo dõi vấn đề đã xảy ra bỏ sót công dụng nào của chỉ báo?",
-      "options": [
-        "Đánh giá trạng thái hiện tại",
-        "Đánh giá kiểm soát chất lượng",
-        "Điều chỉnh nhiệm vụ đã có",
-        "Theo dõi rủi ro tiềm ẩn"
-      ],
-      "correct": 3,
-      "explanation": "Slide 28 nêu việc theo dõi potential risks.",
-      "slides": [
-        28
-      ],
-      "sourceId": "SPM-189",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-189"
-    },
-    {
-      "part": 2,
-      "question": "KLOC là đơn vị gì?",
-      "options": [
-        "Một nghìn dòng mã",
-        "Một nghìn điểm chức năng",
-        "Một nghìn trang tài liệu",
-        "Một nghìn tháng công"
-      ],
-      "correct": 0,
-      "explanation": "KLOC được ghi là thousand lines of code.",
-      "slides": [
-        30
-      ],
-      "sourceId": "SPM-192",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-192"
-    },
-    {
-      "part": 2,
-      "question": "Metric nào chuẩn hóa số lỗi theo kích thước mã nguồn?",
-      "options": [
-        "Pages per FP",
-        "Errors per KLOC",
-        "FP per person-month",
-        "Dollars per FP"
-      ],
-      "correct": 1,
-      "explanation": "Errors per KLOC lấy số lỗi trên mỗi nghìn dòng mã.",
-      "slides": [
-        30
-      ],
-      "sourceId": "SPM-193",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-193"
-    },
-    {
-      "part": 2,
-      "question": "Metric nào biểu diễn chi phí trên từng dòng mã?",
-      "options": [
-        "Dollars per LOC",
-        "LOC per person-month",
-        "Pages per KLOC",
-        "Defects per KLOC"
-      ],
-      "correct": 0,
-      "explanation": "Slide 30 liệt kê $ per LOC là metric chi phí theo dòng mã.",
-      "slides": [
-        30
-      ],
-      "sourceId": "SPM-194",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-194"
-    },
-    {
-      "part": 2,
-      "question": "Metric nào đo lượng mã tạo ra trên một tháng công?",
-      "options": [
-        "Dollars per page of documentation",
-        "Dollars per LOC",
-        "Errors per KLOC",
-        "LOC per person-month"
-      ],
-      "correct": 3,
-      "explanation": "LOC per person-month liên hệ lượng mã với tháng công.",
-      "slides": [
-        30
-      ],
-      "sourceId": "SPM-195",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-195"
-    },
-    {
-      "part": 2,
-      "question": "Metric nào liên hệ lượng tài liệu với quy mô mã?",
-      "options": [
-        "Defects per FP",
-        "Dollars per page of documentation",
-        "FP per person-month",
-        "Pages of documentation per KLOC"
-      ],
-      "correct": 3,
-      "explanation": "Số trang tài liệu trên KLOC chuẩn hóa tài liệu theo kích thước mã.",
-      "slides": [
-        30
-      ],
-      "sourceId": "SPM-196",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-196"
-    },
-    {
-      "part": 2,
-      "question": "Vì sao chức năng được xác định gián tiếp khi tính FP?",
-      "options": [
-        "Vì chức năng luôn bằng số dòng mã",
-        "Vì mọi dữ liệu về chức năng đều bị cấm thu thập",
-        "Vì chỉ khách hàng mới được phép tính metric",
-        "Vì functionality không đo trực tiếp được"
-      ],
-      "correct": 3,
-      "explanation": "Slide 31 nêu functionality không thể đo trực tiếp và phải suy ra từ các phép đo trực tiếp khác.",
-      "slides": [
-        31
-      ],
-      "sourceId": "SPM-199",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-199"
-    },
-    {
-      "part": 2,
-      "question": "FP dựa trên hai cơ sở nào?",
-      "options": [
-        "Số đếm miền thông tin và số người làm trong dự án",
-        "Độ phức tạp và số trang tài liệu hướng dẫn phần mềm",
-        "Số dòng mã và số tháng công đã dùng để phát triển",
-        "Số đếm miền thông tin và độ phức tạp"
-      ],
-      "correct": 3,
-      "explanation": "FP dựa trên các phép đo đếm được của miền thông tin và đánh giá độ phức tạp phần mềm.",
-      "slides": [
-        31
-      ],
-      "sourceId": "SPM-200",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-200"
-    },
-    {
-      "part": 2,
       "question": "Năm đặc trưng miền thông tin của FP là gì?",
       "options": [
         "Inquiries, files, thời hạn, rủi ro và kiểm thử",
-        "Inputs, outputs, inquiries, files và external interfaces",
+        "Inputs, thiết kế, lỗi, chi phí và độ tin cậy",
         "Inputs, outputs, mã nguồn, nhân sự và ngân sách",
-        "Inputs, thiết kế, lỗi, chi phí và độ tin cậy"
+        "Inputs, outputs, inquiries, files và external interfaces"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide 33 liệt kê đúng năm loại miền thông tin này.",
       "slides": [
         33
@@ -2911,60 +4143,6 @@ window.SPM_DATA = {
       "sourceId": "SPM-208",
       "sourceType": "slides",
       "id": "SLIDE-SPM-208"
-    },
-    {
-      "part": 2,
-      "question": "Một user input được đếm khi cung cấp loại dữ liệu nào?",
-      "options": [
-        "Mỗi nhóm dữ liệu logic nằm trong cơ sở dữ liệu lớn",
-        "Mỗi trường dữ liệu trong tất cả báo cáo được xuất ra",
-        "Mỗi lần người dùng hỏi và nhận phản hồi trực tuyến",
-        "Đầu vào cung cấp dữ liệu ứng dụng riêng biệt"
-      ],
-      "correct": 3,
-      "explanation": "Slide 34 đếm mỗi user input cung cấp distinct application-oriented data.",
-      "slides": [
-        34
-      ],
-      "sourceId": "SPM-210",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-210"
-    },
-    {
-      "part": 2,
-      "question": "Ví dụ nào là user output?",
-      "options": [
-        "Báo cáo cung cấp thông tin ứng dụng",
-        "Đầu vào cung cấp dữ liệu ứng dụng mới",
-        "Tệp dữ liệu logic của cơ sở dữ liệu",
-        "Giao diện truyền tin sang hệ thống khác"
-      ],
-      "correct": 0,
-      "explanation": "Slide 34 nêu reports, screens, error messages là các dạng output.",
-      "slides": [
-        34
-      ],
-      "sourceId": "SPM-211",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-211"
-    },
-    {
-      "part": 2,
-      "question": "Báo cáo có 20 trường dữ liệu được đếm thế nào về output?",
-      "options": [
-        "Không đếm riêng từng trường như một output",
-        "Đếm 20 inquiries dù báo cáo không tạo phản hồi tức thời",
-        "Đếm 20 outputs tương ứng với 20 trường trong báo cáo",
-        "Đếm 20 inputs vì mỗi trường đều biểu diễn dữ liệu"
-      ],
-      "correct": 0,
-      "explanation": "Các individual data items trong report không được đếm riêng.",
-      "slides": [
-        34
-      ],
-      "sourceId": "SPM-212",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-212"
     },
     {
       "part": 2,
@@ -2986,50 +4164,14 @@ window.SPM_DATA = {
     },
     {
       "part": 2,
-      "question": "Files trong miền thông tin là loại tệp nào?",
-      "options": [
-        "Nhóm dữ liệu chủ có tính logic",
-        "Mỗi dòng dữ liệu trong cơ sở dữ liệu",
-        "Chỉ tệp vật lý có phần mở rộng nhất định",
-        "Chỉ thư mục cài đặt chương trình"
-      ],
-      "correct": 0,
-      "explanation": "Slide 35 xác định logical master file là một logical grouping of data.",
-      "slides": [
-        35
-      ],
-      "sourceId": "SPM-216",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-216"
-    },
-    {
-      "part": 2,
-      "question": "External interfaces dùng để làm gì?",
-      "options": [
-        "Nhóm dữ liệu logic được giữ trong cơ sở dữ liệu nội bộ",
-        "Giao diện máy đọc được truyền tin sang hệ thống khác",
-        "Màn hình cung cấp thông tin ứng dụng cho người dùng",
-        "Đầu vào trực tuyến tạo phản hồi trực tuyến tức thời"
-      ],
-      "correct": 1,
-      "explanation": "Slide 35 đếm machine-readable interfaces dùng truyền thông tin tới another system.",
-      "slides": [
-        35
-      ],
-      "sourceId": "SPM-218",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-218"
-    },
-    {
-      "part": 2,
       "question": "Công thức FP nào được trình bày trong bài giảng?",
       "options": [
         "FP = count total ÷ [0.65 + 0.01 × ΣFi]",
+        "FP = count total + [0.65 + 0.01 × ΣFi]",
         "FP = count total × [0.65 + 0.01 × ΣFi]",
-        "FP = count total × [1 + 0.65 × ΣFi]",
-        "FP = count total + [0.65 + 0.01 × ΣFi]"
+        "FP = count total × [1 + 0.65 × ΣFi]"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Slide 36 cho FP bằng count total nhân hệ số 0.65 + 0.01ΣFi.",
       "slides": [
         36
@@ -3040,29 +4182,11 @@ window.SPM_DATA = {
     },
     {
       "part": 2,
-      "question": "Fi trong công thức FP có vai trò gì?",
-      "options": [
-        "Số dòng mã trong từng tệp",
-        "Số lỗi trên mỗi nghìn dòng mã",
-        "Số tháng công của mỗi nhân viên",
-        "Giá trị điều chỉnh độ phức tạp"
-      ],
-      "correct": 3,
-      "explanation": "Slide 36 gọi Fi là complexity adjustment values.",
-      "slides": [
-        36
-      ],
-      "sourceId": "SPM-221",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-221"
-    },
-    {
-      "part": 2,
       "question": "Nếu count total = 100 và ΣFi = 35, FP bằng bao nhiêu?",
       "options": [
         "135",
-        "35",
         "65",
+        "35",
         "100"
       ],
       "correct": 3,
@@ -3076,87 +4200,14 @@ window.SPM_DATA = {
     },
     {
       "part": 2,
-      "question": "Metric nào đo năng suất theo FP?",
-      "options": [
-        "FP per person-month",
-        "Dollars per FP",
-        "Errors per FP",
-        "Pages of documentation per FP"
-      ],
-      "correct": 0,
-      "explanation": "FP trên tháng công liên hệ chức năng cung cấp với công sức.",
-      "slides": [
-        39
-      ],
-      "sourceId": "SPM-234",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-234"
-    },
-    {
-      "part": 2,
-      "question": "Metric nào chuẩn hóa số lỗi theo chức năng?",
-      "options": [
-        "Dollars per LOC",
-        "LOC per person-month",
-        "Errors per FP",
-        "Pages per KLOC"
-      ],
-      "correct": 2,
-      "explanation": "Slide 39 nêu Errors per FP.",
-      "slides": [
-        39
-      ],
-      "sourceId": "SPM-235",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-235"
-    },
-    {
-      "part": 2,
-      "question": "Metric nào chuẩn hóa chi phí theo chức năng?",
-      "options": [
-        "Dollars per FP",
-        "FP per person-month",
-        "Pages per KLOC",
-        "Defects per KLOC"
-      ],
-      "correct": 0,
-      "explanation": "$ per FP là chi phí trên điểm chức năng.",
-      "slides": [
-        39
-      ],
-      "sourceId": "SPM-236",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-236"
-    },
-    {
-      "part": 2,
-      "question": "Cặp metric nào đo mật độ khuyết tật theo hai hướng chuẩn hóa?",
-      "options": [
-        "Dollars per LOC và FP per person-month",
-        "Errors per FP và pages per KLOC",
-        "LOC per person-month và dollars per FP",
-        "Defects per KLOC và defects per FP"
-      ],
-      "correct": 3,
-      "explanation": "Cả hai lấy defects làm tử số, với kích thước mã hoặc chức năng làm mẫu số.",
-      "slides": [
-        30,
-        39
-      ],
-      "sourceId": "SPM-238",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-238"
-    },
-    {
-      "part": 2,
       "question": "Chất lượng hệ thống phụ thuộc những sản phẩm công việc nào?",
       "options": [
+        "Bảng rủi ro, phiếu rủi ro, mốc, danh mục nguồn lực",
         "Phạm vi, ước lượng nỗ lực, phân công, lịch trình",
-        "Đặc tả yêu cầu, thiết kế, mã nguồn, ca kiểm thử",
         "Ngày bắt đầu, ngày kết thúc, đơn vị công, nhân lực",
-        "Bảng rủi ro, phiếu rủi ro, mốc, danh mục nguồn lực"
+        "Đặc tả yêu cầu, thiết kế, mã nguồn, ca kiểm thử"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide 40 liên hệ chất lượng với yêu cầu, thiết kế, mã và tests.",
       "slides": [
         40
@@ -3167,48 +4218,12 @@ window.SPM_DATA = {
     },
     {
       "part": 2,
-      "question": "Mô hình thiết kế có vai trò gì?",
-      "options": [
-        "Đếm số khách hàng",
-        "Tính số tháng công",
-        "Mô hình hóa lời giải",
-        "Ghi nhận lỗi sau bàn giao"
-      ],
-      "correct": 2,
-      "explanation": "Design models mô hình hóa solution.",
-      "slides": [
-        40
-      ],
-      "sourceId": "SPM-241",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-241"
-    },
-    {
-      "part": 2,
-      "question": "Các ca kiểm thử có vai trò gì đối với chất lượng?",
-      "options": [
-        "Thay thế mọi đặc tả yêu cầu",
-        "Thực thi phần mềm để phát hiện lỗi",
-        "Xác định số giao diện máy đọc được",
-        "Quyết định số người trong tổ chức"
-      ],
-      "correct": 1,
-      "explanation": "Slide 40 nêu tests exercise the software to uncover errors.",
-      "slides": [
-        40
-      ],
-      "sourceId": "SPM-242",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-242"
-    },
-    {
-      "part": 2,
       "question": "Correctness thể hiện điều gì?",
       "options": [
         "Thân thiện với người dùng khi học hệ thống",
-        "Dễ sửa đổi khi khách hàng thay đổi yêu cầu",
+        "Chống chịu tấn công cố ý hoặc vô tình",
         "Thực hiện chức năng được yêu cầu",
-        "Chống chịu tấn công cố ý hoặc vô tình"
+        "Dễ sửa đổi khi khách hàng thay đổi yêu cầu"
       ],
       "correct": 2,
       "explanation": "Slide 41 định nghĩa correctness bằng mức độ phần mềm thực hiện required function.",
@@ -3218,24 +4233,6 @@ window.SPM_DATA = {
       "sourceId": "SPM-243",
       "sourceType": "slides",
       "id": "SLIDE-SPM-243"
-    },
-    {
-      "part": 2,
-      "question": "Correctness thường được đo bằng metric nào trong khoảng một năm?",
-      "options": [
-        "Defects per KLOC",
-        "LOC per person-month",
-        "Pages of documentation per KLOC",
-        "Dollars per LOC"
-      ],
-      "correct": 0,
-      "explanation": "Correctness có thể được đo bằng khuyết tật trên KLOC, đếm trong một khoảng chuẩn, thường là một năm.",
-      "slides": [
-        41
-      ],
-      "sourceId": "SPM-244",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-244"
     },
     {
       "part": 2,
@@ -3257,86 +4254,14 @@ window.SPM_DATA = {
     },
     {
       "part": 2,
-      "question": "Chỉ đo thời gian sửa mã có bao phủ đủ MTTC không?",
-      "options": [
-        "Phạm vi đo thiếu phân tích, thiết kế, kiểm thử và phân phối thay đổi",
-        "Phạm vi đo phải đổi sang defects per FP",
-        "Phạm vi đo đầy đủ vì MTTC chỉ gồm sửa mã",
-        "Phạm vi đo đúng nếu hệ thống có nhiều files"
-      ],
-      "correct": 0,
-      "explanation": "MTTC bao trùm toàn bộ các bước thay đổi được nêu, không chỉ implementation.",
-      "slides": [
-        41
-      ],
-      "sourceId": "SPM-249",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-249"
-    },
-    {
-      "part": 2,
-      "question": "Integrity đo khả năng nào của hệ thống?",
-      "options": [
-        "Giúp người dùng học và dùng với hiệu quả vừa phải",
-        "Sửa đổi phần mềm khi môi trường vận hành thay đổi",
-        "Thực hiện các chức năng mà đặc tả yêu cầu mô tả",
-        "Chống chịu tấn công vào an toàn hệ thống"
-      ],
-      "correct": 3,
-      "explanation": "Slide 42 định nghĩa integrity bằng ability to withstand attacks to its security.",
-      "slides": [
-        42
-      ],
-      "sourceId": "SPM-252",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-252"
-    },
-    {
-      "part": 2,
-      "question": "Threat là gì?",
-      "options": [
-        "Xác suất tấn công xảy ra trong thời gian cho trước",
-        "Thời gian từ phân tích yêu cầu thay đổi đến phân phối",
-        "Tỷ lệ lỗi đã được tìm thấy trước thời điểm bàn giao",
-        "Xác suất tấn công bị hệ thống đẩy lùi khi nó xuất hiện"
-      ],
-      "correct": 0,
-      "explanation": "Slide 43 định nghĩa threat bằng probability attack will occur within a given time.",
-      "slides": [
-        43
-      ],
-      "sourceId": "SPM-256",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-256"
-    },
-    {
-      "part": 2,
-      "question": "Security là gì?",
-      "options": [
-        "Thời gian trung bình từ yêu cầu thay đổi đến phân phối",
-        "Xác suất tấn công xuất hiện trong một khoảng thời gian",
-        "Tỷ lệ lỗi trước bàn giao trên tổng lỗi được phát hiện",
-        "Xác suất tấn công bị đẩy lùi"
-      ],
-      "correct": 3,
-      "explanation": "Slide 43 định nghĩa security là xác suất attack will be repelled.",
-      "slides": [
-        43
-      ],
-      "sourceId": "SPM-257",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-257"
-    },
-    {
-      "part": 2,
       "question": "Usability lượng hóa điều gì?",
       "options": [
-        "Mức độ ổn định của cơ cấu quản lý",
-        "Mức độ phức tạp của mọi tệp vật lý",
+        "Mức độ chính xác của chi phí thiết bị",
         "Mức độ thân thiện với người dùng",
-        "Mức độ chính xác của chi phí thiết bị"
+        "Mức độ phức tạp của mọi tệp vật lý",
+        "Mức độ ổn định của cơ cấu quản lý"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Slide 44 mô tả usability là attempt to quantify user-friendliness.",
       "slides": [
         44
@@ -3347,140 +4272,14 @@ window.SPM_DATA = {
     },
     {
       "part": 2,
-      "question": "Usability xem xét kỹ năng nào khi học hệ thống?",
-      "options": [
-        "Kinh nghiệm nhóm phát triển trong miền ứng dụng",
-        "Kỹ năng chuyên môn cần để xây dựng phần mềm mới",
-        "Kỹ năng thể chất hoặc trí tuệ cần thiết",
-        "Số người được phân công thiết kế tài liệu hướng dẫn"
-      ],
-      "correct": 2,
-      "explanation": "Slide 45 nêu physical and/or intellectual skill required to learn.",
-      "slides": [
-        45
-      ],
-      "sourceId": "SPM-262",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-262"
-    },
-    {
-      "part": 2,
-      "question": "Usability xem xét khoảng thời gian học sử dụng nào?",
-      "options": [
-        "Thời gian để sửa và phân phối một thay đổi",
-        "Thời gian để biên dịch mọi bản mã nguồn",
-        "Thời gian để sử dụng hệ thống đạt mức hiệu quả vừa phải",
-        "Thời gian để hoàn tất mua phần cứng"
-      ],
-      "correct": 2,
-      "explanation": "Slide 45 dùng time required to become moderately efficient in use.",
-      "slides": [
-        45
-      ],
-      "sourceId": "SPM-263",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-263"
-    },
-    {
-      "part": 2,
-      "question": "Tăng năng suất do hệ thống được so với cơ sở nào?",
-      "options": [
-        "Năng suất dự kiến của nhóm phát triển",
-        "Tổng chức năng được đếm trong FP",
-        "Cách làm mà hệ thống mới thay thế",
-        "Số khuyết tật ghi nhận sau bàn giao"
-      ],
-      "correct": 2,
-      "explanation": "Slide 45 yêu cầu net increase over the approach the system replaces.",
-      "slides": [
-        45
-      ],
-      "sourceId": "SPM-264",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-264"
-    },
-    {
-      "part": 2,
-      "question": "Bảng hỏi thái độ người dùng hỗ trợ đánh giá khía cạnh usability nào?",
-      "options": [
-        "Đo xác suất một cuộc tấn công sẽ được đẩy lùi",
-        "Đếm số đầu vào và đầu ra của miền thông tin",
-        "Tính thời gian trung bình phân tích và sửa đổi mã",
-        "Đánh giá chủ quan của người dùng"
-      ],
-      "correct": 3,
-      "explanation": "Slide 45 nêu subjective assessment of users attitudes, sometimes through questionnaire.",
-      "slides": [
-        45
-      ],
-      "sourceId": "SPM-266",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-266"
-    },
-    {
-      "part": 2,
-      "question": "DRE đo đặc tính nào của hoạt động bảo đảm và kiểm soát chất lượng?",
-      "options": [
-        "Khả năng tăng số trang tài liệu mà không đổi phần mềm",
-        "Khả năng lọc lỗi trong các hoạt động khung quá trình",
-        "Khả năng xác định số interfaces trong miền thông tin",
-        "Khả năng tuyển thêm người sau khi kết thúc dự án"
-      ],
-      "correct": 1,
-      "explanation": "DRE đo filtering ability của QA và control xuyên suốt process framework activities.",
-      "slides": [
-        46
-      ],
-      "sourceId": "SPM-269",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-269"
-    },
-    {
-      "part": 2,
-      "question": "Trong DRE = E/(E+D), E là gì?",
-      "options": [
-        "Số lỗi tìm thấy trước bàn giao",
-        "Tổng mọi lỗi trước và sau thời điểm bàn giao phần mềm",
-        "Số lỗi được phát hiện sau khi người dùng nhận phần mềm",
-        "Chênh lệch số lỗi trước và sau khi giao cho người dùng"
-      ],
-      "correct": 0,
-      "explanation": "E là errors found before delivery.",
-      "slides": [
-        46
-      ],
-      "sourceId": "SPM-270",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-270"
-    },
-    {
-      "part": 2,
-      "question": "D trong DRE đếm khuyết tật được phát hiện vào thời điểm nào?",
-      "options": [
-        "Sau bàn giao",
-        "Trước bàn giao",
-        "Trước thu thập yêu cầu",
-        "Trước xác định phạm vi"
-      ],
-      "correct": 0,
-      "explanation": "D là defects found after delivery.",
-      "slides": [
-        46
-      ],
-      "sourceId": "SPM-271",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-271"
-    },
-    {
-      "part": 2,
       "question": "Có 90 lỗi được phát hiện trước bàn giao và 10 defects sau bàn giao. DRE bằng bao nhiêu?",
       "options": [
-        "9",
         "0.9",
         "0.1",
-        "1.1"
+        "1.1",
+        "9"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "DRE = 90/(90+10) = 0.9.",
       "slides": [
         46
@@ -3493,12 +4292,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Lập kế hoạch giúp quản lý ước lượng những nội dung nào?",
       "options": [
-        "Chỉ chi phí mua công cụ, bỏ qua nỗ lực và thời gian",
-        "Nguồn lực, chi phí và lịch trình",
+        "Chỉ thời gian kiểm thử, bỏ qua các công việc khác",
         "Chỉ nỗ lực lập trình, bỏ qua tài nguyên và chi phí",
-        "Chỉ thời gian kiểm thử, bỏ qua các công việc khác"
+        "Chỉ chi phí mua công cụ, bỏ qua nỗ lực và thời gian",
+        "Nguồn lực, chi phí và lịch trình"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide 48 nêu reasonable estimates of resources, cost, schedule.",
       "slides": [
         48
@@ -3512,11 +4311,11 @@ window.SPM_DATA = {
       "question": "Ước lượng thời gian dự án bao phủ khoảng nào?",
       "options": [
         "Chỉ thời gian khách hàng đọc hướng dẫn",
-        "Từ lúc bắt đầu đến lúc kết thúc dự án",
         "Chỉ thời gian chạy một chương trình",
-        "Chỉ thời gian họp khởi động"
+        "Chỉ thời gian họp khởi động",
+        "Từ lúc bắt đầu đến lúc kết thúc dự án"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide 48 nêu time that will elapse from start to finish.",
       "slides": [
         48
@@ -3529,12 +4328,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Phạm vi phần mềm mô tả những nội dung nào?",
       "options": [
+        "Dữ liệu/điều khiển, chức năng, hiệu năng, ràng buộc, giao diện, độ tin cậy",
         "Nhiệm vụ, mốc, sản phẩm bàn giao, ngày bắt đầu, ngày kết thúc, đơn vị công",
         "Mô tả, sẵn có, lúc cần, thời lượng dùng, người cung cấp, chi phí mua",
-        "Dữ liệu/điều khiển, chức năng, hiệu năng, ràng buộc, giao diện, độ tin cậy",
         "Nhân lực, vị trí tổ chức, chuyên môn, kinh nghiệm, kỹ năng, thời lượng"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Slide 49 mô tả đầy đủ các khía cạnh của software scope.",
       "slides": [
         49
@@ -3547,12 +4346,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Câu hỏi “Ai sử dụng giải pháp?” giúp làm rõ nội dung nào?",
       "options": [
-        "Nguồn lực môi trường",
-        "Nỗ lực phát triển",
         "Phạm vi phần mềm",
+        "Nỗ lực phát triển",
+        "Nguồn lực môi trường",
         "Hiệu quả lọc lỗi"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Slide 49 đưa câu hỏi này vào Obtaining Information of Software Scope.",
       "slides": [
         49
@@ -3565,12 +4364,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Câu hỏi nào làm rõ giá trị kinh tế của giải pháp?",
       "options": [
+        "Giải pháp thành công mang lại lợi ích kinh tế gì?",
         "Có nguồn khác cung cấp giải pháp hay không?",
         "Ai sẽ sử dụng giải pháp sau khi phát triển?",
-        "Giải pháp thành công mang lại lợi ích kinh tế gì?",
         "Ai đứng sau yêu cầu thực hiện công việc này?"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Slide 49 hỏi economic benefit of a successful solution.",
       "slides": [
         49
@@ -3583,12 +4382,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "“Ai đứng sau yêu cầu công việc?” tìm hiểu điều gì?",
       "options": [
-        "Tính xác suất đẩy lùi tấn công",
-        "Xác định số dòng mã phải viết",
         "Đo thời gian trung bình sửa lỗi",
-        "Làm rõ nguồn khởi xướng yêu cầu"
+        "Tính xác suất đẩy lùi tấn công",
+        "Làm rõ nguồn khởi xướng yêu cầu",
+        "Xác định số dòng mã phải viết"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Slide 49 dùng câu hỏi who is behind the request để thu thập scope information.",
       "slides": [
         49
@@ -3601,12 +4400,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Câu hỏi nào giúp tìm hiểu nguồn giải pháp thay thế?",
       "options": [
-        "Có nguồn khác cung cấp giải pháp không?",
         "Có bao nhiêu màn hình cần kiểm thử hôm nay?",
         "Có bao nhiêu files vật lý trên máy phát triển?",
-        "Có bao nhiêu lỗi được đếm trên KLOC?"
+        "Có bao nhiêu lỗi được đếm trên KLOC?",
+        "Có nguồn khác cung cấp giải pháp không?"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Slide 49 hỏi Is there another source for the solution?",
       "slides": [
         49
@@ -3621,8 +4420,8 @@ window.SPM_DATA = {
       "options": [
         "Sau khi đã hiểu phạm vi",
         "Sau khi đã bỏ mọi ràng buộc",
-        "Sau khi mọi nhân viên rời nhóm",
-        "Sau khi đã kết thúc toàn bộ dự án"
+        "Sau khi đã kết thúc toàn bộ dự án",
+        "Sau khi mọi nhân viên rời nhóm"
       ],
       "correct": 0,
       "explanation": "Slide 49 nêu Once scope is understood, nhóm xác định có thực hiện được hay không.",
@@ -3638,8 +4437,8 @@ window.SPM_DATA = {
       "question": "Đánh giá tính khả thi tập trung vào điều gì?",
       "options": [
         "Chỉ lập danh sách đầu ra mà không xét ràng buộc khác",
-        "Khẳng định mọi yêu cầu đều khả thi trước khi hiểu phạm vi",
         "Chỉ xác định nhóm sẽ sử dụng công cụ phát triển nào",
+        "Khẳng định mọi yêu cầu đều khả thi trước khi hiểu phạm vi",
         "Khả năng thực hiện trong phạm vi đã hiểu"
       ],
       "correct": 3,
@@ -3657,8 +4456,8 @@ window.SPM_DATA = {
       "options": [
         "Ước lượng nguồn lực phát triển",
         "Đánh giá defects sau bàn giao cho người dùng cuối",
-        "Tính hiệu quả lọc lỗi xuyên suốt các hoạt động quá trình",
-        "Đánh giá thái độ người dùng khi đã sử dụng hiệu quả"
+        "Đánh giá thái độ người dùng khi đã sử dụng hiệu quả",
+        "Tính hiệu quả lọc lỗi xuyên suốt các hoạt động quá trình"
       ],
       "correct": 0,
       "explanation": "Slide 50 gọi resource estimation là second software planning task.",
@@ -3673,12 +4472,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Công cụ phát triển và cấu phần tích hợp lại thuộc các nhóm nguồn lực nào?",
       "options": [
-        "Một thuộc chuyên môn nhân lực, một thuộc vị trí tổ chức",
-        "Một thuộc công cụ môi trường, một thuộc cấu phần tái sử dụng",
         "Cả hai đều chỉ là công cụ vì cùng được gọi là phần mềm",
-        "Cả hai đều thuộc nhân lực vì cùng cần người thực hiện"
+        "Cả hai đều thuộc nhân lực vì cùng cần người thực hiện",
+        "Một thuộc công cụ môi trường, một thuộc cấu phần tái sử dụng",
+        "Một thuộc chuyên môn nhân lực, một thuộc vị trí tổ chức"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Hình phân biệt software tools với reusable software components dù cả hai cùng là phần mềm.",
       "slides": [
         50
@@ -3693,8 +4492,8 @@ window.SPM_DATA = {
       "options": [
         "Mô tả nguồn lực",
         "Thời lượng áp dụng",
-        "Tình trạng sẵn có",
-        "Thời điểm cần dùng"
+        "Thời điểm cần dùng",
+        "Tình trạng sẵn có"
       ],
       "correct": 0,
       "explanation": "“Máy chủ A” mô tả nguồn lực; tình trạng sẵn có, lúc cần và thời lượng dùng là các đặc trưng khác.",
@@ -3709,12 +4508,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Bốn đặc trưng cần xác định cho mỗi nguồn lực là gì?",
       "options": [
-        "Mô tả, sẵn có, lúc cần và số defects sau bàn giao",
         "Mô tả, lúc cần, thời lượng dùng và số trường báo cáo",
         "Sẵn có, lúc cần, thời lượng dùng và mức độ thân thiện",
-        "Mô tả, sẵn có, lúc cần và thời lượng dùng"
+        "Mô tả, sẵn có, lúc cần và thời lượng dùng",
+        "Mô tả, sẵn có, lúc cần và số defects sau bàn giao"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Bốn đặc trưng là description, availability, time required và duration applied.",
       "slides": [
         51
@@ -3725,30 +4524,12 @@ window.SPM_DATA = {
     },
     {
       "part": 3,
-      "question": "Chưa biết thiết bị có được cấp không là thiếu đặc trưng nguồn lực nào?",
-      "options": [
-        "Thời điểm cần",
-        "Tình trạng sẵn có",
-        "Mô tả nguồn lực",
-        "Tên phần mềm"
-      ],
-      "correct": 1,
-      "explanation": "Statement of availability là đặc trưng riêng cần xác định.",
-      "slides": [
-        51
-      ],
-      "sourceId": "SPM-304",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-304"
-    },
-    {
-      "part": 3,
       "question": "“Cần máy chủ từ đầu tháng 6” thể hiện đặc trưng nào?",
       "options": [
-        "Khoảng thời gian nguồn lực được sử dụng",
+        "Mức kỹ năng của người dùng cuối",
         "Mô tả độ tin cậy của phần mềm",
         "Thời điểm nguồn lực được yêu cầu",
-        "Mức kỹ năng của người dùng cuối"
+        "Khoảng thời gian nguồn lực được sử dụng"
       ],
       "correct": 2,
       "explanation": "Time when resource will be required xác định lúc bắt đầu cần.",
@@ -3764,11 +4545,11 @@ window.SPM_DATA = {
       "question": "“Dùng công cụ trong ba tháng” thể hiện đặc trưng nào?",
       "options": [
         "Thời điểm cần bắt đầu sử dụng nguồn lực",
-        "Mô tả loại công cụ được lựa chọn cho dự án",
         "Thời lượng sử dụng nguồn lực",
+        "Mô tả loại công cụ được lựa chọn cho dự án",
         "Tình trạng có thể sử dụng nguồn lực hay không"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Duration of time resource will be applied thể hiện thời lượng sử dụng.",
       "slides": [
         51
@@ -3783,8 +4564,8 @@ window.SPM_DATA = {
       "options": [
         "Chỉ xác nhận thiết bị và bỏ qua kỹ năng thành viên",
         "Xét phạm vi và chọn kỹ năng cần thiết",
-        "Chọn chức danh cao nhất mà không xét chuyên môn",
-        "Chọn số người trước khi ước lượng nỗ lực phát triển"
+        "Chọn số người trước khi ước lượng nỗ lực phát triển",
+        "Chọn chức danh cao nhất mà không xét chuyên môn"
       ],
       "correct": 1,
       "explanation": "Slide 52 nêu evaluating scope and selecting skills required.",
@@ -3799,12 +4580,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Nhân lực cần được đặc tả theo hai khía cạnh nào?",
       "options": [
-        "Thời điểm cần và thời lượng dùng",
-        "Vị trí tổ chức và chuyên môn",
         "Tình trạng sẵn có và chi phí mua",
-        "Quy mô sản phẩm và độ phức tạp"
+        "Thời điểm cần và thời lượng dùng",
+        "Quy mô sản phẩm và độ phức tạp",
+        "Vị trí tổ chức và chuyên môn"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide 52 yêu cầu organizational position và specialty.",
       "slides": [
         52
@@ -3817,12 +4598,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Dự án nhỏ có thể tổ chức người thực hiện thế nào?",
       "options": [
-        "Một người chỉ được quản lý và không được làm kỹ thuật",
         "Luôn cần một nhóm chuyên biệt cho từng nhiệm vụ",
+        "Một người làm các nhiệm vụ, tham vấn chuyên gia khi cần",
         "Không cần tham vấn dù thiếu kỹ năng chuyên môn",
-        "Một người làm các nhiệm vụ, tham vấn chuyên gia khi cần"
+        "Một người chỉ được quản lý và không được làm kỹ thuật"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Slide 52 cho phép single individual perform all tasks, consulting specialists as required.",
       "slides": [
         52
@@ -3836,11 +4617,11 @@ window.SPM_DATA = {
       "question": "Có bao nhiêu nhóm nguồn lực phần mềm tái sử dụng?",
       "options": [
         "Ba",
-        "Năm",
         "Hai",
-        "Bốn"
+        "Bốn",
+        "Năm"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Bài giảng nêu four software resource categories.",
       "slides": [
         53
@@ -3853,10 +4634,10 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Full-experience components có đặc điểm gì?",
       "options": [
-        "Không liên quan phần mềm hiện tại và nhóm chưa biết miền ứng dụng",
         "Phải viết hoàn toàn mới và không được tái sử dụng",
+        "Chỉ là công cụ phần cứng mà nhóm từng mua",
         "Tương tự phần mềm hiện tại và nhóm có đầy đủ kinh nghiệm trong miền ứng dụng",
-        "Chỉ là công cụ phần cứng mà nhóm từng mua"
+        "Không liên quan phần mềm hiện tại và nhóm chưa biết miền ứng dụng"
       ],
       "correct": 2,
       "explanation": "Slide 53 nêu similarity và full experience in application area.",
@@ -3871,9 +4652,9 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Tài sản full-experience có thể gồm những gì?",
       "options": [
+        "Chỉ dữ liệu kiểm thử, không tính mã và thiết kế cũ",
         "Chỉ mã nguồn, không tính các đặc tả và thiết kế cũ",
         "Chỉ thiết kế, không tính các đặc tả và dữ liệu kiểm thử",
-        "Chỉ dữ liệu kiểm thử, không tính mã và thiết kế cũ",
         "Đặc tả, thiết kế, mã và dữ liệu kiểm thử"
       ],
       "correct": 3,
@@ -3889,12 +4670,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Full-experience và partial-experience khác nhau theo tiêu chí nào?",
       "options": [
-        "Chỉ nơi lưu tài sản cũ, không cần xem kinh nghiệm nhóm",
-        "Chỉ số thành viên của nhóm, không cần xem miền ứng dụng",
+        "Kinh nghiệm miền ứng dụng và mức sửa đổi cần thiết",
         "Chỉ công cụ dùng để tạo tài sản, không cần xét sửa đổi",
-        "Kinh nghiệm miền ứng dụng và mức sửa đổi cần thiết"
+        "Chỉ số thành viên của nhóm, không cần xem miền ứng dụng",
+        "Chỉ nơi lưu tài sản cũ, không cần xem kinh nghiệm nhóm"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Slides 53–54 đối chiếu full/limited experience và similar/related requiring substantial modification.",
       "slides": [
         53,
@@ -3926,10 +4707,10 @@ window.SPM_DATA = {
       "part": 3,
       "question": "New components là gì?",
       "options": [
+        "Phần mềm hiện có có thể mua từ một nhà cung cấp bên thứ ba",
         "Thành phần liên quan cần sửa nhiều mà nhóm chỉ có kinh nghiệm hạn chế",
-        "Thành phần từ dự án tương tự mà nhóm đã có đầy đủ kinh nghiệm",
         "Thành phần phải xây riêng cho dự án hiện tại",
-        "Phần mềm hiện có có thể mua từ một nhà cung cấp bên thứ ba"
+        "Thành phần từ dự án tương tự mà nhóm đã có đầy đủ kinh nghiệm"
       ],
       "correct": 2,
       "explanation": "Slide 54 định nghĩa must be built specifically for needs of current project.",
@@ -3944,12 +4725,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Nguồn lực môi trường cần xác định hai thông tin nào?",
       "options": [
-        "Khoảng thời gian cần và khả năng sẵn có",
-        "Chỉ danh sách tên thiết bị, bỏ qua thời điểm sử dụng",
+        "Chỉ thời điểm sử dụng, không cần xác nhận sẵn có",
         "Chỉ phần cứng cần thiết, không phải xem xét phần mềm",
-        "Chỉ thời điểm sử dụng, không cần xác nhận sẵn có"
+        "Chỉ danh sách tên thiết bị, bỏ qua thời điểm sử dụng",
+        "Khoảng thời gian cần và khả năng sẵn có"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Slide 55 yêu cầu prescribe time window và verify availability.",
       "slides": [
         55
@@ -3960,32 +4741,14 @@ window.SPM_DATA = {
     },
     {
       "part": 3,
-      "question": "Công cụ đang được dự án khác dùng trong giai đoạn cần: phải kiểm tra điều gì?",
-      "options": [
-        "Khả năng sẵn có trong giai đoạn cần",
-        "Chỉ sự tồn tại của công cụ trong danh mục tài sản",
-        "Chỉ tên nhà cung cấp của công cụ đã được mua",
-        "Chỉ khả năng dùng công cụ sau khi dự án hoàn tất"
-      ],
-      "correct": 0,
-      "explanation": "Slide 55 yêu cầu xác nhận availability trong time window cần thiết.",
-      "slides": [
-        55
-      ],
-      "sourceId": "SPM-332",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-332"
-    },
-    {
-      "part": 3,
       "question": "Những nhóm biến nào ảnh hưởng chi phí và nỗ lực phần mềm?",
       "options": [
-        "Chỉ kỹ thuật và môi trường, bỏ qua con người cùng chính trị",
         "Chỉ môi trường và chính trị, bỏ qua con người cùng kỹ thuật",
-        "Chỉ con người và kỹ thuật, bỏ qua môi trường cùng chính trị",
-        "Con người, kỹ thuật, môi trường và chính trị"
+        "Chỉ kỹ thuật và môi trường, bỏ qua con người cùng chính trị",
+        "Con người, kỹ thuật, môi trường và chính trị",
+        "Chỉ con người và kỹ thuật, bỏ qua môi trường cùng chính trị"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Slide 56 liệt kê human, technical, environmental, political variables.",
       "slides": [
         56
@@ -3998,12 +4761,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Cơ sở lịch sử nào được đề xuất để ước lượng?",
       "options": [
-        "Chỉ kế hoạch chưa từng được triển khai",
-        "Các dự án tương tự đã hoàn thành",
+        "Chỉ các dự án không liên quan miền ứng dụng",
         "Mọi dự án chưa xác định phạm vi",
-        "Chỉ các dự án không liên quan miền ứng dụng"
+        "Chỉ kế hoạch chưa từng được triển khai",
+        "Các dự án tương tự đã hoàn thành"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide 56 đề xuất base estimates on similar completed projects.",
       "slides": [
         56
@@ -4016,12 +4779,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Có thể dùng loại mô hình nào để ước lượng chi phí và nỗ lực?",
       "options": [
-        "Chỉ công thức xác suất tấn công và đẩy lùi tấn công",
-        "Chỉ bảng đếm lỗi trước và sau bàn giao phần mềm",
         "Chỉ metric thái độ người dùng đối với hệ thống",
-        "Một hoặc nhiều mô hình thực nghiệm"
+        "Chỉ bảng đếm lỗi trước và sau bàn giao phần mềm",
+        "Một hoặc nhiều mô hình thực nghiệm",
+        "Chỉ công thức xác suất tấn công và đẩy lùi tấn công"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Slide 56 đề xuất one or more empirical models.",
       "slides": [
         56
@@ -4052,12 +4815,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Phân rã để ước lượng tách dự án theo những nội dung nào?",
       "options": [
-        "Chỉ thiết bị sẵn có, không xét công việc phải thực hiện",
         "Chỉ thời điểm họp, không xét hoạt động kỹ nghệ phần mềm",
         "Chức năng chính và hoạt động liên quan",
-        "Chỉ chức danh trong nhóm, không xét chức năng sản phẩm"
+        "Chỉ chức danh trong nhóm, không xét chức năng sản phẩm",
+        "Chỉ thiết bị sẵn có, không xét công việc phải thực hiện"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Slide 57 nêu major functions and related software engineering activities.",
       "slides": [
         57
@@ -4070,10 +4833,10 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Hai hướng ước lượng gắn với phân rã là gì?",
       "options": [
-        "Dựa trên correctness và integrity",
+        "Dựa trên MTTC và DRE",
         "Dựa trên LOC và FP",
-        "Dựa trên threat và security",
-        "Dựa trên MTTC và DRE"
+        "Dựa trên correctness và integrity",
+        "Dựa trên threat và security"
       ],
       "correct": 1,
       "explanation": "Slide 57 ghi LOC-based, FP-based estimation.",
@@ -4088,12 +4851,12 @@ window.SPM_DATA = {
       "part": 3,
       "question": "Trong phân nhóm kỹ thuật ở slide 57, COCOMO là ví dụ cho nhóm nào?",
       "options": [
-        "Kỹ thuật phân rã dựa trên LOC",
         "Phân loại thành phần tái sử dụng",
+        "Mô hình thực nghiệm",
         "Kỹ thuật phân rã dựa trên FP",
-        "Mô hình thực nghiệm"
+        "Kỹ thuật phân rã dựa trên LOC"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Slide 57 đặt COCOMO Model trong empirical estimation models.",
       "slides": [
         57
@@ -4107,11 +4870,11 @@ window.SPM_DATA = {
       "question": "Công cụ ước lượng tự động triển khai các kỹ thuật nào?",
       "options": [
         "Chỉ kiểm tra khả năng sẵn có của các công cụ môi trường",
-        "Chỉ phân loại kinh nghiệm nhóm đối với thành phần tái sử dụng",
         "Kỹ thuật phân rã hoặc mô hình thực nghiệm",
+        "Chỉ phân loại kinh nghiệm nhóm đối với thành phần tái sử dụng",
         "Chỉ bảng đặc tả nguồn lực với bốn đặc trưng cần thiết"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Slide 57 nêu automated tools implement decomposition techniques or empirical models.",
       "slides": [
         57
@@ -4122,28 +4885,10 @@ window.SPM_DATA = {
     },
     {
       "part": 4,
-      "question": "Vấn đề nào không thuộc nhóm rủi ro kỹ thuật trong bài giảng?",
-      "options": [
-        "Xác minh phần mềm",
-        "Ngân sách dự án",
-        "Thiết kế phần mềm",
-        "Bảo trì phần mềm"
-      ],
-      "correct": 1,
-      "explanation": "Slide 60 xếp ngân sách vào rủi ro dự án, còn thiết kế, xác minh và bảo trì vào rủi ro kỹ thuật.",
-      "slides": [
-        60
-      ],
-      "sourceId": "SPM-353",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-353"
-    },
-    {
-      "part": 4,
       "question": "Rủi ro nào đe dọa kế hoạch dự án?",
       "options": [
-        "Rủi ro kinh doanh",
         "Rủi ro kỹ thuật",
+        "Rủi ro kinh doanh",
         "Rủi ro thiết kế",
         "Rủi ro dự án"
       ],
@@ -4158,32 +4903,14 @@ window.SPM_DATA = {
     },
     {
       "part": 4,
-      "question": "Thiếu nhân lực làm trễ lịch và tăng chi phí thuộc loại rủi ro nào?",
-      "options": [
-        "Rủi ro giao diện",
-        "Rủi ro dự án",
-        "Rủi ro kinh doanh",
-        "Rủi ro xác minh"
-      ],
-      "correct": 1,
-      "explanation": "Nhân sự và nguồn lực thuộc các vấn đề được liệt kê cho rủi ro dự án.",
-      "slides": [
-        60
-      ],
-      "sourceId": "SPM-356",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-356"
-    },
-    {
-      "part": 4,
       "question": "Khó triển khai giao diện, đe dọa chất lượng thuộc loại rủi ro nào?",
       "options": [
         "Rủi ro ngân sách",
-        "Rủi ro kỹ thuật",
+        "Rủi ro khách hàng",
         "Rủi ro kinh doanh",
-        "Rủi ro khách hàng"
+        "Rủi ro kỹ thuật"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide xếp vấn đề giao diện và triển khai vào rủi ro kỹ thuật.",
       "slides": [
         60
@@ -4196,12 +4923,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Rủi ro kinh doanh đe dọa điều gì?",
       "options": [
-        "Khả năng phân bổ nhân lực phát triển phần mềm",
-        "Khả năng đáp ứng lịch triển khai phần mềm",
         "Khả năng tồn tại của phần mềm sẽ xây dựng",
-        "Khả năng tuân thủ đặc tả giao diện phần mềm"
+        "Khả năng tuân thủ đặc tả giao diện phần mềm",
+        "Khả năng đáp ứng lịch triển khai phần mềm",
+        "Khả năng phân bổ nhân lực phát triển phần mềm"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Slide định nghĩa business risks là đe dọa viability của phần mềm.",
       "slides": [
         60
@@ -4214,12 +4941,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Rủi ro kỹ thuật có thể gây hệ quả nào đối với triển khai?",
       "options": [
+        "Chỉ làm thay đổi quy mô thị trường dự kiến",
         "Chỉ thay đổi mức tải nguồn lực của kế hoạch",
         "Việc triển khai khó khăn hoặc không thể thực hiện",
-        "Chỉ phát sinh bất đồng lịch họp khách hàng",
-        "Chỉ làm thay đổi quy mô thị trường dự kiến"
+        "Chỉ phát sinh bất đồng lịch họp khách hàng"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Slide nêu implementation có thể trở nên difficult or impossible.",
       "slides": [
         60
@@ -4232,12 +4959,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Nhận diện rủi ro nhằm mục đích gì?",
       "options": [
-        "Chuẩn bị chi phí và lịch trình cho dự phòng",
         "Xếp mức xác suất và hậu quả cho từng rủi ro",
         "Tinh chỉnh điều kiện thành các điều kiện con",
-        "Xác định có hệ thống các đe dọa đối với kế hoạch"
+        "Xác định có hệ thống các đe dọa đối với kế hoạch",
+        "Chuẩn bị chi phí và lịch trình cho dự phòng"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Risk identification là systematic attempt to specify threats to the project plan.",
       "slides": [
         61
@@ -4250,12 +4977,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Rủi ro do tổng kích thước phần mềm thuộc mục checklist nào?",
       "options": [
-        "Đặc điểm khách hàng",
-        "Quy mô sản phẩm",
+        "Môi trường phát triển",
         "Định nghĩa quy trình",
-        "Môi trường phát triển"
+        "Đặc điểm khách hàng",
+        "Quy mô sản phẩm"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Product size xét rủi ro gắn với quy mô toàn bộ phần mềm xây dựng hoặc sửa đổi.",
       "slides": [
         61
@@ -4268,12 +4995,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Ràng buộc quản lý vì thị trường thuộc mục checklist nào?",
       "options": [
-        "Ảnh hưởng kinh doanh",
         "Môi trường phát triển",
+        "Công nghệ xây dựng",
         "Quy mô nhân sự",
-        "Công nghệ xây dựng"
+        "Ảnh hưởng kinh doanh"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Business impact xét các ràng buộc quản lý đặt ra cho thị trường.",
       "slides": [
         61
@@ -4286,12 +5013,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Khó giao tiếp kịp thời với khách hàng thuộc mục checklist nào?",
       "options": [
-        "Định nghĩa quy trình",
         "Quy mô sản phẩm",
         "Đặc điểm khách hàng",
+        "Định nghĩa quy trình",
         "Kinh nghiệm nhân viên"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Customer characteristics xét mức độ hiểu biết và khả năng giao tiếp kịp thời.",
       "slides": [
         61
@@ -4304,10 +5031,10 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Tổ chức không tuân theo quy trình đã mô tả thuộc mục checklist nào?",
       "options": [
+        "Quy mô sản phẩm",
         "Đặc điểm khách hàng",
-        "Ảnh hưởng kinh doanh",
         "Định nghĩa quy trình",
-        "Quy mô sản phẩm"
+        "Ảnh hưởng kinh doanh"
       ],
       "correct": 2,
       "explanation": "Process definition xét cả mức độ định nghĩa và tuân thủ quy trình.",
@@ -4323,9 +5050,9 @@ window.SPM_DATA = {
       "question": "Công cụ phát triển có chất lượng thấp thuộc mục checklist nào?",
       "options": [
         "Môi trường phát triển",
-        "Công nghệ xây dựng",
         "Đặc điểm khách hàng",
-        "Quy mô sản phẩm"
+        "Quy mô sản phẩm",
+        "Công nghệ xây dựng"
       ],
       "correct": 0,
       "explanation": "Development environment xét tính sẵn có và chất lượng của công cụ.",
@@ -4341,11 +5068,11 @@ window.SPM_DATA = {
       "question": "Công nghệ mới và phức tạp thuộc mục checklist nào?",
       "options": [
         "Đặc điểm khách hàng",
-        "Định nghĩa quy trình",
         "Công nghệ xây dựng",
-        "Ảnh hưởng kinh doanh"
+        "Ảnh hưởng kinh doanh",
+        "Định nghĩa quy trình"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Technology to be built xét độ phức tạp và tính mới của công nghệ.",
       "slides": [
         62
@@ -4358,12 +5085,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Kinh nghiệm kỹ thuật của kỹ sư được xét trong mục checklist nào?",
       "options": [
-        "Quy mô và kinh nghiệm nhân viên",
+        "Môi trường công cụ phát triển",
         "Mức độ hiểu biết khách hàng",
-        "Các ràng buộc của thị trường",
-        "Môi trường công cụ phát triển"
+        "Quy mô và kinh nghiệm nhân viên",
+        "Các ràng buộc của thị trường"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Staff size and experience xét kinh nghiệm kỹ thuật và dự án của người làm việc.",
       "slides": [
         62
@@ -4392,33 +5119,14 @@ window.SPM_DATA = {
     },
     {
       "part": 4,
-      "question": "Xác suất cao hơn có nhất thiết gây hậu quả nặng hơn không?",
-      "options": [
-        "Có, mọi rủi ro cùng chung mức tổn thất",
-        "Có, xác suất xác định toàn bộ mức tác động",
-        "Không, vì chỉ hậu quả cần được ước lượng",
-        "Không, phải đánh giá hậu quả riêng"
-      ],
-      "correct": 3,
-      "explanation": "Ước lượng rủi ro đánh giá riêng khả năng xảy ra và hậu quả. Bảng ví dụ có rủi ro dễ xảy ra hơn nhưng tác động nhẹ hơn.",
-      "slides": [
-        63,
-        64
-      ],
-      "sourceId": "SPM-377",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-377"
-    },
-    {
-      "part": 4,
       "question": "Vì sao không thể cho rằng số Impact càng lớn thì hậu quả càng nặng?",
       "options": [
+        "Thang gộp xác suất với tác động thành một mức số duy nhất",
         "Chú giải đặt 1 là thảm họa và 4 là không đáng kể",
         "Thang ghi 1 là không đáng kể còn 4 là hậu quả thảm họa",
-        "Thang gộp xác suất với tác động thành một mức số duy nhất",
         "Thang chỉ so sánh tác động khi hai rủi ro có cùng xác suất"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Thang tác động trong hình không tăng độ nghiêm trọng theo trị số.",
       "slides": [
         64
@@ -4431,12 +5139,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Tinh chỉnh rủi ro nhằm mục đích gì?",
       "options": [
-        "Chia rủi ro thành các rủi ro chi tiết hơn",
         "Chuyển mọi rủi ro thành sự kiện chắc chắn",
+        "Xóa rủi ro có tác động cao khỏi kế hoạch",
         "Thay xác suất bằng số nhiệm vụ dự án",
-        "Xóa rủi ro có tác động cao khỏi kế hoạch"
+        "Chia rủi ro thành các rủi ro chi tiết hơn"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Slide mô tả refinement là refine risk into a set of more detailed risks.",
       "slides": [
         65
@@ -4451,10 +5159,10 @@ window.SPM_DATA = {
       "options": [
         "Khách hàng, nhóm, hợp đồng",
         "Chi phí, thời gian, chất lượng",
-        "Mã nguồn, kiểm thử, cấu hình",
-        "Điều kiện, chuyển tiếp, hậu quả"
+        "Điều kiện, chuyển tiếp, hậu quả",
+        "Mã nguồn, kiểm thử, cấu hình"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "CTC viết tắt condition-transition-consequence.",
       "slides": [
         65
@@ -4465,32 +5173,14 @@ window.SPM_DATA = {
     },
     {
       "part": 4,
-      "question": "Cách nào diễn đạt rủi ro theo mẫu CTC?",
-      "options": [
-        "Có điều kiện X, chỉ ghi người phụ trách mà bỏ hậu quả Y",
-        "Có hậu quả Y, khẳng định điều kiện X chắc chắn tồn tại",
-        "Có điều kiện X, khẳng định hậu quả Y chắc chắn xảy ra",
-        "Với điều kiện X, có lo ngại rằng hậu quả Y có thể xảy ra"
-      ],
-      "correct": 3,
-      "explanation": "Mẫu dùng Given that condition và concern that possibly consequence.",
-      "slides": [
-        65
-      ],
-      "sourceId": "SPM-386",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-386"
-    },
-    {
-      "part": 4,
       "question": "Trong tinh chỉnh CTC, thành phần nào được phân rã thành điều kiện con?",
       "options": [
-        "Điều kiện",
         "Người được giao",
         "Cột trạng thái",
+        "Điều kiện",
         "Ngày tạo hồ sơ"
       ],
-      "correct": 0,
+      "correct": 2,
       "explanation": "Slide nói condition được refined thành subcondition 1, 2, 3,...",
       "slides": [
         65
@@ -4503,12 +5193,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Khi cấu phần dự kiến tái sử dụng không tích hợp được, chức năng còn lại cần làm gì?",
       "options": [
+        "Phải phát triển riêng",
         "Được xem là đã hoàn thành",
         "Tự động chuyển cho khách hàng",
-        "Bỏ khỏi ứng dụng",
-        "Phải phát triển riêng"
+        "Bỏ khỏi ứng dụng"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Phiếu ghi remaining functionality will have to be custom developed.",
       "slides": [
         66
@@ -4519,68 +5209,14 @@ window.SPM_DATA = {
     },
     {
       "part": 4,
-      "question": "Điều kiện con liên quan bên thứ ba trong phiếu rủi ro là gì?",
-      "options": [
-        "Chuẩn giao diện cấu phần chưa được hoàn chỉnh",
-        "Phần chức năng còn lại phải được phát triển riêng",
-        "Ngôn ngữ cấu phần không được môi trường hỗ trợ",
-        "Bên thứ ba không biết chuẩn thiết kế nội bộ"
-      ],
-      "correct": 3,
-      "explanation": "Subcondition 1 nói cấu phần được bên thứ ba phát triển không biết internal design standards.",
-      "slides": [
-        66
-      ],
-      "sourceId": "SPM-391",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-391"
-    },
-    {
-      "part": 4,
-      "question": "Khi chọn giao thức giao diện, phiếu rủi ro yêu cầu xét thêm yếu tố nào?",
-      "options": [
-        "Thời lượng của cuộc họp giới thiệu công cụ",
-        "Cấu trúc thành phần phần mềm",
-        "Số người dùng đã chống đối hệ thống",
-        "Kỹ năng của người lập báo cáo earned value"
-      ],
-      "correct": 1,
-      "explanation": "Biện pháp 2 trên phiếu yêu cầu consider component structure when deciding on interface protocol.",
-      "slides": [
-        66
-      ],
-      "sourceId": "SPM-392",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-392"
-    },
-    {
-      "part": 4,
-      "question": "Điều kiện con liên quan ngôn ngữ trong phiếu rủi ro là gì?",
-      "options": [
-        "Ngôn ngữ cấu phần không được môi trường đích hỗ trợ",
-        "Chức năng còn lại phải được nhóm phát triển riêng",
-        "Chuẩn thiết kế giao diện cấu phần chưa hoàn chỉnh",
-        "Bên thứ ba không biết các chuẩn thiết kế nội bộ"
-      ],
-      "correct": 0,
-      "explanation": "Subcondition 3 ghi ngôn ngữ triển khai không được target environment hỗ trợ.",
-      "slides": [
-        66
-      ],
-      "sourceId": "SPM-393",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-393"
-    },
-    {
-      "part": 4,
       "question": "Biện pháp nào giảm rủi ro bên thứ ba không biết chuẩn thiết kế nội bộ?",
       "options": [
-        "Thúc đẩy hoàn tất chuẩn giao diện cấu phần",
+        "Liên hệ bên thứ ba để kiểm tra tuân thủ chuẩn thiết kế",
         "Điều chỉnh lịch xây thêm 18 cấu phần riêng",
-        "Kiểm tra khả năng bổ sung hỗ trợ ngôn ngữ",
-        "Liên hệ bên thứ ba để kiểm tra tuân thủ chuẩn thiết kế"
+        "Thúc đẩy hoàn tất chuẩn giao diện cấu phần",
+        "Kiểm tra khả năng bổ sung hỗ trợ ngôn ngữ"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Mitigation 1 yêu cầu contact third party to determine conformance with design standards.",
       "slides": [
         66
@@ -4594,9 +5230,9 @@ window.SPM_DATA = {
       "question": "Rủi ro ngôn ngữ không được hỗ trợ cần kiểm tra những gì?",
       "options": [
         "Đếm cấu phần liên quan và thúc đẩy hoàn tất chuẩn giao diện",
-        "Đếm cấu phần liên quan và hỏi chuẩn nội bộ của bên thứ ba",
+        "Đếm cấu phần liên quan và cập nhật tên người nhận rủi ro",
         "Số cấu phần liên quan và khả năng có hỗ trợ ngôn ngữ",
-        "Đếm cấu phần liên quan và cập nhật tên người nhận rủi ro"
+        "Đếm cấu phần liên quan và hỏi chuẩn nội bộ của bên thứ ba"
       ],
       "correct": 2,
       "explanation": "Mitigation 3 đếm cấu phần ở subcondition 3 và kiểm tra khả năng acquire language support.",
@@ -4609,32 +5245,14 @@ window.SPM_DATA = {
     },
     {
       "part": 4,
-      "question": "Khoản RE trong phiếu rủi ro được phân bổ vào đâu?",
-      "options": [
-        "Thời lượng của công cụ",
-        "Mức tác động trong bảng",
-        "Chi phí dự phòng dự án",
-        "Số đếm chức năng ban đầu"
-      ],
-      "correct": 2,
-      "explanation": "Phiếu thông tin rủi ro yêu cầu phân bổ khoản RE vào chi phí dự phòng của dự án.",
-      "slides": [
-        66
-      ],
-      "sourceId": "SPM-396",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-396"
-    },
-    {
-      "part": 4,
       "question": "Dự phòng thiếu cấu phần tái sử dụng cần điều chỉnh lịch theo giả định nào?",
       "options": [
-        "Giữ nguyên lịch và không điều chỉnh nhân lực",
-        "Loại bỏ các chức năng mà khách hàng đã yêu cầu",
+        "Coi các cấu phần chưa tích hợp là đã hoàn thành",
         "Phải tự xây thêm các cấu phần còn thiếu",
-        "Coi các cấu phần chưa tích hợp là đã hoàn thành"
+        "Loại bỏ các chức năng mà khách hàng đã yêu cầu",
+        "Giữ nguyên lịch và không điều chỉnh nhân lực"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Kế hoạch dự phòng giả định phải tự xây thêm cấu phần, điều chỉnh lịch và phân bổ nhân lực tương ứng.",
       "slides": [
         66
@@ -4647,12 +5265,12 @@ window.SPM_DATA = {
       "part": 4,
       "question": "Điều gì kích hoạt dự phòng trong phiếu rủi ro?",
       "options": [
-        "Đã xác định được người khởi tạo phiếu rủi ro",
-        "Đã ghi nhận mô tả rủi ro trong phiếu thông tin",
         "Các bước giảm thiểu không hiệu quả đến thời điểm quy định",
-        "Các bước giảm thiểu đã được bắt đầu theo kế hoạch"
+        "Đã ghi nhận mô tả rủi ro trong phiếu thông tin",
+        "Các bước giảm thiểu đã được bắt đầu theo kế hoạch",
+        "Đã xác định được người khởi tạo phiếu rủi ro"
       ],
-      "correct": 2,
+      "correct": 0,
       "explanation": "Phiếu ghi kích hoạt dự phòng khi các bước giảm thiểu không hiệu quả tính đến thời điểm được quy định.",
       "slides": [
         66
@@ -4665,12 +5283,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Lịch tổng thể được phát triển thành dạng nào?",
       "options": [
+        "Báo cáo tài chính",
         "Chuẩn thiết kế",
         "Danh sách rủi ro",
-        "Lịch chi tiết",
-        "Báo cáo tài chính"
+        "Lịch chi tiết"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Slide nêu macroscopic schedule được refined thành detailed schedule.",
       "slides": [
         68
@@ -4683,12 +5301,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Các nhiệm vụ chồng thời gian cần kiểm tra giới hạn nhân lực nào?",
       "options": [
-        "Không vượt số người được phân bổ tại cùng thời điểm",
+        "Tổng số nhiệm vụ phải bằng tổng số người được cấp",
         "Mọi nhiệm vụ phải có cùng thời lượng và ngày bắt đầu",
         "Mọi nhiệm vụ phải do cùng một thành viên thực hiện",
-        "Tổng số nhiệm vụ phải bằng tổng số người được cấp"
+        "Không vượt số người được phân bổ tại cùng thời điểm"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Slide 68 phân bổ effort; slide 75 effort validation yêu cầu không vượt allocated staff ở bất kỳ thời điểm nào.",
       "slides": [
         68,
@@ -4702,10 +5320,10 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Task network biểu diễn điều gì?",
       "options": [
-        "Chất lượng sản phẩm bằng một công thức",
+        "Danh sách thiết bị theo giá mua",
         "Luồng nhiệm vụ của dự án bằng đồ họa",
-        "Quyền truy cập người dùng theo tài khoản",
-        "Danh sách thiết bị theo giá mua"
+        "Chất lượng sản phẩm bằng một công thức",
+        "Quyền truy cập người dùng theo tài khoản"
       ],
       "correct": 1,
       "explanation": "Task network là graphic representation of task flow.",
@@ -4715,42 +5333,6 @@ window.SPM_DATA = {
       "sourceId": "SPM-406",
       "sourceType": "slides",
       "id": "SLIDE-SPM-406"
-    },
-    {
-      "part": 5,
-      "question": "Hồ sơ đã có task set nhưng chưa có hình biểu diễn luồng nhiệm vụ: thiếu gì?",
-      "options": [
-        "Work product",
-        "Boundary times",
-        "Critical path",
-        "Task network"
-      ],
-      "correct": 3,
-      "explanation": "Task network là hình biểu diễn luồng nhiệm vụ; task set là tập nhiệm vụ, mốc và sản phẩm bàn giao.",
-      "slides": [
-        69
-      ],
-      "sourceId": "SPM-408",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-408"
-    },
-    {
-      "part": 5,
-      "question": "Ba nhiệm vụ I.5 trong mạng ví dụ được thực hiện thế nào?",
-      "options": [
-        "Từng cặp thay thế nhau theo lịch khách hàng",
-        "Tuần tự cho một chức năng khái niệm duy nhất",
-        "Song song cho ba chức năng khái niệm khác nhau",
-        "Độc lập hoàn toàn với proof of concept"
-      ],
-      "correct": 2,
-      "explanation": "Chú thích nói three I.5 tasks applied in parallel to 3 different concept functions.",
-      "slides": [
-        70
-      ],
-      "sourceId": "SPM-412",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-412"
     },
     {
       "part": 5,
@@ -4774,10 +5356,10 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Đường găng là gì?",
       "options": [
+        "Nhóm nhiệm vụ có mọi ngày bắt đầu giống nhau",
         "Nhóm nhiệm vụ chỉ do quản lý cấp cao làm",
-        "Chuỗi nhiệm vụ dùng nhiều tài liệu nhất",
         "Chuỗi nhiệm vụ quyết định thời lượng dự án",
-        "Nhóm nhiệm vụ có mọi ngày bắt đầu giống nhau"
+        "Chuỗi nhiệm vụ dùng nhiều tài liệu nhất"
       ],
       "correct": 2,
       "explanation": "Critical path là chain of tasks that determines duration of project.",
@@ -4790,32 +5372,14 @@ window.SPM_DATA = {
     },
     {
       "part": 5,
-      "question": "Thông tin nào là cơ sở cho việc lập lịch?",
-      "options": [
-        "Mức tác động trong bảng rủi ro",
-        "Thái độ chủ quan của người dùng",
-        "Ước lượng nỗ lực",
-        "Số khuyết tật sau bàn giao"
-      ],
-      "correct": 2,
-      "explanation": "Slide liệt kê estimates of effort cùng các cơ sở phân rã và chọn quy trình.",
-      "slides": [
-        71
-      ],
-      "sourceId": "SPM-420",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-420"
-    },
-    {
-      "part": 5,
       "question": "Ngoài phân rã chức năng, lập lịch cần chọn những gì?",
       "options": [
         "Thang tác động và danh mục rủi ro",
-        "Các tiêu chí và báo cáo kiểm toán",
         "Mô hình quy trình và tập nhiệm vụ",
+        "Các tiêu chí và báo cáo kiểm toán",
         "Thang Fi và trọng số miền thông tin"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Slide ghi selection of appropriate process model and task set.",
       "slides": [
         71
@@ -4828,12 +5392,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Mô hình thống kê giúp ước lượng loại thời gian nào của nhiệm vụ?",
       "options": [
-        "Thời gian kiểm toán để xác nhận tuân thủ chuẩn",
-        "Thời gian có khả năng nhất của từng nhiệm vụ",
         "Thời gian phát sinh tổn thất nếu rủi ro thành hiện thực",
-        "Thời gian hoàn thành thực tế của việc đã kết thúc"
+        "Thời gian hoàn thành thực tế của việc đã kết thúc",
+        "Thời gian có khả năng nhất của từng nhiệm vụ",
+        "Thời gian kiểm toán để xác nhận tuân thủ chuẩn"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Slide nêu establish most likely time estimates for individual task applying statistical models.",
       "slides": [
         71
@@ -4846,12 +5410,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Boundary times xác định điều gì?",
       "options": [
-        "Số chức năng cần hủy khỏi sản phẩm",
-        "Mức tác động của mỗi rủi ro kỹ thuật",
+        "Cửa sổ thời gian cho một nhiệm vụ",
         "Ngân sách mua công cụ cho toàn tổ chức",
-        "Cửa sổ thời gian cho một nhiệm vụ"
+        "Mức tác động của mỗi rủi ro kỹ thuật",
+        "Số chức năng cần hủy khỏi sản phẩm"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Slide định nghĩa boundary times là thời điểm giới hạn một time window cho task.",
       "slides": [
         71
@@ -4862,50 +5426,14 @@ window.SPM_DATA = {
     },
     {
       "part": 5,
-      "question": "Chỉ phân rã sản phẩm mà chưa phân rã công việc còn thiếu đầu vào nào?",
-      "options": [
-        "Ước lượng nỗ lực",
-        "Chọn mô hình quy trình",
-        "Chọn tập nhiệm vụ",
-        "Phân rã nhiệm vụ"
-      ],
-      "correct": 3,
-      "explanation": "Slide liệt kê riêng decomposition of tasks cùng decomposition of product function.",
-      "slides": [
-        71
-      ],
-      "sourceId": "SPM-424",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-424"
-    },
-    {
-      "part": 5,
-      "question": "Biểu đồ thời gian còn gọi là biểu đồ gì?",
-      "options": [
-        "CTC sheet",
-        "Quality report",
-        "Gantt chart",
-        "Risk table"
-      ],
-      "correct": 2,
-      "explanation": "Slide ghi Timeline chart (Gantt chart).",
-      "slides": [
-        72
-      ],
-      "sourceId": "SPM-425",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-425"
-    },
-    {
-      "part": 5,
       "question": "Mỗi nhiệm vụ trong Gantt cần các dữ liệu nào?",
       "options": [
+        "Kỹ năng, thái độ và mức tăng năng suất",
         "Xác suất, mức tác động và mã rủi ro",
         "Số lỗi, số khuyết tật và kích thước mã",
-        "Nỗ lực, thời lượng và ngày bắt đầu",
-        "Kỹ năng, thái độ và mức tăng năng suất"
+        "Nỗ lực, thời lượng và ngày bắt đầu"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Slide ghi effort, duration, and start date input for each task.",
       "slides": [
         72
@@ -4916,32 +5444,14 @@ window.SPM_DATA = {
     },
     {
       "part": 5,
-      "question": "Ngoài dữ liệu thời gian, Gantt có thể gắn nhiệm vụ với ai?",
-      "options": [
-        "Người cụ thể được phân công",
-        "Nhà cung cấp đã rút tài trợ",
-        "Người dùng đã mua sản phẩm",
-        "Chuẩn ngôn ngữ đã bị loại bỏ"
-      ],
-      "correct": 0,
-      "explanation": "Slide nêu may assign specific individuals.",
-      "slides": [
-        72
-      ],
-      "sourceId": "SPM-428",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-428"
-    },
-    {
-      "part": 5,
       "question": "Bảng dự án lưu các ngày nào để theo dõi tiến độ?",
       "options": [
         "Chỉ ngày bắt đầu dự kiến và đơn vị công ước lượng",
-        "Chỉ ngày bắt đầu thực tế và danh sách người phụ trách",
+        "Ngày bắt đầu và kết thúc dự kiến cùng thực tế",
         "Chỉ ngày hoàn thành dự kiến và mô tả đầu ra nhiệm vụ",
-        "Ngày bắt đầu và kết thúc dự kiến cùng thực tế"
+        "Chỉ ngày bắt đầu thực tế và danh sách người phụ trách"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Project Table liệt kê nhiệm vụ cùng planned and actual start- and end-dates.",
       "slides": [
         73
@@ -4949,25 +5459,6 @@ window.SPM_DATA = {
       "sourceId": "SPM-429",
       "sourceType": "slides",
       "id": "SLIDE-SPM-429"
-    },
-    {
-      "part": 5,
-      "question": "Nhiệm vụ bắt đầu trễ kế hoạch: cần lưu gì trong bảng dự án?",
-      "options": [
-        "Cả ngày bắt đầu dự kiến và thực tế",
-        "Chỉ ngày bắt đầu thực tế mới xảy ra",
-        "Chỉ ngày kết thúc dự kiến của dự án",
-        "Chỉ ngày bắt đầu dự kiến đã phê duyệt"
-      ],
-      "correct": 0,
-      "explanation": "Bảng dự án lưu ngày dự kiến và thực tế; theo dõi lịch đối chiếu hai ngày bắt đầu này.",
-      "slides": [
-        73,
-        74
-      ],
-      "sourceId": "SPM-430",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-430"
     },
     {
       "part": 5,
@@ -4989,32 +5480,14 @@ window.SPM_DATA = {
     },
     {
       "part": 5,
-      "question": "Đánh giá kết quả review là một cách hỗ trợ hoạt động nào?",
-      "options": [
-        "Đếm điểm chức năng",
-        "Theo dõi lịch dự án",
-        "Phân loại nguồn lực",
-        "Ước lượng kích thước mã"
-      ],
-      "correct": 1,
-      "explanation": "Evaluating results of all reviews là một cách tracking the schedule.",
-      "slides": [
-        74
-      ],
-      "sourceId": "SPM-432",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-432"
-    },
-    {
-      "part": 5,
       "question": "Theo dõi mốc dự án cần kiểm tra điều gì?",
       "options": [
+        "Mốc có đạt được đúng ngày dự kiến không?",
         "Mốc có tên ngắn hơn các nhiệm vụ không?",
         "Mốc có được tất cả khách hàng đánh số không?",
-        "Mốc có dùng cùng biểu tượng với rủi ro không?",
-        "Mốc có đạt được đúng ngày dự kiến không?"
+        "Mốc có dùng cùng biểu tượng với rủi ro không?"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Slide yêu cầu determine whether milestones accomplished by scheduled date.",
       "slides": [
         74
@@ -5029,8 +5502,8 @@ window.SPM_DATA = {
       "options": [
         "Ngày bắt đầu thực tế với ngày bắt đầu dự kiến",
         "Nỗ lực ước lượng và tổng chức năng sản phẩm",
-        "Chuẩn áp dụng và nội dung mô tả quy trình",
-        "Xác suất dự kiến và mức tác động của rủi ro"
+        "Xác suất dự kiến và mức tác động của rủi ro",
+        "Chuẩn áp dụng và nội dung mô tả quy trình"
       ],
       "correct": 0,
       "explanation": "Slide nêu comparing actual start-date to planned start-date for each task.",
@@ -5046,11 +5519,11 @@ window.SPM_DATA = {
       "question": "Trao đổi không chính thức với kỹ sư giúp thu được thông tin nào?",
       "options": [
         "Các ước lượng thời gian có khả năng nhất từ mô hình",
-        "Đánh giá chủ quan về tiến độ và vấn đề sắp tới",
         "Các mốc chính thức đã hoàn thành đúng ngày dự kiến",
-        "Các ngày bắt đầu thực tế ghi trong bảng nhiệm vụ"
+        "Các ngày bắt đầu thực tế ghi trong bảng nhiệm vụ",
+        "Đánh giá chủ quan về tiến độ và vấn đề sắp tới"
       ],
-      "correct": 1,
+      "correct": 3,
       "explanation": "Slide nêu subjective assessment of progress to date and problems on the horizon.",
       "slides": [
         74
@@ -5058,24 +5531,6 @@ window.SPM_DATA = {
       "sourceId": "SPM-435",
       "sourceType": "slides",
       "id": "SLIDE-SPM-435"
-    },
-    {
-      "part": 5,
-      "question": "Tập cách theo dõi lịch phù hợp gồm những gì?",
-      "options": [
-        "Chỉ dùng ngày bắt đầu thực tế vì mọi nhận xét của kỹ sư đều không có ích",
-        "Chỉ dùng kết quả review vì bảng dự án không có dữ liệu đối chiếu",
-        "Chỉ dùng họp định kỳ vì các mốc chính thức không phản ánh tiến độ",
-        "Dùng cả đối chiếu ngày, đánh giá review và trao đổi với người thực hiện"
-      ],
-      "correct": 3,
-      "explanation": "Slide 74 kết hợp họp trạng thái, review, mốc, đối chiếu ngày và trao đổi không chính thức.",
-      "slides": [
-        74
-      ],
-      "sourceId": "SPM-436",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-436"
     },
     {
       "part": 5,
@@ -5099,12 +5554,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Interdependency yêu cầu nhận biết điều gì?",
       "options": [
+        "Số người được phân bổ và số người có mặt",
         "Nhiệm vụ nào tuần tự, nhiệm vụ nào song song",
-        "Đơn vị công cùng ngày bắt đầu và kết thúc",
         "Người phụ trách cùng sản phẩm bàn giao",
-        "Số người được phân bổ và số người có mặt"
+        "Đơn vị công cùng ngày bắt đầu và kết thúc"
       ],
-      "correct": 0,
+      "correct": 1,
       "explanation": "Slide nêu tasks occur in sequence while others can occur in parallel.",
       "slides": [
         75
@@ -5119,8 +5574,8 @@ window.SPM_DATA = {
       "options": [
         "Người được phân công và kết quả công việc cụ thể",
         "Đơn vị công, ngày bắt đầu và ngày hoàn thành",
-        "Nhiệm vụ song song và nhiệm vụ thực hiện tuần tự",
-        "Mốc dự án và sản phẩm công việc phải bàn giao"
+        "Mốc dự án và sản phẩm công việc phải bàn giao",
+        "Nhiệm vụ song song và nhiệm vụ thực hiện tuần tự"
       ],
       "correct": 1,
       "explanation": "Slide quy định work units cùng start date và completion date.",
@@ -5135,12 +5590,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Xếp sáu người làm đồng thời khi chỉ có bốn người vi phạm nguyên tắc nào?",
       "options": [
-        "Xác định mốc",
         "Xác nhận nỗ lực",
         "Xác định kết quả",
+        "Xác định mốc",
         "Phân rã công việc"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Effort validation đảm bảo không xếp quá số nhân sự được phân bổ tại bất kỳ thời điểm nào.",
       "slides": [
         75
@@ -5153,12 +5608,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Nhiệm vụ có lịch nhưng không có người phụ trách vi phạm nguyên tắc nào?",
       "options": [
-        "Xác định mốc",
         "Xác định trách nhiệm",
+        "Xác định mốc",
         "Phân rã công việc",
         "Phân bổ thời gian"
       ],
-      "correct": 1,
+      "correct": 0,
       "explanation": "Defined responsibilities yêu cầu mỗi task giao cho specific team member.",
       "slides": [
         75
@@ -5171,12 +5626,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Nhiệm vụ không nêu kết quả cần đạt vi phạm nguyên tắc nào?",
       "options": [
-        "Phân bổ thời gian",
-        "Xác định đầu ra",
         "Phụ thuộc nhiệm vụ",
-        "Xác nhận nỗ lực"
+        "Xác nhận nỗ lực",
+        "Xác định đầu ra",
+        "Phân bổ thời gian"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Defined outcomes yêu cầu every task have a defined outcome.",
       "slides": [
         75
@@ -5189,9 +5644,9 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Nhóm nhiệm vụ chưa gắn với mốc dự án thiếu nguyên tắc nào?",
       "options": [
-        "Xác nhận nỗ lực",
-        "Xác định trách nhiệm",
         "Phân bổ thời gian",
+        "Xác định trách nhiệm",
+        "Xác nhận nỗ lực",
         "Xác định mốc"
       ],
       "correct": 3,
@@ -5207,12 +5662,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Kế hoạch dự án truyền đạt phạm vi và nguồn lực cho ai?",
       "options": [
-        "Quản lý phần mềm, nhân viên kỹ thuật và khách hàng",
-        "Chỉ quản lý cấp cao, chỉ người thiết kế, người bảo trì",
         "Chỉ nhóm kỹ thuật, chỉ người lập lịch, người kiểm thử",
-        "Quản lý phần mềm, chỉ nhóm SQA, người kiểm toán"
+        "Quản lý phần mềm, chỉ nhóm SQA, người kiểm toán",
+        "Chỉ quản lý cấp cao, chỉ người thiết kế, người bảo trì",
+        "Quản lý phần mềm, nhân viên kỹ thuật và khách hàng"
       ],
-      "correct": 0,
+      "correct": 3,
       "explanation": "Slide nêu software management, technical staff, and customer.",
       "slides": [
         76
@@ -5243,12 +5698,12 @@ window.SPM_DATA = {
       "part": 5,
       "question": "Chi phí và lịch trong kế hoạch được xác định để ai xem xét?",
       "options": [
-        "Chỉ nhà cung cấp công cụ",
         "Chỉ người dùng cuối",
-        "Chỉ người tạo phiếu rủi ro",
-        "Ban quản lý"
+        "Ban quản lý",
+        "Chỉ nhà cung cấp công cụ",
+        "Chỉ người tạo phiếu rủi ro"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Slide ghi define cost and schedule for management review.",
       "slides": [
         76
@@ -5259,32 +5714,14 @@ window.SPM_DATA = {
     },
     {
       "part": 5,
-      "question": "Cách tiếp cận phát triển trong kế hoạch được cung cấp cho ai?",
-      "options": [
-        "Chỉ các thành viên thực hiện nhiệm vụ trên đường găng",
-        "Chỉ các quản lý chịu trách nhiệm xác nhận ngân sách",
-        "Chỉ các thành viên tham gia kiểm toán sản phẩm công việc",
-        "Tất cả người liên quan tới dự án"
-      ],
-      "correct": 3,
-      "explanation": "Slide nói overall approach for all people associated with the project.",
-      "slides": [
-        76
-      ],
-      "sourceId": "SPM-449",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-449"
-    },
-    {
-      "part": 5,
       "question": "Kế hoạch dự án phải nêu cách xử lý chất lượng và thay đổi thế nào?",
       "options": [
-        "Ước lượng nỗ lực và xác định thời lượng nhiệm vụ",
         "Truyền đạt nguồn lực và các đặc tính phạm vi sản phẩm",
         "Cách bảo đảm chất lượng và quản lý thay đổi",
+        "Ước lượng nỗ lực và xác định thời lượng nhiệm vụ",
         "Xác định ngày bắt đầu và kết thúc dự kiến của dự án"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Slide yêu cầu outline how quality ensured and change managed.",
       "slides": [
         76
@@ -5295,32 +5732,14 @@ window.SPM_DATA = {
     },
     {
       "part": 6,
-      "question": "SQA hướng tới những sản phẩm công việc nào?",
-      "options": [
-        "Chỉ sản phẩm công việc kỹ thuật đã được SQA chọn kiểm toán",
-        "Chỉ chương trình thực thi sau khi đã hoàn tất kiểm thử",
-        "Mọi sản phẩm công việc của kỹ nghệ phần mềm",
-        "Chỉ báo cáo review kỹ thuật được nhóm phát triển tạo ra"
-      ],
-      "correct": 2,
-      "explanation": "Slide yêu cầu every software engineering work product exhibits high quality.",
-      "slides": [
-        78
-      ],
-      "sourceId": "SPM-452",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-452"
-    },
-    {
-      "part": 6,
       "question": "Ai có trách nhiệm tham gia chất lượng phần mềm?",
       "options": [
-        "Chỉ các thành viên nhóm đảm bảo chất lượng của dự án",
-        "Chỉ các quản lý nhận dữ liệu kiểm toán và báo cáo",
+        "Chỉ những người trực tiếp lập trình và kiểm thử",
         "Mọi người trong quá trình kỹ nghệ phần mềm",
-        "Chỉ những người trực tiếp lập trình và kiểm thử"
+        "Chỉ các quản lý nhận dữ liệu kiểm toán và báo cáo",
+        "Chỉ các thành viên nhóm đảm bảo chất lượng của dự án"
       ],
-      "correct": 2,
+      "correct": 1,
       "explanation": "Slide ghi Everyone involved in the software engineering process.",
       "slides": [
         78
@@ -5331,122 +5750,14 @@ window.SPM_DATA = {
     },
     {
       "part": 6,
-      "question": "Số liệu đo lường giúp cải tiến chất lượng bằng cách nào?",
-      "options": [
-        "Xây dựng chiến lược cải tiến quy trình và chất lượng sản phẩm",
-        "Chỉ thay việc đánh giá các sản phẩm công việc bằng số liệu",
-        "Chỉ kết luận mọi yêu cầu ngầm đã trở thành chuẩn nội bộ",
-        "Chỉ xác nhận ngày bắt đầu thực tế của từng nhiệm vụ"
-      ],
-      "correct": 0,
-      "explanation": "Slide liên kết metrics với strategies improving software process và end product quality.",
-      "slides": [
-        78
-      ],
-      "sourceId": "SPM-454",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-454"
-    },
-    {
-      "part": 6,
-      "question": "Hai sản phẩm công việc của SQA được nêu là gì?",
-      "options": [
-        "Bảng dự án và lịch ngày bắt đầu thực tế của nhiệm vụ",
-        "Mạng nhiệm vụ và danh sách sản phẩm phải bàn giao",
-        "Kế hoạch SQA và báo cáo tóm tắt review kỹ thuật chính thức",
-        "Phiếu thông tin rủi ro và bảng xác suất cùng tác động"
-      ],
-      "correct": 2,
-      "explanation": "Slide nêu Software Quality Assurance Plan và formal technical review summary report.",
-      "slides": [
-        78
-      ],
-      "sourceId": "SPM-455",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-455"
-    },
-    {
-      "part": 6,
-      "question": "Quality of design liên quan nội dung nào?",
-      "options": [
-        "Mức độ bàn giao sản phẩm đúng lịch và ngân sách",
-        "Mức độ tuân theo các đặc tả thiết kế khi chế tạo",
-        "Các đặc tính mà người thiết kế quy định cho sản phẩm",
-        "Mức độ quy trình điều chỉnh sau phản hồi về lỗi"
-      ],
-      "correct": 2,
-      "explanation": "Quality of design là characteristics that designers specify for an item.",
-      "slides": [
-        79
-      ],
-      "sourceId": "SPM-458",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-458"
-    },
-    {
-      "part": 6,
-      "question": "Quality of conformance phản ánh điều gì?",
-      "options": [
-        "Tập đặc tính được người thiết kế quy định trước chế tạo",
-        "Mức độ cải tiến quy trình dựa trên các số liệu đo lường",
-        "Tập hoạt động kiểm toán và báo cáo cho ban quản lý",
-        "Mức độ tuân theo đặc tả thiết kế khi chế tạo"
-      ],
-      "correct": 3,
-      "explanation": "Slide định nghĩa conformance là degree design specifications followed during manufacturing.",
-      "slides": [
-        79
-      ],
-      "sourceId": "SPM-459",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-459"
-    },
-    {
-      "part": 6,
-      "question": "Sai lệch có thể xuất hiện trong những tài liệu hoặc sản phẩm nào?",
-      "options": [
-        "Chỉ báo cáo kiểm toán đã gửi cho quản lý cấp cao của tổ chức",
-        "Chỉ sản phẩm kỹ thuật đã hoàn tất kiểm thử và được bàn giao",
-        "Chỉ tài liệu mô tả quy trình do nhóm SQA trực tiếp tạo ra",
-        "Kế hoạch dự án, mô tả quy trình, chuẩn áp dụng và sản phẩm kỹ thuật"
-      ],
-      "correct": 3,
-      "explanation": "Slide 83 nêu sai lệch trong project plan, process description, applicable standards hoặc technical work products.",
-      "slides": [
-        83
-      ],
-      "sourceId": "SPM-461",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-461"
-    },
-    {
-      "part": 6,
-      "question": "Sự hài lòng của người dùng kết hợp những yếu tố nào?",
-      "options": [
-        "Tuân thủ + chất lượng tốt + chỉ cần đúng ngân sách",
-        "Tuân thủ + chuẩn nội bộ + số lượng chức năng lớn",
-        "Tuân thủ + chất lượng tốt + chỉ cần đúng lịch",
-        "Sản phẩm tuân thủ, chất lượng tốt và giao đúng ngân sách/lịch"
-      ],
-      "correct": 3,
-      "explanation": "Slide ghi user satisfaction = compliant product + good quality + delivery within budget and schedule.",
-      "slides": [
-        79
-      ],
-      "sourceId": "SPM-462",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-462"
-    },
-    {
-      "part": 6,
       "question": "Kiểm soát chất lượng gồm những hoạt động nào?",
       "options": [
-        "Nhận diện, ước lượng và tinh chỉnh rủi ro",
-        "Ước lượng, lập lịch và phân công",
         "Kiểm toán, báo cáo và cấp nguồn lực",
-        "Kiểm tra, review và kiểm thử"
+        "Kiểm tra, review và kiểm thử",
+        "Ước lượng, lập lịch và phân công",
+        "Nhận diện, ước lượng và tinh chỉnh rủi ro"
       ],
-      "correct": 3,
+      "correct": 1,
       "explanation": "Slide liệt kê inspections, reviews, and tests throughout software process.",
       "slides": [
         80
@@ -5457,86 +5768,14 @@ window.SPM_DATA = {
     },
     {
       "part": 6,
-      "question": "QC nhằm bảo đảm điều gì cho mỗi sản phẩm công việc?",
-      "options": [
-        "Bảo đảm đáp ứng các yêu cầu đặt ra cho nó",
-        "Bảo đảm tất cả sản phẩm có cùng kích thước",
-        "Bảo đảm không cần xem xét quy trình",
-        "Bảo đảm chỉ được tạo bằng một công cụ"
-      ],
-      "correct": 0,
-      "explanation": "Quality control ensures each work product meets requirements placed upon it.",
-      "slides": [
-        80
-      ],
-      "sourceId": "SPM-466",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-466"
-    },
-    {
-      "part": 6,
-      "question": "Vòng phản hồi QC hướng về đâu?",
-      "options": [
-        "Chỉ bản kế hoạch SQA được duyệt trước phát triển",
-        "Quy trình đã tạo ra sản phẩm công việc",
-        "Chỉ khâu kiểm toán báo cáo dữ liệu cho cấp quản lý",
-        "Chỉ khâu xác định mốc và lịch hoàn thành nhiệm vụ"
-      ],
-      "correct": 1,
-      "explanation": "Slide nói feedback loop to the process that created the work product.",
-      "slides": [
-        80
-      ],
-      "sourceId": "SPM-467",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-467"
-    },
-    {
-      "part": 6,
-      "question": "QC có thể được thực hiện theo những hình thức nào?",
-      "options": [
-        "Tự động, thủ công hoặc kết hợp cả hai",
-        "Chỉ tự động khi sản phẩm đã được biên dịch",
-        "Chỉ thủ công khi sản phẩm là tài liệu kỹ thuật",
-        "Phải kết hợp thủ công và tự động trong mọi hoạt động"
-      ],
-      "correct": 0,
-      "explanation": "Slide cho phép fully automated, entirely manual, hoặc combination.",
-      "slides": [
-        80
-      ],
-      "sourceId": "SPM-469",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-469"
-    },
-    {
-      "part": 6,
-      "question": "Cần điều kiện nào để đối chiếu đầu ra trong QC?",
-      "options": [
-        "Mọi sản phẩm công việc có đặc tả rõ và đo được",
-        "Chỉ số liệu kiểm toán mà không cần đặc tả từng đầu ra",
-        "Chỉ một đặc tả chung không cần đo cho toàn bộ dự án",
-        "Chỉ yêu cầu chức năng của chương trình thực thi cuối cùng"
-      ],
-      "correct": 0,
-      "explanation": "Slide nhấn mạnh defined, measurable specifications cho all work products.",
-      "slides": [
-        80
-      ],
-      "sourceId": "SPM-470",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-470"
-    },
-    {
-      "part": 6,
       "question": "QA gồm những chức năng quản lý nào?",
       "options": [
-        "Lập trình và biên dịch",
+        "Kiểm toán và báo cáo",
         "Nhận diện và tinh chỉnh rủi ro",
-        "Ước lượng và lập lịch",
-        "Kiểm toán và báo cáo"
+        "Lập trình và biên dịch",
+        "Ước lượng và lập lịch"
       ],
-      "correct": 3,
+      "correct": 0,
       "explanation": "Slide định nghĩa QA consists of auditing and reporting functions of management.",
       "slides": [
         81
@@ -5547,87 +5786,14 @@ window.SPM_DATA = {
     },
     {
       "part": 6,
-      "question": "QA cung cấp cho quản lý loại dữ liệu nào?",
-      "options": [
-        "Dữ liệu cần thiết để hiểu chất lượng sản phẩm",
-        "Chỉ ngày dự kiến và thực tế của các nhiệm vụ dự án",
-        "Chỉ ước lượng nỗ lực cho các hoạt động kỹ nghệ",
-        "Chỉ xác suất và tác động của các rủi ro trong dự án"
-      ],
-      "correct": 0,
-      "explanation": "QA cung cấp data necessary to be informed about product quality.",
-      "slides": [
-        81
-      ],
-      "sourceId": "SPM-475",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-475"
-    },
-    {
-      "part": 6,
-      "question": "Ai phải xử lý và cấp nguồn lực khi QA phát hiện vấn đề?",
-      "options": [
-        "Chỉ người dùng cuối",
-        "Ban quản lý",
-        "Chỉ người viết báo cáo",
-        "Chỉ nhà cung cấp công cụ"
-      ],
-      "correct": 1,
-      "explanation": "Slide xác định management responsible address problems and apply necessary resources.",
-      "slides": [
-        81
-      ],
-      "sourceId": "SPM-477",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-477"
-    },
-    {
-      "part": 6,
-      "question": "QC và QA khác nhau thế nào?",
-      "options": [
-        "QC chỉ xác định chuẩn; QA chỉ theo dõi lịch nhiệm vụ",
-        "QC chỉ xác định yêu cầu; QA chỉ phân bổ nguồn lực dự án",
-        "QC kiểm toán cho quản lý; QA trực tiếp kiểm thử sản phẩm",
-        "QC kiểm tra sản phẩm; QA kiểm toán, báo cáo để quản lý biết chất lượng"
-      ],
-      "correct": 3,
-      "explanation": "QC dùng inspections/reviews/tests; QA dùng auditing/reporting phục vụ quản lý.",
-      "slides": [
-        80,
-        81
-      ],
-      "sourceId": "SPM-479",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-479"
-    },
-    {
-      "part": 6,
-      "question": "SQA báo cáo định kỳ kết quả kiểm toán sản phẩm cho ai?",
-      "options": [
-        "Người quản lý dự án",
-        "Chỉ bên thứ ba cung cấp cấu phần",
-        "Chỉ người dùng cuối của phần mềm",
-        "Chỉ người thiết kế sản phẩm được kiểm toán"
-      ],
-      "correct": 0,
-      "explanation": "Trong hoạt động kiểm toán sản phẩm công việc, SQA periodically reports results to the project manager.",
-      "slides": [
-        83
-      ],
-      "sourceId": "SPM-480",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-480"
-    },
-    {
-      "part": 6,
       "question": "Chất lượng phần mềm gồm ba nhóm tiêu chí nào?",
       "options": [
-        "Chuẩn đã ghi chép, xác suất rủi ro, thời lượng nhiệm vụ",
-        "Yêu cầu rõ, ngày bắt đầu thực tế, số người được phân công",
         "Đặc tính ngầm, chi phí ước lượng, lịch nhiệm vụ dự kiến",
-        "Yêu cầu rõ, chuẩn được ghi chép và đặc tính ngầm kỳ vọng"
+        "Chuẩn đã ghi chép, xác suất rủi ro, thời lượng nhiệm vụ",
+        "Yêu cầu rõ, chuẩn được ghi chép và đặc tính ngầm kỳ vọng",
+        "Yêu cầu rõ, ngày bắt đầu thực tế, số người được phân công"
       ],
-      "correct": 3,
+      "correct": 2,
       "explanation": "Slide nêu explicit functional/performance requirements, documented standards, implicit characteristics.",
       "slides": [
         82
@@ -5638,50 +5804,14 @@ window.SPM_DATA = {
     },
     {
       "part": 6,
-      "question": "Nền tảng để đo chất lượng phần mềm là gì?",
-      "options": [
-        "Nguồn lực dự án",
-        "Yêu cầu phần mềm",
-        "Kích thước phần mềm",
-        "Lịch triển khai dự án"
-      ],
-      "correct": 1,
-      "explanation": "Slide ghi Software requirements are foundation from which quality measured.",
-      "slides": [
-        82
-      ],
-      "sourceId": "SPM-482",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-482"
-    },
-    {
-      "part": 6,
-      "question": "Chuẩn phát triển định hướng điều gì?",
-      "options": [
-        "Mức nguồn lực được phép phân bổ cho từng thời điểm",
-        "Cách thức phần mềm được kỹ nghệ hóa",
-        "Thời điểm bắt đầu từng nhiệm vụ trong bảng dự án",
-        "Xác suất phát sinh từng rủi ro trong danh mục dự án"
-      ],
-      "correct": 1,
-      "explanation": "Specified standards define development criteria guiding manner software engineered.",
-      "slides": [
-        82
-      ],
-      "sourceId": "SPM-484",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-484"
-    },
-    {
-      "part": 6,
       "question": "Ví dụ nào là yêu cầu ngầm đối với phần mềm?",
       "options": [
         "Số đầu vào và số đầu ra",
         "Ngày bắt đầu và ngày kết thúc",
-        "Dễ dùng và dễ bảo trì",
-        "Chi phí mua máy và số nhân viên"
+        "Chi phí mua máy và số nhân viên",
+        "Dễ dùng và dễ bảo trì"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Slide nêu implicit requirements gồm ease of use và good maintainability.",
       "slides": [
         82
@@ -5692,86 +5822,14 @@ window.SPM_DATA = {
     },
     {
       "part": 6,
-      "question": "Kế hoạch SQA được xây dựng vào giai đoạn nào?",
-      "options": [
-        "Sau khi mọi cuộc kiểm toán kết thúc",
-        "Trong giai đoạn lập kế hoạch dự án",
-        "Chỉ sau khi phần mềm đã bàn giao",
-        "Chỉ khi phát sinh lỗi nghiêm trọng"
-      ],
-      "correct": 1,
-      "explanation": "Slide ghi plan developed during project planning.",
-      "slides": [
-        83
-      ],
-      "sourceId": "SPM-489",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-489"
-    },
-    {
-      "part": 6,
-      "question": "Ai xem xét kế hoạch SQA?",
-      "options": [
-        "Chỉ quản lý tài chính",
-        "Tất cả các bên quan tâm",
-        "Chỉ khách hàng cuối cùng",
-        "Chỉ tác giả kế hoạch"
-      ],
-      "correct": 1,
-      "explanation": "Kế hoạch is reviewed by all interested parties.",
-      "slides": [
-        83
-      ],
-      "sourceId": "SPM-490",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-490"
-    },
-    {
-      "part": 6,
-      "question": "Kế hoạch SQA phải nêu thủ tục nào về lỗi?",
-      "options": [
-        "Báo cáo và theo dõi lỗi",
-        "Chỉ đếm lỗi sau bàn giao",
-        "Chỉ phân công người viết mã",
-        "Chỉ chọn thời điểm phát hành"
-      ],
-      "correct": 0,
-      "explanation": "Plan identifies procedures for error reporting and tracking.",
-      "slides": [
-        83
-      ],
-      "sourceId": "SPM-492",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-492"
-    },
-    {
-      "part": 6,
-      "question": "Kế hoạch SQA có phải xác định lượng phản hồi cho nhóm dự án không?",
-      "options": [
-        "Có, nhưng kế hoạch chỉ nêu phản hồi cho quản lý cấp cao",
-        "Không, kế hoạch chỉ quy định đánh giá và chuẩn áp dụng",
-        "Có, kế hoạch xác định lượng phản hồi cung cấp",
-        "Không, kế hoạch chỉ quy định tài liệu và thủ tục lỗi"
-      ],
-      "correct": 2,
-      "explanation": "Plan identifies amount of feedback provided to software project team.",
-      "slides": [
-        83
-      ],
-      "sourceId": "SPM-494",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-494"
-    },
-    {
-      "part": 6,
       "question": "Nhóm phần mềm và nhóm SQA có vai trò gì với mô tả quy trình?",
       "options": [
         "Quản lý tài chính chọn quy trình, nhóm phần mềm kiểm toán",
         "Khách hàng chọn toàn bộ, SQA chỉ ghi ngày bắt đầu",
-        "Nhóm phần mềm chọn quy trình, SQA xem xét tính tuân thủ",
-        "SQA chọn toàn bộ, nhóm phần mềm chỉ mua công cụ"
+        "SQA chọn toàn bộ, nhóm phần mềm chỉ mua công cụ",
+        "Nhóm phần mềm chọn quy trình, SQA xem xét tính tuân thủ"
       ],
-      "correct": 2,
+      "correct": 3,
       "explanation": "Slide phân biệt software team selects process và SQA reviews process description.",
       "slides": [
         83
@@ -5782,32 +5840,14 @@ window.SPM_DATA = {
     },
     {
       "part": 6,
-      "question": "SQA xem xét tính tuân thủ của quy trình theo những căn cứ nào?",
-      "options": [
-        "Chỉ yêu cầu chức năng cùng hiệu năng của chương trình cuối",
-        "Chính sách tổ chức, chuẩn nội bộ, chuẩn bên ngoài và kế hoạch dự án",
-        "Chỉ ngày dự kiến cùng thực tế của mỗi nhiệm vụ phát triển",
-        "Chỉ xác suất cùng tác động của rủi ro trong bảng dự án"
-      ],
-      "correct": 1,
-      "explanation": "Slide nêu organizational policy, internal/external standards, other parts of software project plan.",
-      "slides": [
-        83
-      ],
-      "sourceId": "SPM-496",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-496"
-    },
-    {
-      "part": 6,
       "question": "SQA phải làm gì khi phát hiện sai lệch so với quy trình?",
       "options": [
         "Nhận diện và ghi chép nhưng chỉ khách hàng xác minh sửa",
+        "Nhận diện và ghi chép rồi dừng theo dõi khi gửi báo cáo",
         "Nhận diện, ghi chép, theo dõi và xác minh đã sửa",
-        "Nhận diện và sửa ngay nhưng không cần ghi chép sai lệch",
-        "Nhận diện và ghi chép rồi dừng theo dõi khi gửi báo cáo"
+        "Nhận diện và sửa ngay nhưng không cần ghi chép sai lệch"
       ],
-      "correct": 1,
+      "correct": 2,
       "explanation": "Slide yêu cầu identifies, documents, tracks deviations và verifies corrections made.",
       "slides": [
         83
@@ -5815,24 +5855,6 @@ window.SPM_DATA = {
       "sourceId": "SPM-497",
       "sourceType": "slides",
       "id": "SLIDE-SPM-497"
-    },
-    {
-      "part": 6,
-      "question": "Mục không tuân thủ được theo dõi đến khi nào và báo cho ai?",
-      "options": [
-        "Đến khi đổi phiên bản, chỉ báo tác giả mã",
-        "Đến khi lập hồ sơ, chỉ báo người dùng cuối",
-        "Đến khi hết tháng, chỉ báo nhà cung cấp",
-        "Đến khi giải quyết, báo quản lý cấp cao"
-      ],
-      "correct": 3,
-      "explanation": "SQA records noncompliance, reports senior management, tracks until resolved.",
-      "slides": [
-        83
-      ],
-      "sourceId": "SPM-500",
-      "sourceType": "slides",
-      "id": "SLIDE-SPM-500"
     }
   ]
 };

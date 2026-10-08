@@ -1,64 +1,50 @@
 # Ôn tập Software Project Management
 
-Website tiếng Việt để ôn bài giảng Software Project Management của Trần Khánh Dung (01/2017), gồm 83 slide. Bộ câu hỏi được soạn theo nội dung văn bản, bảng và sơ đồ của file PowerPoint đã cung cấp.
+Website tiếng Việt, chạy offline, gồm **235 câu từ PowerPoint + 65 câu từ đề cương năm ngoái QLDA.pdf = 300 câu**.
 
-## Sử dụng offline
+## Sử dụng
 
-1. Tải file ZIP của dự án và giải nén **toàn bộ thư mục**.
-2. Mở `index.html` bằng Edge, Chrome, Firefox hoặc Safari.
-3. Chọn một, nhiều chương hoặc tất cả 6 chương, rồi bắt đầu làm bài.
+1. Giải nén toàn bộ ZIP, mở `index.html`.
+2. Chọn chương và nguồn câu hỏi: tất cả 300, riêng 65 câu đề năm ngoái hoặc riêng 235 câu từ slide.
+3. Chọn luyện tập (xem đáp án từng câu) hoặc tự kiểm tra (xem đáp án sau nộp bài).
 
-Không cần cài đặt, máy chủ, tài khoản hay kết nối mạng. Giữ `index.html`, `style.css`, `app.js`, `core.js`, `data.js` và `favicon.svg` trong cùng thư mục.
+Không cần cài đặt, tài khoản, máy chủ hay mạng để làm bài và đọc lời giải. Các liên kết kiểm chứng bên ngoài cần mạng khi mở.
 
-## Nội dung
+## Phân bố
 
-| Phần | Nội dung | Số câu | Slide |
-|---|---|---:|---|
-| I | Key concepts & principles | 70 | 4–22 |
-| II | Project Metrics and Software Measurement | 70 | 23–46 |
-| III | Software Project Planning | 45 | 47–57 |
-| IV | Risk Analysis & Management | 40 | 58–66 |
-| V | Project Scheduling and Tracking | 40 | 67–76 |
-| VI | Software Quality Assurance | 35 | 77–83 |
-| | **Tổng cộng** | **300** | |
+| Phần | Nội dung | Từ slide | Từ đề | Tổng |
+|---|---|---:|---:|---:|
+| 1 | Key concepts & principles | 50 | 37 | 87 |
+| 2 | Project Metrics and Software Measurement | 55 | 4 | 59 |
+| 3 | Software Project Planning | 35 | 9 | 44 |
+| 4 | Risk Analysis & Management | 30 | 6 | 36 |
+| 5 | Project Scheduling and Tracking | 35 | 7 | 42 |
+| 6 | Software Quality Assurance | 30 | 2 | 32 |
+| | **Tổng** | **235** | **65** | **300** |
 
-Mỗi câu có bốn lựa chọn, một đáp án đúng, giải thích ngắn và số slide nguồn. Có câu nhận biết, phân biệt, áp dụng tình huống và đọc bảng/công thức. Một khái niệm có thể được kiểm tra qua các nhiệm vụ khác nhau; các câu chỉ đổi cách diễn đạt hoặc chỉ đổi số đã được rà soát để giảm lặp. Tình huống được biên soạn nhằm áp dụng đúng nội dung slide, không bổ sung mô hình hay kiến thức môn học ngoài nguồn.
+Scrum/UML của đề được xếp trong Phần I và có nguồn riêng. Các số slide là thứ tự trang trong PowerPoint 83 slide của Trần Khánh Dung (01/2017).
+
+## 65 câu đề năm ngoái
+
+Mỗi số câu gốc 1–65 xuất hiện đúng một lần và có nhãn “Đề năm ngoái · Câu …”. 23 câu giữ nội dung câu hỏi và các phương án; 42 câu được chỉnh điều kiện, cách hỏi hoặc phương án để tránh thiếu dữ kiện và nhiều đáp án hợp lý. Vị trí đáp án được xáo trộn. Bản luyện tập đã chỉnh không phải bản chép nguyên văn của đề.
+
+Mở [doi-chieu-65.html](doi-chieu-65.html) để đọc toàn bộ câu gốc, đáp án khoanh tay, kết luận kiểm chứng và bản chỉnh. Báo cáo câu gốc có 28 câu rõ ràng, 16 có điều kiện, 12 mơ hồ, 9 lỗi/thiếu dữ kiện. Không coi đáp án khoanh tay là đáp án chính thức.
+
+235 câu còn lại chỉ dùng slide; các câu dễ trùng mục tiêu với đề đã được ưu tiên loại. 65 câu đề có thêm nội dung Scrum/UML, kiểm thử và vòng đời, kiểm chứng theo Scrum Guide, OMG UML và giáo trình tác giả được dẫn ở lời giải. Một khái niệm có thể được kiểm tra qua những nhiệm vụ khác nhau.
 
 ## Chức năng
 
-- **Luyện tập:** chọn đáp án rồi bấm Kiểm tra đáp án để mở lời giải. Câu đã kiểm tra được khóa để giữ kết quả trung thực.
-- **Tự kiểm tra:** đáp án và lời giải chỉ mở sau khi nộp bài.
-- Xáo trộn câu hỏi và đáp án độc lập. Đáp án đúng được phân bố cân bằng A/B/C/D trong bộ gốc và trong mỗi bài khi bật xáo trộn đáp án.
-- Tiến độ, danh sách câu và chuyển qua lại giữa các câu.
-- Điểm tổng thể và kết quả từng chương. Câu chưa trả lời được ghi riêng và nằm trong mẫu số khi tính điểm.
-- Xem lại toàn bộ đáp án, làm lại những câu thực sự trả lời sai.
-- Lưu bài đang làm và lịch sử câu sai trên trình duyệt hiện tại. Không đồng bộ thiết bị. Nếu trình duyệt chặn lưu trữ, vẫn có thể làm bài trong phiên hiện tại.
-- Giao diện co giãn cho điện thoại/máy tính, hỗ trợ chọn đáp án bằng bàn phím.
+- Chọn chương, chọn nguồn, xáo trộn câu và phương án độc lập.
+- Tiến độ, danh sách câu, chấm điểm và kết quả từng phần.
+- Lời giải, số slide hoặc nguồn đề và liên kết báo cáo câu gốc.
+- Xem lại bài, làm lại câu thực sự trả lời sai; câu chưa trả lời tính riêng.
+- Lưu/tiếp tục trên trình duyệt hiện tại; vẫn làm bài được khi lưu trữ bị chặn.
+- Giao diện điện thoại/máy tính, chọn đáp án bằng bàn phím.
 
-## Đối chiếu nguồn
+Tiến độ các phiên bản trước được tách khỏi bộ mới để tránh nhầm câu/đáp án.
 
-Số slide là thứ tự trang trong PowerPoint, từ 1 đến 83. Các bảng FP (slide 32), bảng rủi ro (64), phiếu rủi ro (66) và mạng công việc (70) được đọc trực tiếp từ hình trong tài liệu. Bản 300 câu bỏ công thức integrity in thiếu rõ ràng ở slide 43; phần 40–20–40 không tự bổ sung tên các giai đoạn vì slide 68 không nêu chúng.
+## Triển khai
 
-## GitHub Pages
+Website: [gsk7625.github.io/Edu](https://gsk7625.github.io/Edu/). File tĩnh ở gốc nhánh `main`, có `.nojekyll`.
 
-Website: [gsk7625.github.io/Edu](https://gsk7625.github.io/Edu/)
-
-Các file tĩnh đặt ở gốc nhánh `main`, kèm `.nojekyll`, phù hợp với cấu hình Pages: nhánh `main`, thư mục `/ (root)`.
-
-## Cấu trúc
-
-- `index.html`: giao diện.
-- `style.css`: bố cục và responsive.
-- `data.js`: ngân hàng 300 câu và metadata 6 chương.
-- `core.js`: tạo bài, xáo trộn, chấm điểm, lọc câu sai và kiểm tra phiên đã lưu.
-- `app.js`: tương tác và lưu tiến độ trên thiết bị.
-- `favicon.svg`: biểu tượng trang.
-- `QUALITY.md`: kết quả kiểm tra bản bàn giao.
-
-Lịch sử website cũ được giữ trong các commit trước để có thể phục hồi bằng GitHub nếu cần.
-
-## Đối chiếu đề cương năm trước
-
-Mở [doi-chieu-65.html](doi-chieu-65.html) để xem kiểm chứng từng câu trong QLDA.pdf: 28 câu rõ ràng, 16 câu có điều kiện, 12 câu mơ hồ và 9 câu lỗi/thiếu dữ kiện. Đáp án khoanh tay được ghi riêng, không xem là đáp án chính thức. Nguồn Scrum/UML và giáo trình ngoài slide chỉ dùng cho báo cáo đối chiếu, không thêm vào bộ 300 câu.
-
-Bản mới đã loại 200 câu; rút gọn hoặc chỉnh 288 câu dẫn và 53 bộ lựa chọn. Tránh câu chỉ nhớ vị trí hình, tên/ngày/số tiền trên phiếu mẫu và các cách hỏi thiếu điều kiện. Vẫn giữ câu định nghĩa và áp dụng khi nhiệm vụ trả lời khác nhau. Tiến độ bản 500 câu được tách khỏi bản 300 câu để tránh chấm nhầm câu.
+`index.html`, `style.css`, `app.js`, `core.js`, `data.js`, `favicon.svg` cần ở cùng thư mục. `doi-chieu-65.html` là báo cáo offline; `QUALITY.md` ghi kết quả kiểm tra. Các phiên bản cũ còn trong lịch sử commit GitHub.

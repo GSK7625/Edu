@@ -1,15 +1,13 @@
-# Kiểm tra bản 300 câu — 08/10/2026
+# Kiểm tra bản 300 câu có đề năm ngoái — 08/10/2026
 
-- 300 câu; phân bố I/II/III/IV/V/VI: 70/70/45/40/40/35.
-- 300 câu dẫn và mã nguồn riêng biệt; mỗi câu có 4 lựa chọn khác nhau, 1 đáp án đúng, lời giải và số slide.
-- Chọn lọc từ bộ 500: loại 200 câu, chỉnh 288 câu dẫn và 53 bộ lựa chọn. Giữ nội dung trong 6 phần PowerPoint.
-- Vị trí đáp án đúng: A=75, B=75, C=75, D=75; từng chương lệch tối đa 1 giữa các vị trí.
-- Đáp án đúng dài nhất riêng biệt: 65/300 (21,7%). Thứ hạng độ dài có đồng hạng: hạng 1=150; hạng 2=36; hạng 3=49; hạng 4=65.
-- Loại câu về công thức integrity thiếu rõ ràng, DRE 0/0 và chi tiết nhớ máy móc trên hình/phiếu mẫu.
-- Báo cáo 65 câu tách riêng: 28 rõ ràng, 16 có điều kiện, 12 mơ hồ, 9 lỗi/thiếu dữ kiện. Không ép đáp án cho câu chưa đủ căn cứ.
+- Tổng 300: 235 câu từ slide và đầy đủ 65 số câu gốc 1–65, mỗi số đúng một lần.
+- Phân bố I–VI: 87/59/44/36/42/32. Mỗi câu 4 lựa chọn khác nhau, một đáp án đúng, lời giải và nguồn.
+- 300 câu dẫn riêng biệt. 65 câu từ bộ slide được thay bằng câu đề, ưu tiên loại nội dung dễ trùng. 23 câu đề giữ nội dung; 42 câu được chỉnh để rõ điều kiện và chỉ có một đáp án đúng.
+- A=75, B=75, C=75, D=75; từng chương chênh tối đa 1 giữa các vị trí. Đáp án đúng dài nhất riêng biệt 70/300 (23.3%).
+- Bản đối chiếu vẫn giữ đủ câu gốc và đánh dấu các câu chưa chốt được; không dùng bản chỉnh để suy ngược rằng đề gốc không có lỗi.
 
-12 kiểm thử dữ liệu và chấm điểm đạt: cấu trúc, nguồn, cân bằng đáp án, xáo trộn bảo toàn đáp án, chấm điểm, lọc câu sai, khôi phục bài và từ chối phiên bản 500 cũ.
+14 kiểm thử dữ liệu/chấm điểm đạt: đủ 65 số câu nguồn, cấu trúc/nguồn, cân bằng, xáo trộn giữ đúng đáp án, điểm, lọc câu sai, lưu/khôi phục và từ chối phiên bản cũ.
 
-Kiểm tra Edge bằng file offline đạt: luyện tập và khóa đáp án; chọn bằng bàn phím; tự kiểm tra và nộp bài; xem lại lời giải; lưu/tiếp tục; chọn chương; bài 35 câu với 1 đúng, 1 sai, 33 chưa làm; làm lại câu sai; vẫn chạy khi lưu trữ bị chặn. Không yêu cầu mạng và không có lỗi JavaScript trong các luồng kiểm tra. Bố cục máy tính 1365×900 và điện thoại 390×844 không tràn ngang.
+Kiểm tra Edge offline đạt: chọn riêng 65/235/toàn bộ300, nhãn số câu gốc, liên kết đối chiếu, tiếp tục bài, luyện tập/khóa lựa chọn, tự kiểm tra/nộp bài, lời giải, làm lại câu sai, chọn chương, bàn phím, lưu trữ bị chặn. Không có yêu cầu mạng trong thao tác làm bài. Giao diện 1365×900 và 390×844 không tràn ngang.
 
-Kiểm tra cấu trúc không tự chứng minh mọi câu chỉ có một đáp án đúng; nội dung được đọc và rà soát riêng. Một khái niệm có thể được hỏi qua định nghĩa và tình huống. Bộ câu hỏi chưa được hiệu chuẩn độ khó bằng kết quả người học.
+Kiểm tra cấu trúc không tự chứng minh tính đúng của nội dung; các câu đề được soạn và rà riêng theo nguồn kiểm chứng. Chưa hiệu chuẩn độ khó bằng dữ liệu người học.
